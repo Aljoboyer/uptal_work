@@ -1,19 +1,4 @@
-body {
-    background:linear-gradient(to right top, rgb(255, 111, 0) 50%, #ddd 50%) no-repeat;
-    background-size:100% calc(93% - 93vh );
 
-  }
-body::before {
-content:"";
-position:fixed;
-left:0px;
-top: 84px;
-bottom:0;
-
-width:100%;
-background:#ffffff;
-z-index:-1;
-}
 
 .details_container{
     width: 100%;
