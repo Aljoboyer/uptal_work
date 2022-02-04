@@ -3,7 +3,7 @@ import { createClient } from 'contentful'
 const Sitemap = () => {};
 
 export async function getServerSideProps({ res }){
-  const baseUrl = "https://test-q1so.onrender.com"
+  const baseUrl = "https://www.uptal.org"
   // const blogUrl = new Site() 
 
   const client = createClient({
@@ -42,7 +42,7 @@ export async function getServerSideProps({ res }){
       ${blogs.map(blog => {
         return `
             <url>
-              <loc>${baseUrl +'/blogs/'+(blog.fields.slug)}</loc>
+              <loc>${baseUrl +'/blog/'+(blog.fields.slug)}</loc>
               <lastmod>${new Date().toISOString()}</lastmod>
               <changefreq>monthly</changefreq>
               <priority>1.0</priority>
