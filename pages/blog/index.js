@@ -34,6 +34,7 @@ export default function Blog({ blogs }) {
        
     <Row className="mx-auto">
      <Nabars/>
+     
      <Filteritem />
     
       <Row className="mx-auto mt-3">

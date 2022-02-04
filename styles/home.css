@@ -26,7 +26,6 @@
     z-index: 1;
 }
 
-
 .maintitle{
     color: #2c3454;
     font-size: 33px;
@@ -129,13 +128,25 @@
   margin-left: 35px;
   padding-bottom: 10px;
 }
+.home_blog_btn{
+  font-size: 18px;
+  color: #515e72;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+
+}
+
 @media only screen and (min-width: 200px)  and (max-width: 322px) {
   .home_logo{
-   
-    margin-left: 100px;
+    margin-right: 38px;
+    /* margin-left: 100px; */
   }
  .Header_Btn1{
-   margin-left: 45px;
+   /* margin-left: 45px; */
+   text-align: center;
  }
  .content-colam{
   margin-bottom: 40px;
@@ -146,11 +157,12 @@
     margin-left: 15px;
   }
   .home_logo{
-   
-    margin-left: 120px;
+    margin-right: 38px;
+    /* margin-left: 120px; */
   }
  .Header_Btn1{
-   margin-left: 75px;
+   /* margin-left: 75px; */
+   text-align: center;
  }
   .maintitle{
     color: #2c3454;
@@ -178,10 +190,12 @@
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
   .home_logo{
    
-    margin-left: 165px;
+    /* margin-left: 165px; */
+    margin-right: 20px;
   }
  .Header_Btn1{
-   margin-left: 120px;
+   /* margin-left: 120px; */
+   text-align: center;
  }
   .maintitle{
     color: #2c3454;
@@ -210,15 +224,13 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 788px) {
-
- 
-  .Header_Row{
+  /* .Header_Row{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 30px;
-  }
+  } */
   .home_logo{
    
     margin-left: 0px;
@@ -232,9 +244,13 @@
     background-color: #f4f4f6;
  
   }
-  .Header_Btn{
+  /* .Header_Btn{
     margin-left: 0px;
     margin-right: 15px;
+  } */
+  .Header_Btn1{
+    margin-left: 0px;
+    text-align: end;
   }
 }
 @media only screen and (min-width: 788px) and (max-width:1000px) {
@@ -245,5 +261,15 @@
   }
   .content-colam{
     margin-bottom: 40px;
+  }
+  .Header_Btn1{
+    text-align: center;
+    margin-left: 90px;
+  }
+}
+@media only screen and (min-width:1016px) {
+  .Header_Btn1{
+    text-align: center;
+    margin-left: 90px;
   }
 }

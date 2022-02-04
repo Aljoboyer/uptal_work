@@ -108,7 +108,8 @@ export default function Post({post}) {
   }; 
 
     return (
-      <Row className="mx-auto">
+      <div>
+        <Row className="mx-auto">
             <Navbartwo/>
             <Meta
             title={title}
@@ -193,5 +194,7 @@ export default function Post({post}) {
         </Offcanvas.Body>
           </Offcanvas>
       </Row>
+      <Indicator/>
+      </div>
     );
 }
