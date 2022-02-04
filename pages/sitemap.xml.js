@@ -3,7 +3,7 @@ import { createClient } from 'contentful'
 const Sitemap = () => {};
 
 export async function getServerSideProps({ res }){
-  const baseUrl = "https://test-q1so.onrender.com"
+  const baseUrl = "https://www.uptal.org"
   // const blogUrl = new Site() 
 
   const client = createClient({
