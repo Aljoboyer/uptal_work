@@ -7,6 +7,7 @@ import Meta from '../../partial/seo-meta';
 import { Row, Col, Offcanvas} from "react-bootstrap";
 import MainFooter from '../../components/Footers/MainFooter';
 import { useRouter } from "next/router";
+import Indicator from '../../components/Indicator';
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -143,8 +144,9 @@ export default function Post({post}) {
             </Col>
          
           </Row>
-          <div className='join_full_container'>
-              <Row className="container join_work_container mx-auto justify-content-md-between">
+          <Row className='container justify-content-center mx-auto join_full_container'>
+          <Col lg={11} md={12} sm={12} xs={10} className=''>
+                <Row className="join_work_container justify-content-md-between">
                 <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>
                   <img
                   src="/joinimg.png"
@@ -167,7 +169,8 @@ export default function Post({post}) {
                    </div>
                 </Col>
               </Row>
-          </div>
+          </Col>
+          </Row>
          
           <MainFooter/>
           <div className="table_content_btn_row">

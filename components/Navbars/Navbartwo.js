@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logo from '../../public/my-img.png'
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Indicator from "../Indicator";
 
 export default function Navbartwo() {
 
@@ -13,7 +14,7 @@ export default function Navbartwo() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const router = useRouter()
-    const ClickHandler = (id) => {
+    const ClickHandler = () => {
         router.push('/')
     }
   return (
@@ -27,7 +28,7 @@ export default function Navbartwo() {
             className="navtwologo"
             />
       </Navbar.Brand>
-       
+     
         <Navbar.Toggle onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -47,24 +48,8 @@ export default function Navbartwo() {
             </div>    
         </Navbar.Collapse>      
         </Navbar>
+        <Indicator/>
 
-      <Offcanvas className="offcanvas_container w-100 h-50" show={show} onHide={handleClose} scroll={true} placement="end">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title><img
-        src="/my-img.png"
-        alt="Picture of the author"
-        className="canvas_img"
-      /></Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-   
-            <div style={{width: '100%'}}>
-             <button className="offcangetstarted_btn">Hire Remote Developers</button>
-             <button className="Applydev_btn">Apply As Developer</button>
-             <button className="Login_btn">Login</button>
-            </div>    
-        </Offcanvas.Body>
-      </Offcanvas>
     </div>
   );
 }
