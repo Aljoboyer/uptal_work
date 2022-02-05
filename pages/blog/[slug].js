@@ -122,7 +122,7 @@ export default function Post({post}) {
                   <h1 className='details_title'>{title}</h1>
                   <div className='d-flex blog_details_container'>
                     <p className='blog_detailsone'>{author}</p>
-                    <p className='blog_details'>{convert(new Date(date).toString())}</p>
+                    <p className='blog_details'>{new Date(date).getDate()} {new Date(date).toLocaleString('default', { month: 'long' })}</p>
                     <p className='blog_details'>{timeToRead} mins read</p>
                   </div>
                 </Col>

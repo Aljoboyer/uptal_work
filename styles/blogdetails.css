@@ -500,7 +500,7 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 83%;
+        bottom: 84%;
         z-index: 1;
     }
   }

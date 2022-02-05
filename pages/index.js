@@ -6,8 +6,8 @@ export default function Home() {
     <div className="homesection" style={{width:"100%", backgroundColor: "#f4f4f6"}}>
       <Row className="home">
         <HomeHeader/>
-        <Row className="container mx-auto d-flex justify-content-center pe-0">
-            <Row className="justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly mt-3 gy-3 cardcontainer justify-content-xl-evenly">
+        <Row className="container mx-auto d-flex justify-content-center p-0 mt-0">
+            <Row className="justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly  gy-3 cardcontainer justify-content-xl-evenly p-0">
             <h1 className="maintitle fw-bold text-center">Matching great developers with world-class companies</h1>
                 <Col className="text-center pb-4 ps-3 pe-3 content-colam" lg={4} md={10} sm={12}>
                   <button className="businessbtn">Businesses</button>
@@ -28,6 +28,50 @@ export default function Home() {
                     <button className="joinbtn">Apply Now</button>
                 </Col>
             </Row>
+        </Row>
+        <Row>
+            <Col lg={2}>
+            <img
+                src="/paypal-color-v1.svg"
+                alt="Picture of the author"
+                className="brand_img"
+              />
+            </Col>
+            <Col lg={2}>
+            <img
+                src="/walmart-color-v1.svg"
+                alt="Picture of the author"
+                className="brand_img"
+              />
+            </Col>
+            <Col lg={2}>
+            <img
+                src="/amazon-color-v1.svg"
+                alt="Picture of the author"
+                className="brand_img"
+              />
+            </Col>
+            <Col lg={2}>
+            <img
+                src="/olo.png"
+                alt="Picture of the author"
+                className="brand_img"
+              />
+            </Col>
+            <Col lg={2}>
+            <img
+                src="/microsoft.jpg"
+                alt="Picture of the author"
+                className="brand_img"
+              />
+            </Col>
+             <Col lg={2}>
+            <img
+                src="/barclays-color-v1.svg"
+                alt="Picture of the author"
+                className="brand_img"
+              />
+            </Col>
         </Row>
       </Row>
     </div>

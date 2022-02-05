@@ -1,0 +1,264 @@
+/* -------------home banner section css start--------------- */
+.employe_title{
+    color: #14a800;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.employe_text{
+    color: #001e00;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.anchor_talkbtn{
+    display: flex;
+    flex-direction: row;
+}
+.talk_btn{
+    background-color: #14a800;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 20px 5px 20px;
+}
+.looking_anchor{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #14a800;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    text-align: start;
+    margin-top: 3px;
+}
+.looking_anchor:hover{
+    text-decoration: underline;
+    color: #14a800;
+}
+.employe_banner_img{
+    width: 540px;
+    height: 250px;
+    border-radius: 15px;
+}
+/* -------------home banner section css end--------------- */
+
+/* -------------telant section css start--------------- */
+.field_img{
+    width: 160px;
+    height: 160px;
+}
+.talent_title{
+    font-size: 25px;
+    color: #001e00;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+    padding-top: 70px;
+
+}
+.field_text{
+    font-size: 16px;
+    color: #001e00;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center;
+}
+/* -------------telant section css end--------------- */
+
+/* -------------barand section css start--------------- */
+.employe_brand_img{
+    width: 140px;
+    height: 56px;
+}
+.brand_title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+
+}
+.brand_description{
+    color: rgb(116, 114, 114);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* -------------barand section css end--------------- */
+
+/* -------------gorious section css start--------------- */
+.regorious_img{
+    height: 100%;
+    width: 100%;
+}
+.rigorious_title{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.gorious_point_title{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.gorious_text{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+}
+.gorious_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.regorious_icon{
+    height: 48px;
+    width: 48px;
+}
+/* -------------gorious section css end--------------- */
+
+/* -------------expect section css start--------------- */
+.expect_title{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+    padding-top: 70px;
+}
+.expect_text{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 15px;
+}
+.expect_description{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+}
+.expect_div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+.number_text{
+    color: white;
+    background-color: #001e00;
+    display: block;
+    height: 20px;
+    width: 60px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 100%;
+}
+.talk_btn2{
+    background-color: #14a800;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 20px 5px 20px;
+    margin-left: 30px;
+}
+/* -------------expect section css end--------------- */
+
+/* -------------faq section css start--------------- */
+.faq_section{
+    padding-top: 70px;
+
+}
+.faq_title{
+    font-size: 26px;
+    color: #001e00;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.faq_point_title{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.faq_text{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* -------------faq section css end--------------- */
+@media only screen and (min-width: 200px)  and (max-width: 429px) {
+    
+  }
+@media only screen and (min-width: 430px)  and (max-width: 575px) {
+   .field_container{
+       display: flex;
+       flex-direction: row;
+       margin-left: 30px;
+   }
+   .field_img{
+    width: 100px;
+    height: 100px;
+
+    }
+    .field_text{
+        /* font-size: 20px; */
+        text-align: start;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+  }
+  
+@media only screen and (min-width: 576px) and (max-width: 787px) {
+    
+  }
+@media only screen and (min-width: 788px) and (max-width:991px) {
+   
+  }
+
+  @media only screen and (min-width:992px) and (max-width:1373px) {
+
+  }
