@@ -20,32 +20,28 @@ export default function Navbartwo() {
   return (
 
      <div  className="navtwo" style={{width: '100%'}}>
-        <Navbar collapseOnSelect expand="lg" bg="" variant="light">
+          <Navbar collapseOnSelect expand="lg" bg="" variant="light">
 
-        <Navbar.Brand onClick={ClickHandler}><img
-        src="/my-img.png"
-        alt="Picture of the author"
-        className="websitelogo"
-      /></Navbar.Brand>
-        
-        <Navbar.Toggle onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
-        <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-            
-            </Nav>
-            <div className="nav-itmes">
-            <Nav >
+<Navbar.Brand onClick={ClickHandler}> <p className="navtwo_logo">Uptal.</p> </Navbar.Brand>
 
-                <Nav.Link className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
-                <Nav.Link className="mx-2" >
-                        <button className="getstarted_btn">Hire Remote Developers</button>
-                </Nav.Link>
-                <Nav.Link className="mt-2"> <span className="right-nav-span">Login</span>
-                </Nav.Link>
-                        
-            </Nav>
-            </div>    
-        </Navbar.Collapse>      
+<Navbar.Toggle onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
+<Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+    
+    </Nav>
+    <div className="nav-itmes">
+    <Nav >
+
+        <Nav.Link className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
+        <Nav.Link className="mx-2" >
+                <button className="getstarted_btn">Hire Remote Developers</button>
+        </Nav.Link>
+        <Nav.Link className="mt-2"> <span className="right-nav-span">Login</span>
+        </Nav.Link>
+                
+    </Nav>
+    </div>    
+</Navbar.Collapse>      
         </Navbar>
         <Offcanvas className="offcanvas_container w-100" show={show} onHide={handleClose} scroll={true} placement="end">
           <Offcanvas.Header closeButton>

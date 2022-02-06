@@ -4,7 +4,7 @@
     border: none;
     background-color: #206ee9;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     height: 40px;
     width: 200px;
@@ -22,7 +22,7 @@
     display: none;
 }
 .right-nav-span{
-    font-size: 13px;
+    font-size: 15px;
     color: #515e72;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -33,7 +33,7 @@
     text-decoration: none;
     color: #515e72;
     margin-left: 20px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -44,7 +44,7 @@
     text-decoration: none;
     color: black;
     margin-left: 20px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -73,7 +73,7 @@
 }
 .navrow-text{
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -85,10 +85,7 @@
     font-size: 14px;
     color: #515e72;
 }
-.Search_icons{
-    color: #515e72;
-    width: 10px;
-}
+
 .offcanvas_container{
     height: 40vh;
 }
@@ -97,7 +94,7 @@
     border: none;
     background-color: #206ee9;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     height: 40px;
     width: 93vw;
@@ -113,7 +110,7 @@
     border: solid 1px #206ee9;;
     background-color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     color: #206ee9;
     height: 40px;
     width: 93vw;
@@ -130,7 +127,7 @@
     border: solid 1px #206ee9;;
     background-color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     color: #206ee9;
     height: 40px;
     width: 93vw;
@@ -142,11 +139,16 @@
     display: block;
     margin-top: 10px;
 }
-.websitelogo{
-    width: 120px;
-    height: 60px;
-    margin-left: 16px;
+.navtwo_logo{
+    margin-left: 25px;
     cursor: pointer;
+    font-size: 34px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .canvas_img{
     width: 120px;
@@ -179,7 +181,7 @@
         border: none;
         background-color: #206ee9;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: white;
         height: 40px;
         width: 93vw;
@@ -195,7 +197,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 93vw;
@@ -212,7 +214,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 93vw;
@@ -249,7 +251,7 @@
         border: none;
         background-color: #206ee9;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: white;
         height: 40px;
         width: 95vw;
@@ -265,7 +267,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 95vw;
@@ -282,7 +284,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 95vw;
@@ -320,7 +322,7 @@
         border: none;
         background-color: #206ee9;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: white;
         height: 40px;
         width: 95vw;
@@ -336,7 +338,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 95vw;
@@ -353,7 +355,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 95vw;
@@ -390,7 +392,7 @@
         border: none;
         background-color: #206ee9;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: white;
         height: 40px;
         width: 95vw;
@@ -406,7 +408,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 95vw;
@@ -423,7 +425,7 @@
         border: solid 1px #206ee9;;
         background-color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
         color: #206ee9;
         height: 40px;
         width: 95vw;

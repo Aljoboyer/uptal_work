@@ -10,11 +10,7 @@ export default function MainFooter() {
         <Row className="Footer mx-auto">
             <Row className="footerlink_container pb-3 mx-auto pt-4 mt-2">
                 <Col className="" lg={2} md={4} sm={12}>
-                        <img
-                            src="/my-img-two.png"
-                            alt="Picture of the author"
-                            className="websitefooterlogo"
-                        />
+                <p className="footer_title">Uptal.</p>
                 </Col>
                 <Col lg={10} md={8} sm={12}>
                     <Row className="gy-3  justify-content-center">

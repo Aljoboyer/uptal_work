@@ -7,8 +7,8 @@ export default function Intro() {
     <div className="" style={{width:"100%", backgroundColor: "#f4f4f6"}}>
         <Row className="mx-auto">
             <Navbartwo/>
-            <Row className="container-fluid justify-content-evenly pt-3">
-                <Col className="" lg={5} md={6} sm={12}>
+            <Row className="container-fluid justify-content-xl-around justify-content-lg-around justify-content-sm-center pt-3 ">
+                <Col className="" lg={6} md={6} sm={10}>
                   <p className="employe_title">Your shortcut to pre-vetted talent</p>
                   <p className="employe_text">Talk to a recruiter and get a shortlist within 2 days</p>
                   <div className="anchor_talkbtn">
@@ -16,7 +16,7 @@ export default function Intro() {
                         <a className="looking_anchor ms-2">Looking for work?</a>
                   </div>
                 </Col>
-                <Col lg={6} md={6} sm={12}>
+                <Col lg={5} md={6} sm={10}>
                     <img
                     src="/employe-bannerimg.jpg"
                     alt="Picture of the author"
@@ -26,7 +26,7 @@ export default function Intro() {
             </Row>
             <Row className="container-fluid justify-content-around ">
               <p className="talent_title">Pre-vetted talent available to start in <br /> these fields</p>
-              <Col className="text-center" lg={3} md={6} sm={12}> 
+              <Col className="text-center" lg={3} md={4} sm={6}> 
                 <div className="field_container">
                   <img
                     src="/fullstack.png"
@@ -36,7 +36,7 @@ export default function Intro() {
                   <p className="field_text my-auto">FullStack Developer</p>
                 </div>
               </Col>
-              <Col className="text-center" lg={3} md={6} sm={12}>
+              <Col className="text-center" lg={3} md={4} sm={6}>
                  <div className="field_container">
                  <img
                     src="/datascience.png"
@@ -46,7 +46,7 @@ export default function Intro() {
                   <p className="field_text my-auto">Data Science</p>
                  </div>
               </Col>
-              <Col className="text-center" lg={3} md={6} sm={12}>
+              <Col className="text-center" lg={3} md={4} sm={6}>
                 <div className="field_container">
                   <img
                       src="/cloud.jpg"
@@ -57,45 +57,45 @@ export default function Intro() {
                 </div>
               </Col>
             </Row>
-            <Row className="container-fluid  justify-content-around">
+            <Row className="container-fluid  justify-content-around brand_section">
                 <p className="brand_title ">Leading brands trust Talent Scout</p>
                 <p className="brand_description">From startups to Fortune 500: brands trust our recruiters to help find the best people for them</p>
-                <Col lg={2}>
+                <Col lg={2} sm={4} md={4} xs={6}>
                 <img
                     src="/paypal-color-v1.svg"
                     alt="Picture of the author"
                     className="employe_brand_img"
                   />
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} sm={4} md={4} xs={6}>
                 <img
                     src="/walmart-color-v1.svg"
                     alt="Picture of the author"
                     className="employe_brand_img"
                   />
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} sm={4} md={4} xs={6}>
                 <img
                     src="/amazon-color-v1.svg"
                     alt="Picture of the author"
                     className="employe_brand_img"
                   />
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} sm={4} md={4} xs={6}>
                 <img
                     src="/olo.png"
                     alt="Picture of the author"
                     className="employe_brand_img"
                   />
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} sm={4} md={4} xs={6}>
                 <img
                     src="/microsoft.jpg"
                     alt="Picture of the author"
                     className="employe_brand_img"
                   />
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} sm={4} md={4} xs={6}>
                 <img
                     src="/barclays-color-v1.svg"
                     alt="Picture of the author"
@@ -103,7 +103,7 @@ export default function Intro() {
                   />
                 </Col>
             </Row>
-            <Row className="contianer-fluid mx-auto gy-3 justify-content-evenly">
+            <Row className="contianer-fluid mx-auto gy-3 justify-content-evenly gorious_section">
                 <Col lg={6} md={6} sm={12}>
                   <img
                     src="/regorious.jpg"
@@ -137,7 +137,7 @@ export default function Intro() {
                   </div>
                 </Col>
             </Row>
-            <Row className="contianer-fluid">
+            <Row className="contianer-fluid expect_section">
               <div>
                 <p className="expect_title">What you can expect</p>
                 <p  className="expect_description">It all starts with a conversation—we’ll work with you to find out what hard and soft <br /> skills you’re looking for, quickly zero in on a shortlist of talents, and help guide your <br /> through the hiring process.</p>
@@ -194,7 +194,7 @@ export default function Intro() {
                   </div>
               </Col>
             </Row>
-            <Row className='container justify-content-center mx-auto join_full_container'>
+            <Row className='container justify-content-center mx-auto join_full_container '>
           <Col lg={11} md={12} sm={12} xs={10} className=''>
                 <Row className="join_work_container justify-content-md-between">
                 <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>

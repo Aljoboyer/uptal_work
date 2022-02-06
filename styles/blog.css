@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm&family=IBM+Plex+Sans:wght@500&family=Open+Sans:wght@400;700&family=Poppins:wght@300;500&display=swap');
 .blog-title{
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -9,7 +9,8 @@
    
 }
 .blog-content{
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 25px;
     color: #3c4758;
     font-weight: 500;
     font-family: 'Charm', cursive;
@@ -36,7 +37,8 @@
     transition: 0.5s ease-in-out;
 }
 .date_text{
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 25px;
     color: #3c4758;
     font-weight: 500;
     font-family: 'Charm', cursive;

@@ -20,11 +20,7 @@ export default function Nabars({navigation}) {
     <div style={{width: '100%',}}>
         <Navbar collapseOnSelect expand="lg" bg="" variant="light">
 
-        <Navbar.Brand onClick={ClickHandler}><img
-        src="/my-img.png"
-        alt="Picture of the author"
-        className="websitelogo"
-      /></Navbar.Brand>
+        <Navbar.Brand onClick={ClickHandler}> <p className="navtwo_logo">Uptal.</p> </Navbar.Brand>
        
         <Navbar.Toggle onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
         <Navbar.Collapse id="responsive-navbar-nav">

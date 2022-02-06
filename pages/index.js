@@ -1,5 +1,6 @@
 import { Row ,Col} from "react-bootstrap";
 import HomeHeader from "../components/HomeComponents/HomeHeader";
+import Homeslide from "../components/HomeComponents/Homeslide";
 
 export default function Home() {
   return (
@@ -29,43 +30,44 @@ export default function Home() {
                 </Col>
             </Row>
         </Row>
-        <Row>
-            <Col lg={2}>
+        <div className="home_brand_section">
+        <Row className="mt-4 pt-4">
+            <Col lg={2} sm={4} md={3} xs={6}>
             <img
                 src="/paypal-color-v1.svg"
                 alt="Picture of the author"
                 className="brand_img"
               />
             </Col>
-            <Col lg={2}>
+            <Col lg={2} sm={4} md={3} xs={6}>
             <img
                 src="/walmart-color-v1.svg"
                 alt="Picture of the author"
                 className="brand_img"
               />
             </Col>
-            <Col lg={2}>
+            <Col lg={2} sm={4} md={3} xs={6}>
             <img
                 src="/amazon-color-v1.svg"
                 alt="Picture of the author"
                 className="brand_img"
               />
             </Col>
-            <Col lg={2}>
+            <Col lg={2} sm={4} md={3} xs={6}>
             <img
                 src="/olo.png"
                 alt="Picture of the author"
                 className="brand_img"
               />
             </Col>
-            <Col lg={2}>
+            <Col lg={2} sm={4} md={3} xs={6}>
             <img
                 src="/microsoft.jpg"
                 alt="Picture of the author"
                 className="brand_img"
               />
             </Col>
-             <Col lg={2}>
+             <Col lg={2} sm={4} md={3} xs={6}>
             <img
                 src="/barclays-color-v1.svg"
                 alt="Picture of the author"
@@ -73,6 +75,8 @@ export default function Home() {
               />
             </Col>
         </Row>
+        </div>
+        <Homeslide/>
       </Row>
     </div>
   );

@@ -8,7 +8,7 @@
 }
 .remote_btn{
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     background: white;
     border: none;
     border-radius: 2px;
@@ -17,7 +17,7 @@
 }
 .apply_btn{
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     background: black;
     border: white solid 1px;
     border-radius: 2px;
@@ -29,7 +29,7 @@
 .foter_link{
     cursor: pointer;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
 }
 .foter_link:hover{
     text-decoration: underline;
@@ -41,7 +41,7 @@
 .bottomfooter_text{
     cursor: pointer;
     color: white;
-    font-size: 11px;
+    font-size: 13px;
     margin-left: 8px;
 }
 .bottomfooter_text:hover{
@@ -54,7 +54,7 @@
     margin-top: 50px;
 }
 .copyright_title{
-    font-size: 15px;
+    font-size: 16px;
     color: white;
     margin-left: 8px;
     padding: 0px;
@@ -77,11 +77,15 @@
 
     
 }
-.websitefooterlogo{
-    width: 120px;
-    height: 60px;
-    border-radius: 5px;
+.footer_title{
+    font-size: 34;
+    color: white;
     margin-bottom: 10px;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 @media only screen and (min-width: 300px)  and (max-width: 429px) {
     .apply_btn{
