@@ -55,14 +55,14 @@ export default function Home() {
             </Col>
             <Col lg={2} sm={4} md={3} xs={6}>
             <img
-                src="/olo.png"
+                src="/olalogo.jpg"
                 alt="Picture of the author"
                 className="brand_img"
               />
             </Col>
             <Col lg={2} sm={4} md={3} xs={6}>
             <img
-                src="/microsoft.jpg"
+                src="/mircrosoft.jpg"
                 alt="Picture of the author"
                 className="brand_img"
               />

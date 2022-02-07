@@ -1,4 +1,10 @@
 /* -------------home banner section css start--------------- */
+.employe_banner_section{
+    background-color: #f4f4f6;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    border-radius: 17px;
+}
 .employe_title{
     color: #14a800;
     font-size: 45px;
@@ -49,13 +55,22 @@
 }
 .employe_banner_img{
     width: 570px;
-    height: 290px;
-    border-radius: 15px;
+    height: 280px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 
 }
 /* -------------home banner section css end--------------- */
 
 /* -------------telant section css start--------------- */
+.field_container{
+    background-color: #f4f4f6;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
 .field_img{
     width: 160px;
     height: 160px;
@@ -154,14 +169,27 @@
 /* -------------gorious section css end--------------- */
 
 /* -------------expect section css start--------------- */
+.expect_section_div{
+    padding-top: 60px;
+}
+.expect_section{
+    background-color: #f4f4f6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 15px;
+    margin-top: 70px;
+}
+.expect_point{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
 .expect_title{
     font-size: 27px;
     font-weight: 600;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 40px;
-    padding-top: 70px;
+    /* margin-left: 40px; */
 }
 .expect_text{
     font-size: 16px;
@@ -177,7 +205,7 @@
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 .expect_div{
     display: flex;
@@ -190,6 +218,16 @@
     display: block;
     height: 25px;
     width: 60px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 100%;
+}
+.number_textone{
+    color: white;
+    background-color: #001e00;
+    display: block;
+    height: 25px;
+    width: 40px;
     font-size: 16px;
     text-align: center;
     border-radius: 100%;
@@ -210,9 +248,18 @@
 /* -------------expect section css end--------------- */
 
 /* -------------faq section css start--------------- */
-.faq_section{
+.faq_div{
     padding-top: 80px;
-
+}
+.faq_section{
+    background-color: #f4f4f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+.fa_question{
+    color: #001e00;
+    padding-bottom: 5px;
 }
 .faq_title{
     font-size: 30px;
@@ -221,6 +268,7 @@
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    text-align: start;
 }
 .faq_point_title{
     font-size: 20px;
@@ -237,6 +285,9 @@
     font-family: 'Open Sans', sans-serif;
 }
 /* -------------faq section css end--------------- */
+.join_div{
+    padding-top: 50px;
+}
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .employe_title{
         color: #14a800;
@@ -291,6 +342,33 @@
     }
     .horizontal_line{
         margin-left: 10px; 
+    }
+    .expect_div{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .number_text{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .number_textone{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -348,9 +426,12 @@
     .horizontal_line{
         margin-left: 10px; 
     }
+    .expect_divone{
+        padding-left: 40px;
+    }
   }
   
-@media only screen and (min-width: 576px) and (max-width: 787px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     .employe_banner_img{
         width: 100%;
         height: 250px;
@@ -376,8 +457,31 @@
     .horizontal_line{
         margin-left: 10px; 
     }
+    .number_text{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 40px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
+    }
+    .number_textone{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 30px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
+    }
+    .expect_divone{
+        padding-left: 40px;
+    }
   }
-@media only screen and (min-width: 788px) and (max-width:991px) {
+@media only screen and (min-width: 768px) and (max-width:991px) {
     .employe_banner_img{
         width: 425px;
         height: 250px;
@@ -397,6 +501,26 @@
     }
     .join_footer_row{
         margin-left: 40px;
+    }
+    .number_text{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 80px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
+    }
+    .number_textone{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 50px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
     }
 }
 

@@ -29,7 +29,7 @@ export default function Homeslide() {
 
                 <Carousel.Item  className="text-center" interval={500}>
                         <img
-                        src="/olo.png"
+                        src="/olalogo.jpg"
                         alt="Picture of the author"
                         className="brand_img"
                     />
