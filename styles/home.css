@@ -356,7 +356,7 @@
    text-align: end;
  }
 }
-@media only screen and (min-width:1016px) {
+@media only screen and (min-width:1016px) and (max-width:1400px){
   .website_title{
     margin-right: 38px;
     /* margin-left: 120px; */
@@ -366,5 +366,25 @@
    /* margin-left: 75px; */
    margin-right: 35px;
    text-align: end;
+ }
+}
+@media only screen and (min-width:1400px) and (max-width:3000px){
+  .website_title{
+    margin-right: 38px;
+    /* margin-left: 120px; */
+    text-align: center;
+  }
+ .Header_Btn1{
+   /* margin-left: 75px; */
+   margin-right: 35px;
+   text-align: end;
+ }
+ /* .home_brand_section{
+   padding-top: 20px;
+   padding-bottom: 150px;
+ } */
+ .homesection{
+
+  height: 100vh;
  }
 }
