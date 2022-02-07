@@ -96,6 +96,14 @@ export default function Post({post}) {
       renderNode: {
           [BLOCKS.PARAGRAPH]: (node, next) =>
            " ",
+          [BLOCKS.HEADING_3]: (node, next) =>
+           " ",
+          [BLOCKS.HEADING_4]: (node, next) =>
+           " ",
+          [BLOCKS.HEADING_5]: (node, next) =>
+           " ",
+          [BLOCKS.HEADING_6]: (node, next) =>
+           " ",
            [BLOCKS.HEADING_2]: (node, pext) =>{
               const strUnderscores = String(pext).replace(/ /g,"_")
 
