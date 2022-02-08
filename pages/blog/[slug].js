@@ -104,6 +104,24 @@ export default function Post({post}) {
            " ",
           [BLOCKS.HEADING_6]: (node, next) =>
            " ",
+           [BLOCKS.UL_LIST]: (node, next) =>
+           " ",
+           [BLOCKS.LIST_ITEM]: (node, next) =>
+           " ",
+           [BLOCKS.HR]: (node, next) =>
+           " ",
+           [BLOCKS.OL_LIST]: (node, next) =>
+           " ",
+           [BLOCKS.QUOTE]: (node, next) =>
+           " ",
+           [BLOCKS.TABLE]: (node, next) =>
+           " ",
+           [BLOCKS.TABLE_CELL]: (node, next) =>
+           " ",
+           [BLOCKS.TABLE_ROW]: (node, next) =>
+           " ",
+           [BLOCKS.TABLE_HEADER_CELL]: (node, next) =>
+           " ",
            [BLOCKS.HEADING_2]: (node, pext) =>{
               const strUnderscores = String(pext).replace(/ /g,"_")
 
@@ -206,3 +224,4 @@ export default function Post({post}) {
       </div>
     );
 }
+
