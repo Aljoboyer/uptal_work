@@ -17,7 +17,7 @@ export default function Homeslide() {
                         src="/walmart-color-v1.svg"
                         alt="Picture of the author"
                         className="brand_img"
-                    />
+                        />
                 </Carousel.Item>
                 <Carousel.Item  className="text-center" interval={500}>
                     <img
@@ -29,17 +29,17 @@ export default function Homeslide() {
 
                 <Carousel.Item  className="text-center" interval={500}>
                         <img
-                        src="/olalogo.jpg"
+                        src="/intuit-color-v1.png"
                         alt="Picture of the author"
                         className="brand_img"
                     />
                 </Carousel.Item>
                 <Carousel.Item  className="text-center" interval={500}>
                     <img
-                    src="/microsoft.jpg"
-                    alt="Picture of the author"
-                    className="brand_img"
-                />
+                        src="/mircrosoft.jpg"
+                        alt="Picture of the author"
+                        className="brand_img"
+                    />
                 </Carousel.Item>
                 <Carousel.Item  className="text-center" >
                     <img
