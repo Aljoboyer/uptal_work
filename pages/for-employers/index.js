@@ -7,27 +7,29 @@ export default function Intro() {
     <div style={{width: "100%"}}>
         <Row className="mx-auto">
             <Navbartwo/>
-            <Row className="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-center mx-auto employe_banner_section mt-4">
-                    <Col className="" lg={6} md={6} sm={10}>
-                      <p className="employe_title ms-3">Your shortcut to pre-vetted talent</p>
-                      <p className="employe_text ms-3">Talk to a recruiter and get a shortlist within 2 days</p>
-                      <div className="anchor_talkbtn ms-3">
-                            <button className="talk_btn">Talk to a recruiter</button>
-                            <a className="looking_anchor ms-2">Looking for work?</a>
-                      </div>
-                    </Col>
-                    <Col className="text-end" lg={6} md={6} sm={10}>
-                        <img
-                        src="/employe-bannerimg.jpg"
-                        alt="Picture of the author"
-                        className="employe_banner_img"
-                      />
-                    </Col>
-            </Row>
-            <Row className="container-fluid">
-                <Row className="justify-content-lg-center justify-content-xl-center g-3  mx-auto">
+            <div>
+              <Row className="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-center mx-auto employe_banner_section mt-4">
+                      <Col className="" lg={6} md={6} sm={10}>
+                        <p className="employe_title ms-3">Your shortcut to pre-vetted talent</p>
+                        <p className="employe_text ms-3">Talk to a recruiter and get a shortlist within 2 days</p>
+                        <div className="anchor_talkbtn ms-3">
+                              <button className="talk_btn">Talk to a recruiter</button>
+                              <a className="looking_anchor ms-2">Looking for work?</a>
+                        </div>
+                      </Col>
+                      <Col className="text-end" lg={6} md={6} sm={10}>
+                          <img
+                          src="/employe-bannerimg.jpg"
+                          alt="Picture of the author"
+                          className="employe_banner_img"
+                        />
+                      </Col>
+              </Row>
+            </div>
+            <Row className="">
+                <Row className="container justify-content-lg-center justify-content-xl-center g-3  mx-auto">
                   <Row className="container">
-                     <Col lg={11}>
+                     <Col className="talent_title_colam" lg={8} xl={8} xxl={8} sm={12} md={10}>
                      <p className="talent_title">Pre-vetted talent available to start in <br /> these fields</p>
                      </Col>
                   </Row>
@@ -93,7 +95,7 @@ export default function Intro() {
                     </Col>
                     <Col className="text-center" lg={2} sm={4} md={4} xs={12}>
                     <img
-                        src="/olalogo.jpg"
+                        src="/olalogo.png"
                         alt="Picture of the author"
                         className="employe_brand_img"
                       />
@@ -117,11 +119,11 @@ export default function Intro() {
 
               <div className="expect_section_div">
                 <Row className="container expect_section mx-auto">
-                      <div>
+                      <div className="expect_title_description">
                         <p className="expect_title">What you can expect</p>
                         <p  className="expect_description">It all starts with a conversation—we’ll work with you to find out what hard and soft <br /> skills you’re looking for, quickly zero in on a shortlist of talents, and help guide your <br /> through the hiring process.</p>
                       </div>
-                      <Row className="expect_point">
+                      <Row className="expect_point ms-4">
                           <Col className="ps-0" xl={4} xxl={4}  lg={4} md={4} sm={12}>
                               <div className="expect_div expect_divone  ms-0">
                                   <p className="number_textone">1</p>
@@ -206,7 +208,7 @@ export default function Intro() {
                   </Col>
                 </Row>
             </Col>
-            </Row>
+          </Row>
            
             <MainFooter/>
         </Row>

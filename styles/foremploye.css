@@ -1,4 +1,5 @@
 /* -------------home banner section css start--------------- */
+/* #f4f4f6 */
 .employe_banner_section{
     background-color: #f4f4f6;
     padding-bottom: 15px;
@@ -66,7 +67,7 @@
 /* #f4f4f6; */
 /* -------------telant section css start--------------- */
 .field_container{
-    background-color: #f4f4f6;
+    background-color: #7575cc;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 15px;
@@ -92,8 +93,9 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     padding-top: 70px;
-    padding-left: 50px;
+
 }
+
 .field_text{
     font-size: 18px;
     color: #001e00;
@@ -253,6 +255,9 @@
     padding: 5px 20px 5px 20px;
     margin-left: 30px;
 }
+.expect_title_description{
+    margin-left: 20px;
+}
 /* -------------expect section css end--------------- */
 
 /* -------------faq section css start--------------- */
@@ -365,7 +370,7 @@
         font-size: 16px;
         text-align: center;
         border-radius: 100%;
-        padding-left: 5px;
+        padding-left: 0px;
         padding-right: 5px;
     }
     .number_textone{
@@ -378,6 +383,7 @@
         font-size: 16px;
         text-align: center;
         border-radius: 100%;
+        margin-left: 5px;
     }
     .talent_title{
         margin-left: 30px;
@@ -460,6 +466,16 @@
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 20px;
         grid-row-gap: 20px;
+    }
+    .number_text{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 45px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
     }
    
   }
@@ -598,7 +614,7 @@
   }
   @media only screen and (min-width:1189px) and (max-width:1541px) {
     .talent_title{
-        margin-left: 90px;
+        margin-left: 120px;
         padding-left: 0px;
     }
     .field_grid{
@@ -607,14 +623,47 @@
         grid-column-gap: 20px;
     }
   }
-  @media only screen and (min-width:1541px) and (max-width:3000px) {
-    .talent_title{
-        margin-left: 225px;
-        padding-left: 0px;
+  @media only screen and (min-width:1542px) and (max-width:3000px) {
+    .talent_title_colam{
+        margin-left: 240px;
     }
     .field_grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
+    }
+    .number_text{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 50px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
+    }
+    .number_textone{
+        color: white;
+        background-color: #001e00;
+        display: block;
+        height: 25px;
+        width: 35px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 100%;
+    }
+    .join_work_container{
+        background-color: #1f57c3;
+        padding: 15px 10px 20px 0px;
+        border-radius: 5px;
+    }
+    .employe_banner_img{
+        width: 670px;
+        height: 280px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    
     }
   }
