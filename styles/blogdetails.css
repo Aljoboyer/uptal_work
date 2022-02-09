@@ -492,7 +492,7 @@
 
   }
 
-  @media only screen and (min-width:992px) and (max-width:1373px) {
+  @media only screen and (min-width:992px) and (max-width:3000px) {
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 10px 10px 0px;

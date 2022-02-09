@@ -3,7 +3,7 @@
 .employe_banner_section{
     background-color: #f4f4f6;
     padding-bottom: 15px;
-    padding-top: 5px;
+    
     border-radius: 17px;
 }
 .employe_title{
@@ -151,6 +151,7 @@
         font-family: 'Charm', cursive;
         font-family: 'IBM Plex Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
+        padding-top: 15px;
     }
 .expact_text{
     font-size: 16px;
@@ -264,7 +265,7 @@
         grid-column-gap: 20px;
     }
     .talent_item{
-        background-color: #2d8b20;
+        background-color: #f4f4f6;
         border-radius: 15px;
         text-align: center;
         display: flex;
@@ -309,6 +310,39 @@
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 30px;
         padding-top: 35px;
+    }
+    .expact_section{
+        margin-left: 0px;
+    }
+    .number_one{
+        display: block;
+        width: 100px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
+    .number_two{
+        display: block;
+        width: 100px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
+    .number_three{
+        display: block;
+        width: 100px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 100%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -362,6 +396,9 @@
         font-family: 'Charm', cursive;
         font-family: 'IBM Plex Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
+    }
+    .expact_section{
+        margin-left: 0px;
     }
     .expact_point_div{
         display: grid;
@@ -429,6 +466,36 @@
         grid-column-gap: 30px;
         padding-top: 35px;
     }
+    .number_one{
+        display: block;
+        width: 50px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
+    .number_two{
+        display: block;
+        width: 46px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
+    .number_three{
+        display: block;
+        width: 46px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 100%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
   }
 @media only screen and (min-width: 768px) and (max-width:991px) {
     .talent_div{
@@ -494,10 +561,40 @@
     }
 }
 
-@media only screen and (min-width:1164px) and (max-width:3000px) {
+@media only screen and (min-width:1164px) and (max-width: 3000px) {
     .talent_div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
+    }
+    .number_one{
+        display: block;
+        width: 57px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
+    .number_two{
+        display: block;
+        width: 57px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
+    }
+    .number_three{
+        display: block;
+        width: 57px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 100%;
+        margin-right: 5px;
+        text-align: center;
+        color: white;
     }
 }
