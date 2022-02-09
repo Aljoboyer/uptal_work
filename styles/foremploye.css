@@ -8,11 +8,12 @@
 }
 .employe_title{
     color: #14a800;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    line-height: 50px;
 }
 .employe_text{
     color: #001e00;
@@ -126,13 +127,13 @@
 
 /* -------------expect section css start--------------- */
 .expact_section{
-    margin-left: 35px;
+    margin-left: 38px;
     padding-top: 80px;
 }
 .expact_row{
     background-color: #f4f4f6;
     border-radius: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 .expact_point_div{
     display: grid;
@@ -167,7 +168,7 @@
     height: 25px;
     background-color: #001e00;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 15px;
     text-align: center;
     color: white;
 }
@@ -177,7 +178,7 @@
     height: 25px;
     background-color: #001e00;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 15px;
     text-align: center;
     color: white;
 }
@@ -187,7 +188,7 @@
     height: 25px;
     background-color: #001e00;
     border-radius: 100%;
-    margin-right: 5px;
+    margin-right: 15px;
     text-align: center;
     color: white;
 }
@@ -207,6 +208,7 @@
 
 /* -------------faq section css start--------------- */
 .faq_section{
+    margin-left: 35px;
     padding-top: 80px;
 }
 .faq_row{
@@ -247,8 +249,19 @@
 /* ---------------------joinwork section css-------------- */
 
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
+    .anchor_talkbtn{
+        display: flex;
+        flex-direction: column;
+    }
     .employe_title{
+        color: #14a800;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         margin-left: 0px;
+        line-height: 40px;
     }
     .employe_banner_img{
         width: 100%;
@@ -314,38 +327,56 @@
     .expact_section{
         margin-left: 0px;
     }
+
     .number_one{
         display: block;
-        width: 100px;
+        width: 80px;
         height: 25px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
     .number_two{
         display: block;
-        width: 100px;
+        width: 80px;
         height: 25px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
     .number_three{
         display: block;
-        width: 100px;
+        width: 80px;
         height: 25px;
         background-color: #001e00;
         border-radius: 100%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
+    .faq_section{
+        margin-left: 0px;
+    }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
+    .anchor_talkbtn{
+        display: flex;
+        flex-direction: column;
+    }
+    .employe_title{
+        color: #14a800;
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 0px;
+        line-height: 40px;
+    }
     .employe_banner_img{
         width: 100%;
         height: 220px;
@@ -406,9 +437,52 @@
         grid-column-gap: 30px;
         padding-top: 35px;
     }
+    .faq_section{
+        margin-left: 0px;
+    }
+    .number_one{
+        display: block;
+        width: 35px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 15px;
+        text-align: center;
+        color: white;
+    }
+    .number_two{
+        display: block;
+        width: 35px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 50%;
+        margin-right: 15px;
+        text-align: center;
+        color: white;
+    }
+    .number_three{
+        display: block;
+        width: 35px;
+        height: 25px;
+        background-color: #001e00;
+        border-radius: 100%;
+        margin-right: 15px;
+        text-align: center;
+        color: white;
+    }
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .employe_title{
+        color: #14a800;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 0px;
+        line-height: 45px;
+    }
     .employe_banner_img{
         width: 100%;
         height: 250px;
@@ -468,36 +542,49 @@
     }
     .number_one{
         display: block;
-        width: 50px;
+        width: 35px;
         height: 25px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
     .number_two{
         display: block;
-        width: 46px;
+        width: 35px;
         height: 25px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
     .number_three{
         display: block;
-        width: 46px;
+        width: 35px;
         height: 25px;
         background-color: #001e00;
         border-radius: 100%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
+    .faq_section{
+        margin-left: 0px;
+    }
   }
 @media only screen and (min-width: 768px) and (max-width:991px) {
+    .employe_title{
+        color: #14a800;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 0px;
+        line-height: 45px;
+    }
     .talent_div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -518,33 +605,43 @@
         height: 23px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
     .number_two{
         display: block;
-        width: 100px;
+        width: 90px;
         height: 23px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
     .number_three{
         display: block;
-        width: 100px;
-        height: 23px;
+        width: 90px;
+        height: 25px;
         background-color: #001e00;
         border-radius: 100%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
 }
 
 @media only screen and (min-width:991px) and (max-width:1163px) {
+    .employe_title{
+        color: #14a800;
+        font-size: 45px;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 0px;
+        line-height: 45px;
+    }
     .talent_div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -562,6 +659,16 @@
 }
 
 @media only screen and (min-width:1164px) and (max-width: 3000px) {
+    .employe_title{
+        color: #14a800;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 0px;
+        line-height: 50px;
+    }
     .talent_div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -573,7 +680,7 @@
         height: 25px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
@@ -583,7 +690,7 @@
         height: 25px;
         background-color: #001e00;
         border-radius: 50%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
     }
@@ -593,8 +700,16 @@
         height: 25px;
         background-color: #001e00;
         border-radius: 100%;
-        margin-right: 5px;
+        margin-right: 15px;
         text-align: center;
         color: white;
+    }
+    .faq_section{
+    margin-left: 35px;
+    padding-top: 80px;
+    }
+    .expact_section{
+        margin-left: 38px;
+        padding-top: 80px;
     }
 }

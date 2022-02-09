@@ -113,8 +113,8 @@ export default function Intro() {
         </div>
 
         <div className="expact_section">
-            <Row className="container mx-auto expact_row">
-                <div className="expact_description_div">
+            <Row className="container  mx-auto expact_row">
+                <div className="expact_description_div" >
                   <p className="expact_title">What you can expect</p>
                   <p className="expact_text">It all starts with a conversation—we’ll work with you to find out what hard and soft <br />
                   skills you’re looking for, quickly zero in on a shortlist of talents, and help guide your <br />
@@ -123,18 +123,18 @@ export default function Intro() {
                 <div className="expact_point_div">
                     <div className="expact_point">
                         <p className="number_one">1</p>
-                        <p className="expact_text"> <span className="fw-bold">Sign up and set up your meeting</span>
+                        <p className="expact_text"> <span className="fw-bold">Sign up and set up your meeting</span> <br/>
                         Give us a few details and set up
                         a time to talk with your recruiter</p>
                     </div>
                     <div className="expact_point">
                         <p className="number_two">2</p>
-                        <p className="expact_text"> <span className="fw-bold"> Meet with your recruiter</span>
+                        <p className="expact_text"> <span className="fw-bold"> Meet with your recruiter</span> <br/>
                         Your recruiter will show up with a shortlist of “top matches”</p>
                     </div>
                     <div className="expact_point">
                         <p className="number_three">3</p>
-                        <p className="expact_text"> <span className="fw-bold"> Review and hire talent</span>
+                        <p className="expact_text"> <span className="fw-bold"> Review and hire talent</span> <br/>
                         Interview the top matches, see who’s a hire, or get anothershortlist</p>
                     </div>
                 </div>
@@ -173,9 +173,9 @@ export default function Intro() {
           </Row>
         </div>
 
-        <div className="join_work_section">
-        <Row className='container justify-content-center mx-auto join_full_container'>
-          <Col lg={12} md={12} sm={12} xs={10} className=''>
+         <div className="join_work_section">
+        <Row className='container  justify-content-center mx-auto join_full_container '>
+          <Col lg={12} md={12} sm={12} xs={12} className='w-100'>
                 <Row className="join_work_container justify-content-md-between">
                 <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>
                   <img
