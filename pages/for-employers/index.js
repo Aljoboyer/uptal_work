@@ -122,19 +122,22 @@ export default function Intro() {
                 </div>
                 <div className="expact_point_div">
                     <div className="expact_point">
-                        <p className="number_one">1</p>
-                        <p className="expact_text"> <span className="fw-bold">Sign up and set up your meeting</span> <br/>
+                    <img style={{
+        height: '30px'}}  alt="Picture of the author"  src="/numone.png"/>
+                        <p className="expact_text ms-3"> <span className="fw-bold">Sign up and set up your meeting</span> <br/>
                         Give us a few details and set up
                         a time to talk with your recruiter</p>
                     </div>
                     <div className="expact_point">
-                        <p className="number_two">2</p>
-                        <p className="expact_text"> <span className="fw-bold"> Meet with your recruiter</span> <br/>
+                    <img style={{
+        height: '30px'}}  alt="Picture of the author"  src="/twoicon.png"/>
+                        <p className="expact_text ms-3"> <span className="fw-bold"> Meet with your recruiter</span> <br/>
                         Your recruiter will show up with a shortlist of “top matches”</p>
                     </div>
                     <div className="expact_point">
-                        <p className="number_three">3</p>
-                        <p className="expact_text"> <span className="fw-bold"> Review and hire talent</span> <br/>
+                    <img style={{
+        height: '30px'}}  alt="Picture of the author"  src="/numthree.png"/>
+                        <p className="expact_text ms-3"> <span className="fw-bold"> Review and hire talent</span> <br/>
                         Interview the top matches, see who’s a hire, or get anothershortlist</p>
                     </div>
                 </div>
@@ -202,6 +205,7 @@ export default function Intro() {
           </Col>
           </Row>
         </div>
+
   </div>
       <MainFooter/>
     </Row>

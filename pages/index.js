@@ -1,8 +1,13 @@
 import { Row ,Col} from "react-bootstrap";
 import HomeHeader from "../components/HomeComponents/HomeHeader";
 import Homeslide from "../components/HomeComponents/Homeslide";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter()
+  const ClickHandler = (id) => {
+      router.push('/for-employers')
+  }
   return (
     <div className="homesection" style={{width:"100%", backgroundColor: "#f4f4f6"}}>
       <Row className="home">
@@ -17,14 +22,14 @@ export default function Home() {
                     Uptal lets you hire  vetted  <br />
                     remote developers with  <br />  strong technical and communication skills.
                   </p>
-                    <button className="hirebtn">Hire Now</button>
+                    <button onClick={ClickHandler} className="hirebtn">Hire Now</button>
                 </Col>
                 <Col className="text-center pb-4 ps-3 pe-3  content-colam" lg={4}  md={10} sm={12}>
                   <button className="developers">Developers</button>
                     <h5 className="cardtitle fw-bold">Uptal for developers</h5>
                     <p className="card-pera">
                     Join a community of developers <br />
-                    and get full time, long term  <br /> remote jobs with better compensation and growth.
+                    and get full time, long term  <br /> remote jobs with better compensation.
                   </p>
                     <button className="joinbtn">Apply Now</button>
                 </Col>
@@ -54,11 +59,11 @@ export default function Home() {
               />
             </Col>
             <Col lg={2} sm={4} md={3} xs={6}>
-            <img
-                src="/olalogo.png"
-                alt="Picture of the author"
-                className="brand_img"
-              />
+                  <img
+                      src="/intuit-color-v1.svg"
+                      alt="Picture of the author"
+                      className="brand_img"
+                  />
             </Col>
             <Col lg={2} sm={4} md={3} xs={6}>
             <img

@@ -4,8 +4,13 @@ import { faFacebook, faInstagram, faLinkedinIn, faTwitter, faYoutube } from "@fo
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image'
 import logo from '../../public/my-img.png'
+import { useRouter } from "next/router";
 
 export default function MainFooter() {
+    const router = useRouter()
+    const ClickHandler = () => {
+        router.push('/blog')
+    }
     return (
         <Row className="Footer mx-auto">
             <Row className="footerlink_container pb-3 mx-auto pt-4 mt-2">
@@ -32,7 +37,7 @@ export default function MainFooter() {
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
                             <p className="foter_link fw-bold">Company</p>
-                            <p className="foter_link ">Blog</p>
+                            <p onClick={ClickHandler} className="foter_link ">Blog</p>
                             <p className="foter_link ">Press</p>
                             <p className="foter_link ">About Us</p>
                             <p className="foter_link ">Non-Developer Jobs</p>

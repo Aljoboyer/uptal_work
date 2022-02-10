@@ -162,36 +162,7 @@
     font-family: 'Open Sans', sans-serif;
     display: block;
 }
-.number_one{
-    display: block;
-    width: 60px;
-    height: 25px;
-    background-color: #001e00;
-    border-radius: 50%;
-    margin-right: 15px;
-    text-align: center;
-    color: white;
-}
-.number_two{
-    display: block;
-    width: 60px;
-    height: 25px;
-    background-color: #001e00;
-    border-radius: 50%;
-    margin-right: 15px;
-    text-align: center;
-    color: white;
-}
-.number_three{
-    display: block;
-    width: 60px;
-    height: 25px;
-    background-color: #001e00;
-    border-radius: 100%;
-    margin-right: 15px;
-    text-align: center;
-    color: white;
-}
+
 .talk_two_btn{
     background-color: #14a800;
     border: none;
@@ -252,6 +223,7 @@
     .anchor_talkbtn{
         display: flex;
         flex-direction: column;
+        padding-bottom: 30px;
     }
     .employe_title{
         color: #14a800;
@@ -264,13 +236,10 @@
         line-height: 40px;
     }
     .employe_banner_img{
-        width: 100%;
-        height: 220px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        margin-left: 0px;
+        display: none;
+    }
+    .talk_btn{
+        width: 70%;
     }
     .talent_div{
         display: grid;
@@ -299,20 +268,10 @@
         margin-left: 10px;
     }
     .talent_title{
-        font-size: 25px;
-        font-weight: bold;
-        color: #001e00;
-        font-family: 'Charm', cursive;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-family: 'Open Sans', sans-serif;
+        line-height: 40px;
     }
     .brand_title{
-        font-size: 25px;
-        font-weight: bold;
-        color: #001e00;
-        font-family: 'Charm', cursive;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-family: 'Open Sans', sans-serif;
+        line-height: 40px;
     }
     .employe_brand_img{
         width: 90px;
@@ -327,36 +286,9 @@
     .expact_section{
         margin-left: 0px;
     }
-
-    .number_one{
-        display: block;
-        width: 80px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_two{
-        display: block;
-        width: 80px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_three{
-        display: block;
-        width: 80px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 100%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
+  
+    .expact_title{
+        line-height: 40px;
     }
     .faq_section{
         margin-left: 0px;
@@ -364,8 +296,8 @@
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
     .anchor_talkbtn{
-        display: flex;
-        flex-direction: column;
+
+        padding-bottom: 30px;
     }
     .employe_title{
         color: #14a800;
@@ -378,13 +310,10 @@
         line-height: 40px;
     }
     .employe_banner_img{
-        width: 100%;
-        height: 220px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    
+        display: none;
+    }
+    .talk_btn{
+        width: 50%;
     }
     .talent_div{
         display: grid;
@@ -440,39 +369,14 @@
     .faq_section{
         margin-left: 0px;
     }
-    .number_one{
-        display: block;
-        width: 35px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_two{
-        display: block;
-        width: 35px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_three{
-        display: block;
-        width: 35px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 100%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
+
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .anchor_talkbtn{
+
+        padding-bottom: 30px;
+    }
     .employe_title{
         color: #14a800;
         font-size: 40px;
@@ -484,13 +388,7 @@
         line-height: 45px;
     }
     .employe_banner_img{
-        width: 100%;
-        height: 250px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    
+        display: none;
     }
     .talent_div{
         display: grid;
@@ -540,36 +438,7 @@
         grid-column-gap: 30px;
         padding-top: 35px;
     }
-    .number_one{
-        display: block;
-        width: 35px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_two{
-        display: block;
-        width: 35px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_three{
-        display: block;
-        width: 35px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 100%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
+
     .faq_section{
         margin-left: 0px;
     }
