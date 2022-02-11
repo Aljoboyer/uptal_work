@@ -190,10 +190,10 @@ export default function Intro() {
                 <Col lg={8} md={8} sm={8} xs={12}>
                     <p className='join_title'>Join the world’s work marketplace</p>
                    <div  className='join_footer_row'>
-                   <Row className="justify-content-lg-between justify-content-md-between">
+                   <Row className="justify-content-lg-between justify-content-md-around">
                      <hr className='horizontal_line' />
                       <Col lg={8} md={8} sm={12}>
-                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                        <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                       </Col>
                       <Col lg={3} md={3} sm={12}>
                         <button className='talent_btn'>Find Talent</button>
@@ -205,7 +205,32 @@ export default function Intro() {
           </Col>
           </Row>
         </div>
-
+        
+        <div className="join_work_container_mobile">
+              <Row className="join_work_container justify-content-md-between ">
+              <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>
+                <img
+                src="/joinimg.png"
+                alt="Picture of the author"
+                className="join_img ms-1"
+                />
+              </Col>
+              <Col lg={8} md={8} sm={8} xs={12}>
+                  <p className='join_title'>Join the world’s work marketplace</p>
+                  <div  className='join_footer_row'>
+                  <Row className="justify-content-lg-between justify-content-md-between">
+                    <hr className='horizontal_line' />
+                    <Col lg={8} md={8} sm={12}>
+                      <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                    </Col>
+                    <Col lg={3} md={3} sm={12}>
+                      <button className='talent_btn'>Find Talent</button>
+                    </Col>
+                  </Row>
+                  </div>
+              </Col>
+            </Row>
+        </div>
   </div>
       <MainFooter/>
     </Row>

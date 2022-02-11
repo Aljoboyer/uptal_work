@@ -396,7 +396,7 @@
     }
     .join_img{
         width: 220px;
-        height: 90%;
+        height: 92%;
         border-radius: 5px;
     }
     .join_title{
@@ -492,7 +492,7 @@
 
   }
 
-  @media only screen and (min-width:992px) and (max-width:3000px) {
+  @media only screen and (min-width:992px) and (max-width: 3000px) {
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 10px 15px 3px;
@@ -506,5 +506,8 @@
     }
     .join_footer_row{
         margin-top: 100px;
+    }
+    .talent_btn{
+        margin-top: 50px;
     }
   }

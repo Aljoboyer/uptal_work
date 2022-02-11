@@ -24,7 +24,7 @@ export default function Navbartwo() {
 
 <Navbar.Brand onClick={ClickHandler}> <p className="navtwo_logo">Uptal.</p> </Navbar.Brand>
 
-<Navbar.Toggle className="mb-3" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
+<Navbar.Toggle className="mb-4" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
 <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
     

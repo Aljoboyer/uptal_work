@@ -149,6 +149,9 @@
 .brand_img:hover{
   opacity: 1;
 }
+.paypal_img{
+  margin-left: 40px;
+}
 .website_title{
   font-size: 34px;
   font-weight: bold;
@@ -371,6 +374,15 @@
 
   height: 100vh;
  }
+ .paypal_img{
+  margin-left: 40px;
+}
+.home_blog_btn{
+  margin-right: 90px;
+}
+.home_brand_section{
+  padding-top: 50px;
+ }
 }
 @media only screen and (min-width:1541px) and (max-width:3000px){
   .website_title{
@@ -392,6 +404,12 @@
   height: 100vh;
  }
  .home_brand_section{
-  margin-top: 50px;
+  padding-top: 60px;
  }
+ .paypal_img{
+  margin-left: 40px;
+}
+.home_blog_btn{
+  margin-right: 90px;
+}
 }

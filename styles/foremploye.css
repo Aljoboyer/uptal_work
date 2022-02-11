@@ -218,7 +218,9 @@
 }
 /* -------------faq section css end--------------- */
 /* ---------------------joinwork section css-------------- */
-
+.join_work_container_mobile{
+    display: none;
+}
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .anchor_talkbtn{
         display: flex;
@@ -239,7 +241,11 @@
         display: none;
     }
     .talk_btn{
-        width: 70%;
+        padding: 5px 10px 5px 10px;
+        width: 50%;
+    }
+    .looking_anchor{
+        padding-top: 15px;
     }
     .talent_div{
         display: grid;
@@ -286,12 +292,19 @@
     .expact_section{
         margin-left: 0px;
     }
-  
     .expact_title{
         line-height: 40px;
     }
     .faq_section{
         margin-left: 0px;
+    }
+    .join_work_container_mobile{
+        display: block;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .join_work_section{
+        display: none;
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -369,7 +382,14 @@
     .faq_section{
         margin-left: 0px;
     }
-
+    .join_work_container_mobile{
+        display: block;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .join_work_section{
+        display: none;
+    }
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
