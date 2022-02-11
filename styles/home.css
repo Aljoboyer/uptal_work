@@ -177,6 +177,7 @@
  }
  .content-colam{
   margin-bottom: 40px;
+  margin-left: 15px;
 }
 .maintitle{
   color: #2c3454;
@@ -206,15 +207,12 @@
   .homesection{
     margin-left: 15px;
   }
-  .website_title{
-    /* margin-right: 38px; */
-    /* margin-left: 120px; */
-    text-align: start;
-  }
+
  .Header_Btn1{
    /* margin-left: 75px; */
    text-align: end;
  }
+
   .maintitle{
     color: #2c3454;
     font-size: 25px;
@@ -228,6 +226,7 @@
  
   .content-colam{
     margin-bottom: 40px;
+    margin-left: 15px;
   }
   .Header_Row{
     display: flex;
@@ -274,6 +273,7 @@
   }
   .content-colam{
     margin-bottom: 40px;
+    margin-left: 15px;
   }
   .Header_Row{
     display: flex;
@@ -361,15 +361,11 @@
 }
 @media only screen and (min-width:1016px) and (max-width:1540px){
   .website_title{
-    margin-right: 38px;
+    margin-left: 38px;
     /* margin-left: 120px; */
     text-align: center;
   }
- .Header_Btn1{
-   /* margin-left: 75px; */
-   margin-right: 35px;
-   text-align: end;
- }
+
  .homesection{
 
   height: 100vh;
@@ -378,7 +374,8 @@
   margin-left: 40px;
 }
 .home_blog_btn{
-  margin-right: 90px;
+  margin-right: 110px;
+  text-align: end;
 }
 .home_brand_section{
   padding-top: 50px;
