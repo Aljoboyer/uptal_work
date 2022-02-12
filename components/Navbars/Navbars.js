@@ -16,13 +16,23 @@ export default function Nabars({navigation}) {
     const ClickHandler = (id) => {
         router.push('/')
     }
+    const HireButtonHandler = () =>  {
+
+        router.push('/hire-developers')
+      
+    }
+    const ApplyHandler = () => {
+    
+        router.push('/apply-for-job')
+      
+    }
   return (
     <div style={{width: '100%',}}>
         <Navbar collapseOnSelect expand="lg" bg="" variant="light">
 
         <Navbar.Brand onClick={ClickHandler}> <p className="navtwo_logo">Uptal.</p> </Navbar.Brand>
        
-        <Navbar.Toggle onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
+        <Navbar.Toggle className="mb-4" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
            
@@ -30,11 +40,11 @@ export default function Nabars({navigation}) {
             <div className="nav-itmes">
             <Nav >
 
-                <Nav.Link className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
+                <Nav.Link onClick={ApplyHandler} className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
                 <Nav.Link className="mx-2" >
-                        <button className="getstarted_btn">Hire Remote Developers</button>
+                        <button onClick={HireButtonHandler} className="getstarted_btn">Hire Remote Developers</button>
                 </Nav.Link>
-                <Nav.Link className="mt-2"> <span className="right-nav-span">Login</span>
+                <Nav.Link  className="mt-2"> <span className="right-nav-span">Login</span>
                 </Nav.Link>
                        
             </Nav>
@@ -53,9 +63,9 @@ export default function Nabars({navigation}) {
         <Offcanvas.Body>
    
             <div style={{width: '100%'}}>
-             <button className="offcangetstarted_btn">Hire Remote Developers</button>
-             <button className="Applydev_btn">Apply As Developer</button>
-             <button className="Login_btn">Login</button>
+             <button onClick={HireButtonHandler}  className="offcangetstarted_btn">Hire Remote Developers</button>
+             <button onClick={ApplyHandler} className="Applydev_btn">Apply As Developer</button>
+             <button  className="Login_btn">Login</button>
             </div>    
         </Offcanvas.Body>
       </Offcanvas>

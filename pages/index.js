@@ -5,8 +5,12 @@ import { useRouter } from "next/router";
 
 export default function Home() {
   const router = useRouter()
-  const ClickHandler = (id) => {
+  const ClickHandler = () => {
       router.push('/for-employers')
+  }
+  const ApplyBtnHandler = () => {
+    router.push('/apply-for-job')
+    
   }
   // backgroundColor: "#f4f4f6"
   return (
@@ -32,7 +36,7 @@ export default function Home() {
                     Join a community of developers <br />
                     and get full time, long term  <br /> remote jobs with better compensation.
                   </p>
-                    <button className="joinbtn">Apply Now</button>
+                    <button onClick={ApplyBtnHandler} className="joinbtn">Apply Now</button>
                 </Col>
             </Row>
         </Row>

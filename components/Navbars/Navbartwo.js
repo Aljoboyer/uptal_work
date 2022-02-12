@@ -17,6 +17,27 @@ export default function Navbartwo() {
     const ClickHandler = () => {
         router.push('/')
     }
+    const HireButtonHandler = () =>  {
+      if(router.route === '/hire-developers')
+      {
+        router.push('https://client.uptal.org/')
+      }
+      else{
+        router.push('/hire-developers')
+      }
+    }
+    const ApplyHandler = () => {
+      if(router.route === '/apply-for-job')
+      {
+        router.push('https://developer.uptal.org/')
+      }
+      else{
+        router.push('/apply-for-job')
+      }
+    }
+    const BlogHandler = () => {
+      router.push('/blog')
+    }
   return (
 
      <div  className="navtwo" style={{width: '100%'}}>
@@ -32,11 +53,11 @@ export default function Navbartwo() {
     <div className="nav-itmes">
     <Nav >
 
-        <Nav.Link className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
+        <Nav.Link onClick={ApplyHandler} className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
         <Nav.Link className="mx-2" >
-                <button className="getstarted_btn">Hire Remote Developers</button>
+                <button onClick={HireButtonHandler} className="getstarted_btn">Hire Remote Developers</button>
         </Nav.Link>
-        <Nav.Link className="mt-2"> <span className="right-nav-span">Login</span>
+        <Nav.Link onClick={BlogHandler} className="mt-2"> <span className="right-nav-span">Blog</span>
         </Nav.Link>
                 
     </Nav>
@@ -45,7 +66,7 @@ export default function Navbartwo() {
         </Navbar>
         <Offcanvas className="offcanvas_container w-100" show={show} onHide={handleClose} scroll={true} placement="end">
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title><img
+            <Offcanvas.Title onClick={ClickHandler}><img
           src="/my-img.png"
           alt="Picture of the author"
           className="canvas_img"
@@ -54,9 +75,9 @@ export default function Navbartwo() {
           <Offcanvas.Body>
 
               <div style={{width: '100%'}}>
-                <button className="offcangetstarted_btn">Hire Remote Developers</button>
-                <button className="Applydev_btn">Apply As Developer</button>
-                <button className="Login_btn">Login</button>
+                <button onClick={HireButtonHandler}  className="offcangetstarted_btn">Hire Remote Developers</button>
+                <button onClick={ApplyHandler} className="Applydev_btn">Apply As Developer</button>
+                <button onClick={BlogHandler} className="Login_btn">Blog</button>
               </div>    
           </Offcanvas.Body>
         </Offcanvas>
