@@ -18,9 +18,10 @@ export default function Home() {
       <Row className="home">
         <HomeHeader/>
         <Row className="container mx-auto d-flex justify-content-center p-0 mt-4">
-            <Row className="justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly  gy-3 cardcontainer justify-content-xl-evenly p-0 mx-auto">
+            <Row className="justify-content-xs-center justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly  gy-3 cardcontainer justify-content-xl-evenly p-0 mx-auto">
             <h1 className="maintitle fw-bold text-center">Matching great developers with world-class companies</h1>
-                <Col className="text-center pb-4 ps-3 pe-3 content-colam" lg={4} md={10} sm={12}>
+                <Col className="text-center justify-content-center  pb-4 ps-3 pe-3 content-colam" lg={4} md={10} sm={12}>
+          
                   <button className="businessbtn">Businesses</button>
                     <h5 className="cardtitle fw-bold">Uptal for enterprises</h5>
                     <p className="card-pera">
@@ -28,8 +29,10 @@ export default function Home() {
                     remote developers with  <br />  strong technical and communication skills.
                   </p>
                     <button onClick={ClickHandler} className="hirebtn">Hire Now</button>
+               
                 </Col>
                 <Col className="text-center pb-4 ps-3 pe-3  content-colam" lg={4}  md={10} sm={12}>
+          
                   <button className="developers">Developers</button>
                     <h5 className="cardtitle fw-bold">Uptal for developers</h5>
                     <p className="card-pera">
@@ -37,6 +40,7 @@ export default function Home() {
                     and get full time, long term  <br /> remote jobs with better compensation.
                   </p>
                     <button onClick={ApplyBtnHandler} className="joinbtn">Apply Now</button>
+                  
                 </Col>
             </Row>
         </Row>
