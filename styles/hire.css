@@ -29,7 +29,7 @@ form.nosubmit {
 
   }
   .based_text{
-    margin-left: 25px;
+  
     margin-top: 40px;
     font-size: 18px;
     font-weight: 600;
@@ -48,19 +48,53 @@ form.nosubmit {
     grid-row-gap: 30px;
   }
   .technology_colam{
-    box-shadow: rgba(0, 0, 0, 0.29) 0px 5px 5px;
+    box-shadow: 1px 0 1px 1px rgba(0,0,0,0.25), 
+    1px 0 2px 2px rgba(0,0,0,0.20), 
+   0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
     width: 90%;
     border-radius: 10px;
     cursor: pointer;
   }
 .technology_section_mobile{
   display: none;
+  padding-top: 50px;
 }
 .hire_arrow_icon{
   color: rgb(112, 111, 111);
   display: none;
 }
 .technology_colam:hover .hire_arrow_icon{
+  display: inline;
+}
+.technology_section{
+  padding-top: 70px;
+}
+
+.Based_role_section{
+  padding-top: 70px;
+}
+.Based_role_div{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 25px;
+  grid-row-gap: 30px;
+}
+.based_role_colam{
+  box-shadow: 1px 0 1px 1px rgba(0,0,0,0.25), 
+  1px 0 2px 2px rgba(0,0,0,0.20), 
+ 0 4px 4px rgba(0,0,0,0.15), 
+  0 8px 8px rgba(0,0,0,0.10),
+  0 16px 16px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.based_role_text{
+  font-size: 18px;
+  font-weight: 600;
+}
+.based_role_colam:hover .hire_arrow_icon{
   display: inline;
 }
   @media only screen and (min-width: 200px)  and (max-width: 429px) {
@@ -87,6 +121,12 @@ form.nosubmit {
     }
     .based_text{
       margin-left: 0px;
+    }
+    .Based_role_div{
+      display: grid;
+      grid-template-columns: auto;
+      grid-column-gap: 25px;
+      grid-row-gap: 30px;
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -116,21 +156,27 @@ form.nosubmit {
   .based_text{
     margin-left: 0px;
   }
+  .Based_role_div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+  }
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .technology_section{
+  /* .technology_section{
     display: none;
   }
   .technology_section_mobile{
     display: block;
     
-  }
+  } */
   .technology_div{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-row-gap: 30px;
-    margin-left: 20px;
+
   }
   .technology_text{
     display: inline-block;
@@ -144,6 +190,12 @@ form.nosubmit {
   }
   .based_text{
     margin-left: 0px;
+  }
+  .Based_role_div{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
   }
   }
 @media only screen and (min-width: 768px) and (max-width:991px) {
@@ -151,6 +203,7 @@ form.nosubmit {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-row-gap: 30px;
+    margin-left: 10px;
   }
   .technology_colam{
     width: 90%;
@@ -158,9 +211,7 @@ form.nosubmit {
   .technology_colam{
     width: 90%;
   }
-  .based_text{
-    margin-left: 0px;
-  }
+
   .technology_text{
     display: inline-block;
     font-size: 14px;
@@ -168,12 +219,35 @@ form.nosubmit {
     padding-top: 0px;
     padding-left: 0px;
   }
+  .Based_role_div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+  }
 }
 
-@media only screen and (min-width:991px) and (max-width:1063px) {
+@media only screen and (min-width:991px) and (max-width:1221px) {
   .technology_div{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-row-gap: 30px;
+  }
+  .Based_role_div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+  }
+}
+@media only screen and (min-width:1222px) and (max-width:3000px) {
+  .technology_div{
+    margin-left: 20px;
+  }
+  .Based_role_div{
+    margin-left: 20px;
+  }
+  .based_role_text{
+    margin-left: 20px;
   }
 }

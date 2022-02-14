@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IoIosArrowForward } from 'react-icons/io';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createClient } from 'contentful'
- 
+import { useRouter } from "next/router";
+
 export async function getStaticProps() {
 
   const client = createClient({
@@ -24,7 +25,17 @@ export async function getStaticProps() {
   }
 }
 export default function Intro({hire}) {
-
+  const router = useRouter()
+  const TechnologyHandler = (tech) => {
+    if(tech === 'react')
+    {
+      router.push('https://www.uptal.org/hire/reactjs')
+    }
+    else if(tech === 'python')
+    {
+      router.push('https://www.uptal.org/hire/python')
+    }
+  }
   return (
 <div style={{width: "100%"}}>
     <Row className="mx-auto">
@@ -50,7 +61,7 @@ export default function Intro({hire}) {
         </div>
 
         <div>
-          <div className="talent_section">
+            <div className="talent_section">
                 <Row className="container mx-auto">
                   <p className="talent_title">Pre-vetted talent available to start in these fields</p>
                   <div className="talent_div">
@@ -131,18 +142,7 @@ export default function Intro({hire}) {
                             className="employe_brand_img"
                         />
                     </Col>
-                    <Row className="container mx-auto">
-                    <Col>
-                      <div style={{paddingTop:"50px"}}>
-                          <p className="brand_title">Hire Uptal Developers</p>
-                      </div>
-                      <Row className="mx-auto mt-3">
-                          {hire.map(data => (
-                            <HireCard key={data.sys.id} data={data} />
-                          ))}
-                      </Row>
-                    </Col>
-                </Row>
+                  
                 </Row>
             </div>
 
@@ -182,332 +182,426 @@ export default function Intro({hire}) {
             </div>
             
             <div className="technology_section">
-         <p className="based_text">Based on Skills</p>
-           <Row className="container ms-2 mt-4">
-              <div className="technology_div">
-              <div className="technology_colam">
-                    <img
-                        src="/React-svg.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">React.js</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Node_js.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">Node.js</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Python_.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Python.js</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+             
+                <Row className="container mx-auto mt-4">
+                <p className="based_text ms-4">Based on Skills</p>
+                    <div className="technology_div">
+                        <div onClick={() => TechnologyHandler('react')} className="technology_colam">
+                          <img
+                              src="/React-svg.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">React.js</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Node_js.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">Node.js</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div onClick={() => TechnologyHandler('python')} className="technology_colam">
+                          <img
+                              src="/Python_.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Python.js</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/AWS.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">AWS</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/AWS.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">AWS</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Javascript.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Javascript</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Javascript.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Javascript</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/react_native.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">React Native</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/react_native.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">React Native</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Postgre_SQL.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">PostgreSQL</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Postgre_SQL.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">PostgreSQL</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Ruby_on_Rails.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">Ruby On Rails</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Ruby_on_Rails.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">Ruby On Rails</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Java_developers.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Java</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Java_developers.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Java</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Angular.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />  
-                    <p className="technology_text">Angular</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Angular.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />  
+                          <p className="technology_text">Angular</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div><div className="technology_colam">
-                    <img
-                        src="/Golang.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Golang</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div><div className="technology_colam">
+                          <img
+                              src="/Golang.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Golang</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/PHP.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">PHP</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/PHP.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">PHP</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/ML_engineers.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Machine Le..</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/ML_engineers.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Machine Le..</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Android.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">Android</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Android.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">Android</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Django_developers.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Django</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Django_developers.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Django</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Laravel.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Laravel</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Laravel.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Laravel</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-              </div>
-           </Row>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Magento.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Magento</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Node_js_two.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">React/Node</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+
+                        </div>
+                    </div>
+                </Row>
            </div>
 
-         <div className="technology_section_mobile">
-               <p className="based_text">Based on Skills</p>
-                <div className="technology_div">
-              <div className="technology_colam">
-                    <img
-                        src="/React-svg.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">React.js</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                  </div>
+            <div className="technology_section_mobile">
+                  <p className="based_text ms-3">Based on Skills</p>
+                    <div className="technology_div">
                   <div className="technology_colam">
-                    <img
-                        src="/Node_js.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">Node.js</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Python_.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Python.js</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        <img
+                            src="/React-svg.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">React.js</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Node_js.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">Node.js</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Python_.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Python.js</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/AWS.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">AWS</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/AWS.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">AWS</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Javascript.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Javascript</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Javascript.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Javascript</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/react_native.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">React Native</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/react_native.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">React Native</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Postgre_SQL.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">PostgreSQL</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Postgre_SQL.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">PostgreSQL</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Ruby_on_Rails.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">Ruby On Rails</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Ruby_on_Rails.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">Ruby On Rails</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Java_developers.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Java</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Java_developers.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Java</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Angular.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />  
-                    <p className="technology_text">Angular</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Angular.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />  
+                        <p className="technology_text">Angular</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div><div className="technology_colam">
-                    <img
-                        src="/Golang.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Golang</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div><div className="technology_colam">
+                        <img
+                            src="/Golang.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Golang</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/PHP.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">PHP</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/PHP.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">PHP</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/ML_engineers.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Machine Le..</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/ML_engineers.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Machine Le..</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Android.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    />
-                    <p className="technology_text">Android</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Android.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">Android</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Django_developers.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Django</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Django_developers.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Django</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                  </div>
-                  <div className="technology_colam">
-                    <img
-                        src="/Laravel.svg"
-                        alt="Picture of the author"
-                        className="hire_tech_img"
-                    /> 
-                    <p className="technology_text">Laravel</p>
-                    <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="technology_colam">
+                        <img
+                            src="/Laravel.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        /> 
+                        <p className="technology_text">Laravel</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
+                      </div>
+                      <div className="technology_colam">
+                          <img
+                              src="/Magento.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Magento</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Node_js_two.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">React/Node</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+
+                        </div>
                   </div>
-              </div>
-         </div>
+            </div>
+            
+            <div className="Based_role_section">
+             <Row className="container mx-auto mt-4">
+             <p className="based_role_text">Based on role</p>
+                 <div className="Based_role_div">
+                     <div className="based_role_colam">
+                       <img
+                           src="/Full_Stack.svg"
+                           alt="Picture of the author"
+                           className="hire_tech_img"
+                       />
+                       <p className="technology_text">FullStack Developers</p>
+                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                     </div>
+                     <div className="based_role_colam">
+                       <img
+                           src="/role_backend.svg"
+                           alt="Picture of the author"
+                           className="hire_tech_img"
+                       />
+                       <p className="technology_text">Backend Developers</p>
+                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                     </div>
+                     <div className="based_role_colam">
+                       <img
+                           src="/Front_end_developers.svg"
+                           alt="Picture of the author"
+                           className="hire_tech_img"
+                       />
+                       <p className="technology_text">Frondend Developers</p>
+                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                     </div>
+                     <div className="based_role_colam">
+                       <img
+                           src="/Mobile_developers.svg"
+                           alt="Picture of the author"
+                           className="hire_tech_img"
+                       />
+                       <p className="technology_text">Mobile Developers</p>
+                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                     </div>
+                     <div className="based_role_colam">
+                       <img
+                           src="/app_developer.svg"
+                           alt="Picture of the author"
+                           className="hire_tech_img"
+                       />
+                       <p className="technology_text">App Developers</p>
+                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                     </div>
+                 </div>
+             </Row>
+        </div>
 
             <div className="faq_section">
       `       <Row className="container-xxl container-xl container-lg container-md  container-sm container-xs mx-auto faq_row justify-content-lg-evenly">
@@ -631,5 +725,18 @@ export default function Intro({hire}) {
           <p className="gorious_text">We select excellent communicators who can proactively take ownership of business and product objectives without micromanagement.</p>
       </div>
   </div>
+</Col>
+</Row> */}
+
+{/* <Row className="container mx-auto">
+<Col>
+  <div style={{paddingTop:"50px"}}>
+      <p className="brand_title">Hire Uptal Developers</p>
+  </div>
+  <Row className="mx-auto mt-3">
+      {hire.map(data => (
+        <HireCard key={data.sys.id} data={data} />
+      ))}
+  </Row>
 </Col>
 </Row> */}
