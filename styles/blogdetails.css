@@ -21,6 +21,16 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 50px;
 }
+.hire__details_title{
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
 .banner_row{
     padding-bottom: 40px;
     padding-top: 60px;
@@ -31,6 +41,9 @@
 }
 .blog_detailsone{
     font-size: 14px;
+}
+.hire_banner_text{
+    font-size: 17px;
 }
 .blog_details_container{
     margin-top: 30px;
@@ -186,6 +199,15 @@
         font-family: 'Poppins', sans-serif;
 
     }
+    .hire__details_title{
+        font-size: 34px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
     .banner_row{
         padding-bottom: 40px;
         padding-top: 10px;
@@ -275,6 +297,15 @@
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
     }
+    .hire__details_title{
+        font-size: 34px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
     .banner_row{
         padding-bottom: 40px;
         padding-top: 30px;
@@ -347,6 +378,15 @@
     .details_title{
         font-size: 30px;
         font-weight: 700;
+        font-style: normal;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+    .hire__details_title{
+        font-size: 35px;
+        font-weight: 400;
         font-style: normal;
         font-family: 'Charm', cursive;
         font-family: 'IBM Plex Sans', sans-serif;
@@ -430,6 +470,15 @@
         font-family: 'Open Sans', sans-serif;
         font-family: 'Poppins', sans-serif;
     }
+    .hire__details_title{
+        font-size: 40px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
     .description_colam{
         padding-top: 10px;
     }
@@ -492,7 +541,7 @@
 
   }
 
-  @media only screen and (min-width:992px) and (max-width: 3000px) {
+  @media only screen and (min-width:992px) and (max-width: 1321px) {
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 10px 15px 3px;
@@ -502,6 +551,25 @@
         position: sticky;
         top: 0px;
         bottom: 85%;
+        z-index: 1;
+    }
+    .join_footer_row{
+        margin-top: 100px;
+    }
+    .talent_btn{
+        margin-top: 50px;
+    }
+  }
+  @media only screen and (min-width:1322px) and (max-width: 3000) {
+    .join_work_container{
+        background-color: #1f57c3;
+        padding: 15px 10px 15px 3px;
+        border-radius: 5px;
+    }
+    .indicator{
+        position: sticky;
+        top: 0px;
+        bottom: 87%;
         z-index: 1;
     }
     .join_footer_row{

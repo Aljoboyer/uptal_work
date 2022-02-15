@@ -23,17 +23,28 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.hire_blog_inputs{
+.hire_expect_btn{
   height: 48px;
   width: 280px;
   border-radius: 5px;
+  border: none;
+  background-color: #206ee9;
+  color: white;
+  font-weight: 600;
+}
+.hire_blog_inputs{
+  height: 50px;
+  width: 280px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   border: 0.5px solid rgb(182, 182, 182);
+  padding-left: 10px;
 }
 .hire_blog_developer_btn{
   height: 48px;
   width: 280px;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   border: none;
   background-color: #206ee9;
   color: white;
@@ -47,23 +58,8 @@
     margin-left: 25px;
 }
 
-form.nosubmit {
-    margin-top: 40px;
-    padding: 0;
-    margin-left: 25px;
-  }
-  
-  input.nosubmit {
-    width: 31%;
-    border: solid 0.5px rgb(165, 164, 164);
-    border-radius: 30px;
-    display: block;
-    padding: 9px 4px 9px 40px;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-  }
-  form.nosubmit :focus{
-    outline:#206ee9 0.5px solid;
-  }
+
+
   .hire_tech_img{
     width: 28px;
     height: 28px;
@@ -89,11 +85,10 @@ form.nosubmit {
     grid-row-gap: 30px;
   }
   .technology_colam{
-    box-shadow: 0.5px 0px 0.5px 0.5px rgba(0,0,0,0.25), 
-    0.5px 0px 0.5px 0.5px rgba(0,0,0,0.20), 
-    0.5px 0px 0px 0.5px rgba(0,0,0,0.15), 
-    0px 0px 0.5px 0.5px rgba(0,0,0,0.10),
-    0px 0px 0.5px 0.5px rgba(0,0,0,0.05);
+    box-shadow: 1px 1px 1px 1px rgba(141, 141, 141, 0.15), 
+    1px 1px 1px 1px rgba(170, 169, 169, 0.15), 
+    1px 1px 1px 2px rgba(158, 158, 158, 0.15), 
+    1px 1px 1px 2px rgba(136, 136, 136, 0.15);
     width: 90%;
     border-radius: 10px;
     cursor: pointer;
@@ -125,11 +120,10 @@ form.nosubmit {
   grid-row-gap: 30px;
 }
 .based_role_colam{
-  box-shadow: 0.5px 0px 0.5px 0.5px rgba(0,0,0,0.25), 
-  0.5px 0px 0.5px 0.5px rgba(0,0,0,0.20), 
-  0.5px 0px 0px 0.5px rgba(0,0,0,0.15), 
-  0px 0px 0.5px 0.5px rgba(0,0,0,0.10),
-  0px 0px 0.5px 0.5px rgba(0,0,0,0.05);
+  box-shadow: 1px 1px 1px 1px rgba(141, 141, 141, 0.15), 
+  1px 1px 1px 1px rgba(170, 169, 169, 0.15), 
+  1px 1px 1px 2px rgba(158, 158, 158, 0.15), 
+  1px 1px 1px 2px rgba(136, 136, 136, 0.15);
   border-radius: 10px;
   cursor: pointer;
   padding-left: 7px;
@@ -150,6 +144,37 @@ form.nosubmit {
   color: #206ee9;
   font-size: 18px;
   cursor: pointer;
+}
+.hire_tech_div{
+  margin-left: 20px;
+}
+.hire_based_role_div{
+  margin-left: 20px;
+}
+.hire_faq_div{
+  margin-left: 30px;
+  width: 80%;
+}
+.hire_details_faq{
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Charm', cursive;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.accordion_title{
+  margin-right: 50px;
+  font-size: 14px;
+}
+.accordion_div{
+  margin-right: 30px;
+}
+.based_hire_section{
+  padding-bottom: 70px;
 }
   @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .hire_details_banner_section{
@@ -206,7 +231,13 @@ form.nosubmit {
       grid-column-gap: 15px;
       grid-row-gap: 30px;
     }
-
+    .hire_faq_div{
+      margin-left: 0px;
+      width: 100%;
+    }
+    .hire_details_faq{
+      font-size: 22px;
+    }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
   .hire_details_banner_section{
@@ -261,6 +292,13 @@ form.nosubmit {
     grid-template-columns: auto auto;
     grid-column-gap: 25px;
     grid-row-gap: 30px;
+  }
+  .hire_faq_div{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .hire_details_faq{
+    font-size: 22px;
   }
   }
   
@@ -377,5 +415,5 @@ form.nosubmit {
   .Based_role_section{
     margin-right: 30px;
   }
- 
+
 }
