@@ -56,6 +56,10 @@ export const getStaticProps = async ({ params }) => {
 
 
 export default function HireDevelopers({post}) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
     const { title,skill, skillLogo ,content ,intro} = post.fields;
  
@@ -133,37 +137,99 @@ export default function HireDevelopers({post}) {
             title={title}
             image={'https:' + skillLogo.fields.file.url}
             />
-            <div className=' details_banner'>
-              <Row className="container mx-auto banner_row d-md-flex d-sm-flex justify-content-md-between justify-content-sm-between">
-                <Col className='align-items-center' lg={7} md={6} sm={6} xs={12}>
-                  <h1 className='details_title'>{title}</h1>
-                  <div className='d-flex blog_details_container'>
-                    <p className='blog_detailsone'>{intro}</p>
-                  </div>
-                  <div>
-                  <TextField id="outlined-basic" label="Your Email" variant="outlined" size='small' style={{backgroundColor:'white'}} />
-                  <Button variant="contained">Hire {skill} Developer</Button>
-                  </div>
-                </Col>
-                <Col lg={4} md={6} sm={6} xs={12}>
-                  <img src={'https:' + skillLogo.fields.file.url} className='details_img' />
-                </Col>
-              </Row>
+            <div className='hire_details_banner_section'>
+                <Row className='container-fluid hire_details_banner mx-auto'>
+                    <Row className="container  mx-auto banner_row d-md-flex d-sm-flex justify-content-md-between justify-content-sm-between">
+                    <Col className='align-items-center' lg={7} md={6} sm={6} xs={12}>
+                      <h1 className='details_title'>{title}</h1>
+                      <div className='d-flex blog_details_container'>
+                        <p className='blog_detailsone'>{intro}</p>
+                      </div>
+                      <div className='mt-3'>
+                      <input type="text" className="hire_blog_inputs" placeholder='Your work Email'/>
+                      <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
+                      </div>
+                    </Col>
+                    <Col lg={4} md={6} sm={6} xs={12}>
+                      <img src={'https:' + skillLogo.fields.file.url} className='details_img' />
+                    </Col>
+                  </Row>
+                </Row>
             </div>
-          <Row className='justify-content-lg-start justify-content-sm-center  justify-content-md-center description_container'>
-            <Col className="table_colam" lg={2}>
-              <div className='table_content'>
-                  <p className='table_content_title'>TABLE OF CONTENTS</p>
-                  <p>{documentToReactComponents(content,options)}</p>
-              </div>
-            </Col>
-            <Col className='description_colam' lg={7} md={12} sm={12} xs={12}>
-              <div  className='container'>
-                <p className='description'>{documentToReactComponents(content,main)}</p>
-              </div>
-            </Col>
-         
-          </Row>
+            <div className='container-fluid hire_details_banner_mobile'>
+                    <Row className="  mx-auto banner_row d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center">
+                    <Col lg={4} md={10} sm={12} xs={12}>
+                      <img src={'https:' + skillLogo.fields.file.url} className='details_img' />
+                    </Col>
+                    <Col className='align-items-center' lg={7} md={10} sm={12} xs={12}>
+                      <h1 className='details_title'>{title}</h1>
+                      <div className='d-flex blog_details_container'>
+                        <p className='blog_detailsone'>{intro}</p>
+                      </div>
+                      <div  className='mt-3'>
+                      <input type="text" className="hire_blog_inputs" placeholder='Your work Email'/>
+                      <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
+                      </div>
+                    </Col>
+                   
+                  </Row>
+            </div>
+
+            <div className="hire_expact_section">
+                <Row className="container-fluid  mx-auto expact_row">
+                    <div className="expact_description_div" >
+                      <p className="expact_title">What you can expect</p>
+                      <p className="expact_text">It all starts with a conversation—we’ll work with you to find out what hard and soft <br />
+                      skills you’re looking for, quickly zero in on a shortlist of talents, and help guide your <br />
+                      through the hiring process.</p>
+                    </div>
+                    <div className="expact_point_div">
+                        <div className="expact_point">
+                        <img style={{
+            height: '30px'}}  alt="Picture of the author"  src="/numone.png"/>
+                            <p className="expact_text ms-3"> <span className="fw-bold">Sign up and set up your meeting</span> <br/>
+                            Give us a few details and set up
+                            a time to talk with your recruiter</p>
+                        </div>
+                        <div className="expact_point">
+                        <img style={{
+            height: '30px'}}  alt="Picture of the author"  src="/twoicon.png"/>
+                            <p className="expact_text ms-3"> <span className="fw-bold"> Meet with your recruiter</span> <br/>
+                            Your recruiter will show up with a shortlist of “top matches”</p>
+                        </div>
+                        <div className="expact_point">
+                        <img style={{
+            height: '30px'}}  alt="Picture of the author"  src="/numthree.png"/>
+                            <p className="expact_text ms-3"> <span className="fw-bold"> Review and hire talent</span> <br/>
+                            Interview the top matches, see who’s a hire, or get anothershortlist</p>
+                        </div>
+                    </div>
+                    <div className="talk_two_btn_div text-center">
+                        <button className="talk_two_btn mt-3">Hire Developers</button>
+                    </div>
+                </Row>
+            </div>
+
+          
+       
+         <div>
+          <Row className='container-fluid mx-auto justify-content-lg-start justify-content-sm-center  justify-content-md-center description_container hire_description_container'>
+              <Col className="table_colam pt-0" lg={2}>
+                <div className='hire_table_content'>
+                    <p className='table_content_title'>TABLE OF CONTENTS</p>
+                    <p>{documentToReactComponents(content,options)}</p>
+                </div>
+              </Col>
+              <Col className='description_colam' lg={10} md={12} sm={12} xs={12}>
+                <div  className='container'>
+                  <p className='description'>{documentToReactComponents(content,main)}</p>
+                </div>
+              </Col>
+          
+            </Row>
+         </div>
+     
+
           <Row className='container justify-content-center mx-auto join_full_container'>
           <Col lg={11} md={12} sm={12} xs={10} className=''>
                 <Row className="join_work_container justify-content-md-between">
@@ -179,6 +245,26 @@ export default function HireDevelopers({post}) {
           </Row>
          
           <MainFooter/>
+
+          <div className="table_content_btn_row">
+               <button onClick={handleShow} className='table_content_btn'>Table of Content</button>
+          </div>
+
+          <Offcanvas className="details_offcanvas_container w-100 h-50 bg-dark" show={show} onHide={handleClose} scroll={true} placement="bottom">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title> </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+   
+            <div  style={{width: '100%', marginLeft: '20px'}}>
+                  <p className='table_content_title text-light'>TABLE OF CONTENTS</p>
+                  <p>{documentToReactComponents(content,options)}</p>
+
+             
+            </div>
+            <button onClick={handleClose} className='table_content_offcanvasbtn'>Table of Content</button>
+        </Offcanvas.Body>
+          </Offcanvas>
       </Row>
       <Indicator/>
       </div>
