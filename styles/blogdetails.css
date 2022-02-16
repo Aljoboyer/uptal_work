@@ -569,7 +569,7 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 87%;
+        bottom: 90%;
         z-index: 1;
     }
     .join_footer_row{
