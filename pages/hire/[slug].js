@@ -57,6 +57,7 @@ export const getStaticProps = async ({ params }) => {
 
 
 export default function HireDevelopers({post}) {
+
   const [tech, setTech] = useState(false)
   const [show, setShow] = useState(false);
 
@@ -216,7 +217,7 @@ export default function HireDevelopers({post}) {
                         </div>
                     </div>
                     <div className="talk_two_btn_div text-center">
-                        <button className="hire_expect_btn mt-3">Hire Developers</button>
+                        <button className="hire_expect_btn mt-3">Remote Developers</button>
                     </div>
                 </Row>
             </div>
@@ -239,265 +240,269 @@ export default function HireDevelopers({post}) {
          </div>
      
 
-         <Row className='container justify-content-center mx-auto join_full_container'>
-          <Col lg={11} md={11} sm={12} xs={10} className=''>
-                <Row className="join_work_container justify-content-md-between">
-                <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>
-                  <img
-                  src="/joinimg.png"
-                  alt="Picture of the author"
-                  className="join_img"
-                  />
-                </Col>
-                <Col lg={8} md={8} sm={8} xs={12}>
-                    <p className='join_title'>Join the world’s work marketplace</p>
-                   <div  className='join_footer_row'>
-                   <Row className="justify-content-lg-between justify-content-md-between">
-                     <hr className='horizontal_line' />
-                      <Col lg={8} md={8} sm={12}>
-                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+         
+         <div>
+          <Row className='container join_full_container justify-content-center mx-auto'>
+                <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
+                      <Row className="join_work_container justify-content-md-between">
+                      <Col className="d-flex justify-content-start " lg={4} md={4} sm={12} xs={12}>
+                        <img
+                        src="/joinimg.png"
+                        alt="Picture of the author"
+                        className="join_img"
+                        />
                       </Col>
-                      <Col lg={3} md={3} sm={12}>
-                        <button className='talent_btn'>Find Talent</button>
+                      <Col lg={8} md={8} sm={12} xs={12}>
+                          <p className='join_title'>Join the world’s work marketplace</p>
+                        <div  className='join_footer_row'>
+                        <Row className="justify-content-lg-between justify-content-md-around">
+                          <hr className='horizontal_line' />
+                            <Col lg={8} md={8} sm={12}>
+                              <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
+                            </Col>
+                            <Col lg={3} md={3} sm={12}>
+                              <button className='talent_btn'>Find Talent</button>
+                            </Col>
+                          </Row>
+                        </div>
                       </Col>
                     </Row>
-                   </div>
                 </Col>
-              </Row>
-          </Col>
-          </Row>
+            </Row>
+         </div>
           
-          <div>
-              <div className='hire_faq_div'>
-                  <p className='hire_details_faq'>Frequently Asked Questions</p>
-                  <div className='accordion_div'>
-                      <Accordion >
-                        <Accordion.Item eventKey="0">
-                          <Accordion.Header> <span className='accordion_title'>What is the no-risk trial period for Turing ReactJS developers?</span> </Accordion.Header>
-                          <Accordion.Body>
-                          The purpose of the two-week no-risk trial period is to start working with the developers and include them in the team. If you are satisfied with the developers, you keep working with them and pay their salary including the first two weeks. But, if you are not satisfied during the trial period, then you won’t pay anything.
-                          </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="1">
-                          <Accordion.Header> <span className='accordion_title'>How are Turing ReactJS developers different?</span> </Accordion.Header>
-                          <Accordion.Body>
-                          Turing offers top-quality, cost-effective, and highly productive ReactJS developers who belong to the top 1% of the worlds remote developers. All Turing ReactJS developers are selected only after going through a series of rigorous tests where their skills are evaluated for a Silicon Valley bar. Daily standups are mandatory for every Turing developer as they keep the developer and the customer in alignment with the discussed goal. All Turing remote ReactJS developers work for at least 4 hours in your time zone for your convenience.
-                          </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="2">
-                          <Accordion.Header> <span className='accordion_title'>How do I hire ReactJS Developers?</span> </Accordion.Header>
-                          <Accordion.Body>
-                          If you wish to hire the best ReactJS developers who are willing to work in your timezone, try Turing jobs platform. Turing goes deep into the global talent pool to source ReactJS developers from across the world and vets them to a Silicon Valley level. Companies can hire remote reactJS developers within 3-5 days with Turing.
-                          </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="3">
-                          <Accordion.Header> <span className='accordion_title'>How does Turing vet remote ReactJS engineers?</span> </Accordion.Header>
-                          <Accordion.Body>
-                          Turing has created the first and only Intelligent Talent Cloud to vet remote developers for a Silicon Valley bar. Turing tests developers based upon actual skills vs. self-reported experience from traditional resumes or job interviews. Every developer at Turing has to clear our tests for programming languages, data structures, algorithms, system designs, software specialization, frameworks, and more. Each Turing developer goes through our automated seniority assessment test comprising 57 calibrated questions in 5 areas — project impact, engineering excellence, communication, people, and direction.
-                          </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="4">
-                          <Accordion.Header> <span className='accordion_title'>For which other skills can I hire remote developers from Turing?</span> </Accordion.Header>
-                          <Accordion.Body>
-                          With Turing, you can hire the best remote developers for 100+ skills such as React, Node, Python, Angular, Swift, React Native, Android, Java, Rails, Golang, PHP, Vue, DevOps, Machine Learning, etc. Turing also offers developers based on tech stack and seniority.
-                          </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="5">
-                          <Accordion.Header> <span className='accordion_title'>Are ReactJS developers in demand?</span> </Accordion.Header>
-                          <Accordion.Body>
-                          According to a Quess report, React JS is one of the top digital skill jobs in demand. If you are planning to scale your ReactJS developers team, try Turing. It makes hiring easy for companies by offering vetted remote ReactJS developers for a Silicon Valley bar at half the price.
-                          </Accordion.Body>
-                        </Accordion.Item>
-                      </Accordion>
-                  </div>
-              </div>
+          <div className='hire_faq_section'>
+              <Row className='container justify-content-center mx-auto '>
+                <Row className=' mx-auto hire_faq_row pb-4 pt-4'>
+                    <p className='hire_details_faq ms-4'>Frequently Asked Questions</p>
+                
+                        <Accordion >
+                          <Accordion.Item eventKey="0">
+                            <Accordion.Header> <span className='accordion_title'>What is the no-risk trial period for Turing ReactJS developers?</span> </Accordion.Header>
+                            <Accordion.Body>
+                            The purpose of the two-week no-risk trial period is to start working with the developers and include them in the team. If you are satisfied with the developers, you keep working with them and pay their salary including the first two weeks. But, if you are not satisfied during the trial period, then you won’t pay anything.
+                            </Accordion.Body>
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="1">
+                            <Accordion.Header> <span className='accordion_title'>How are Turing ReactJS developers different?</span> </Accordion.Header>
+                            <Accordion.Body>
+                            Turing offers top-quality, cost-effective, and highly productive ReactJS developers who belong to the top 1% of the worlds remote developers. All Turing ReactJS developers are selected only after going through a series of rigorous tests where their skills are evaluated for a Silicon Valley bar. Daily standups are mandatory for every Turing developer as they keep the developer and the customer in alignment with the discussed goal. All Turing remote ReactJS developers work for at least 4 hours in your time zone for your convenience.
+                            </Accordion.Body>
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="2">
+                            <Accordion.Header> <span className='accordion_title'>How do I hire ReactJS Developers?</span> </Accordion.Header>
+                            <Accordion.Body>
+                            If you wish to hire the best ReactJS developers who are willing to work in your timezone, try Turing jobs platform. Turing goes deep into the global talent pool to source ReactJS developers from across the world and vets them to a Silicon Valley level. Companies can hire remote reactJS developers within 3-5 days with Turing.
+                            </Accordion.Body>
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="3">
+                            <Accordion.Header> <span className='accordion_title'>How does Turing vet remote ReactJS engineers?</span> </Accordion.Header>
+                            <Accordion.Body>
+                            Turing has created the first and only Intelligent Talent Cloud to vet remote developers for a Silicon Valley bar. Turing tests developers based upon actual skills vs. self-reported experience from traditional resumes or job interviews. Every developer at Turing has to clear our tests for programming languages, data structures, algorithms, system designs, software specialization, frameworks, and more. Each Turing developer goes through our automated seniority assessment test comprising 57 calibrated questions in 5 areas — project impact, engineering excellence, communication, people, and direction.
+                            </Accordion.Body>
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="4">
+                            <Accordion.Header> <span className='accordion_title'>For which other skills can I hire remote developers from Turing?</span> </Accordion.Header>
+                            <Accordion.Body>
+                            With Turing, you can hire the best remote developers for 100+ skills such as React, Node, Python, Angular, Swift, React Native, Android, Java, Rails, Golang, PHP, Vue, DevOps, Machine Learning, etc. Turing also offers developers based on tech stack and seniority.
+                            </Accordion.Body>
+                          </Accordion.Item>
+                          <Accordion.Item eventKey="5">
+                            <Accordion.Header> <span className='accordion_title'>Are ReactJS developers in demand?</span> </Accordion.Header>
+                            <Accordion.Body>
+                            According to a Quess report, React JS is one of the top digital skill jobs in demand. If you are planning to scale your ReactJS developers team, try Turing. It makes hiring easy for companies by offering vetted remote ReactJS developers for a Silicon Valley bar at half the price.
+                            </Accordion.Body>
+                          </Accordion.Item>
+                        </Accordion>
+                   
+                </Row>
+            </Row>
           </div>
 
 
             <div className="technology_section">
-             
-             <Row className="container  mt-4">
-             <p className="based_text ms-4">Based on Skills</p>
-                 <div className="technology_div hire_tech_div">
-                     <div onClick={() => TechnologyHandler('react')} className="technology_colam">
-                       <img
-                           src="/React-svg.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       />
-                       <p className="technology_text">React.js</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Node_js.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       />
-                       <p className="technology_text">Node.js</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                     </div>
-                     <div onClick={() => TechnologyHandler('python')} className="technology_colam">
-                       <img
-                           src="/Python_.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Python.js</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                <Row className='container mx-auto'>
+                      <p className="based_text ms-2">Based on Skills</p>
+                    <div className="technology_div hire_tech_div">
+                        <div onClick={() => TechnologyHandler('react')} className="technology_colam">
+                          <img
+                              src="/React-svg.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">React.js</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Node_js.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">Node.js</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div onClick={() => TechnologyHandler('python')} className="technology_colam">
+                          <img
+                              src="/Python_.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Python.js</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/AWS.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       />
-                       <p className="technology_text">AWS</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/AWS.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">AWS</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Javascript.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Javascript</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Javascript.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Javascript</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/react_native.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">React Native</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/react_native.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">React Native</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Postgre_SQL.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">PostgreSQL</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Postgre_SQL.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">PostgreSQL</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Ruby_on_Rails.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       />
-                       <p className="technology_text">Ruby On Rails</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Ruby_on_Rails.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">Ruby On Rails</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Java_developers.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Java</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Java_developers.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Java</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Angular.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       />  
-                       <p className="technology_text">Angular</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Angular.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />  
+                          <p className="technology_text">Angular</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div><div className="technology_colam">
-                       <img
-                           src="/Golang.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Golang</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div><div className="technology_colam">
+                          <img
+                              src="/Golang.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Golang</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/PHP.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">PHP</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/PHP.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">PHP</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/ML_engineers.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Machine Le..</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/ML_engineers.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Machine Le..</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Android.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       />
-                       <p className="technology_text">Android</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Android.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          />
+                          <p className="technology_text">Android</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Django_developers.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Django</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Django_developers.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Django</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Laravel.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Laravel</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Laravel.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Laravel</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Magento.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">Magento</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Magento.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">Magento</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                     <div className="technology_colam">
-                       <img
-                           src="/Node_js_two.svg"
-                           alt="Picture of the author"
-                           className="hire_tech_img"
-                       /> 
-                       <p className="technology_text">React/Node</p>
-                       <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                        </div>
+                        <div className="technology_colam">
+                          <img
+                              src="/Node_js_two.svg"
+                              alt="Picture of the author"
+                              className="hire_tech_img"
+                          /> 
+                          <p className="technology_text">React/Node</p>
+                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
 
-                     </div>
-                 </div>
-             </Row>
+                        </div>
+                    </div>
+                </Row>
             </div>
             <div className="technology_section_mobile">
                   <p className="based_text ">Based on Skills</p>
@@ -689,9 +694,10 @@ export default function HireDevelopers({post}) {
                 {tech === false ? <p onClick={() => setTech(true)} className="see_more mt-3">+ See more positions</p> : <p onClick={() => setTech(false)} className="see_more mt-3">- See more positions</p>}
             </div>
               
-              <div className="Based_role_section based_hire_section">
-                <Row className="container  mt-4">
-                <p className="based_role_text ms-4">Based on role</p>
+            <div className="Based_role_section based_hire_section">
+              <Row className='container justify-content-center mx-auto'>
+             
+                <p className="based_role_text ms-2">Based on role</p>
                     <div className="Based_role_div hire_based_role_div">
                         <div className="based_role_colam">
                           <img
@@ -739,58 +745,59 @@ export default function HireDevelopers({post}) {
                           <IoIosArrowForward className="hire_arrow_icon ms-2"/>
                         </div>
                     </div>
-                </Row>
-              </div>
-              <div className="Based_role_section_mobile based_hire_section">
-                <p className="based_role_text">Based on role</p>
-                    <div className="Based_role_div">
-                        <div className="based_role_colam">
-                          <img
-                              src="/Full_Stack.svg"
-                              alt="Picture of the author"
-                              className="hire_tech_img"
-                          />
-                          <p className="technology_text">FullStack <br/> Developers</p>
-                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                        </div>
-                        <div className="based_role_colam">
-                          <img
-                              src="/role_backend.svg"
-                              alt="Picture of the author"
-                              className="hire_tech_img"
-                          />
-                          <p className="technology_text">Backend <br/> Developers</p>
-                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                        </div>
-                        <div className="based_role_colam">
-                          <img
-                              src="/Front_end_developers.svg"
-                              alt="Picture of the author"
-                              className="hire_tech_img"
-                          />
-                          <p className="technology_text">Frondend <br/> Developers</p>
-                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                        </div>
-                        <div className="based_role_colam">
-                          <img
-                              src="/Mobile_developers.svg"
-                              alt="Picture of the author"
-                              className="hire_tech_img"
-                          />
-                          <p className="technology_text">Mobile <br/> Developers</p>
-                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                        </div>
-                        <div className="based_role_colam">
-                          <img
-                              src="/app_developer.svg"
-                              alt="Picture of the author"
-                              className="hire_tech_img"
-                          />
-                          <p className="technology_text">App Developers</p>
-                          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
-                        </div>
-                    </div>
-              </div>
+               
+              </Row>
+            </div>
+            <div className="Based_role_section_mobile based_hire_section">
+              <p className="based_role_text">Based on role</p>
+                  <div className="Based_role_div">
+                      <div className="based_role_colam">
+                        <img
+                            src="/Full_Stack.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">FullStack <br/> Developers</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="based_role_colam">
+                        <img
+                            src="/role_backend.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">Backend <br/> Developers</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="based_role_colam">
+                        <img
+                            src="/Front_end_developers.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">Frondend <br/> Developers</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="based_role_colam">
+                        <img
+                            src="/Mobile_developers.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">Mobile <br/> Developers</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                      <div className="based_role_colam">
+                        <img
+                            src="/app_developer.svg"
+                            alt="Picture of the author"
+                            className="hire_tech_img"
+                        />
+                        <p className="technology_text">App Developers</p>
+                        <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+                      </div>
+                  </div>
+            </div>
           <Footer/>
 
           <div className="table_content_btn_row">

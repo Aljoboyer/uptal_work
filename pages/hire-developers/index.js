@@ -690,18 +690,17 @@ export default function Intro({hire}) {
               </Row>
             </div>
 
-            <div className="join_work_section">
-            <Row className='container-fluid join_full_container justify-content-center mx-auto'>
+            <Row className='container join_full_container justify-content-center mx-auto'>
               <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
                     <Row className="join_work_container justify-content-md-between">
-                    <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>
+                    <Col className="d-flex justify-content-start " lg={4} md={4} sm={12} xs={12}>
                       <img
                       src="/joinimg.png"
                       alt="Picture of the author"
                       className="join_img"
                       />
                     </Col>
-                    <Col lg={8} md={8} sm={8} xs={12}>
+                    <Col lg={8} md={8} sm={12} xs={12}>
                         <p className='join_title'>Join the world’s work marketplace</p>
                       <div  className='join_footer_row'>
                       <Row className="justify-content-lg-between justify-content-md-around">
@@ -717,48 +716,9 @@ export default function Intro({hire}) {
                     </Col>
                   </Row>
               </Col>
-              </Row>
-            </div>
-
-            <div className="join_work_container_mobile">
-                  <Row className="container join_work_container justify-content-md-between mx-auto">
-                  <Col className=""  lg={4} md={4} sm={4} xs={12}>
-                    <img
-                    src="/joinimg.png"
-                    alt="Picture of the author"
-                    className="join_img_foremploye"
-                    />
-                  </Col>
-                  <Col className="" lg={8} md={8} sm={8} xs={12}>
-                      <p className='join_title'>Join the world’s work marketplace</p>
-                      <div  className='join_footer_row'>
-                      <Row className="justify-content-lg-between justify-content-md-between">
-                        <hr className='horizontal_line' />
-                        <Col lg={8} md={8} sm={12}>
-                          <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
-                        </Col>
-                        <Col lg={3} md={3} sm={12}>
-                          <button className='talent_btn'>Find Talent</button>
-                        </Col>
-                      </Row>
-                      </div>
-                  </Col>
-                </Row>
-            </div> 
+          </Row>        
         </div>
 
-        <Row className="container mx-auto">
-          <Col>
-            <div style={{paddingTop:"50px"}}>
-                <p className="brand_title">Hire Uptal Developers</p>
-            </div>
-            <Row className="mx-auto mt-3">
-                {hire.map(data => (
-                  <HireCard key={data.sys.id} data={data} />
-                ))}
-            </Row>
-          </Col>
-</Row>
       <MainFooter/>
     </Row>
 </div>

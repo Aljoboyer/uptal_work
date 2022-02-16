@@ -171,35 +171,38 @@ export default function Post({post}) {
             </Col>
          
           </Row>
-          <Row className='container justify-content-center mx-auto join_full_container'>
-          <Col lg={11} md={12} sm={12} xs={10} className=''>
-                <Row className="join_work_container justify-content-md-between">
-                <Col className="d-flex justify-content-start " lg={4} md={4} sm={4} xs={12}>
-                  <img
-                  src="/joinimg.png"
-                  alt="Picture of the author"
-                  className="join_img"
-                  />
-                </Col>
-                <Col lg={8} md={8} sm={8} xs={12}>
-                    <p className='join_title'>Join the world’s work marketplace</p>
-                   <div  className='join_footer_row'>
-                   <Row className="justify-content-lg-between justify-content-md-between">
-                     <hr className='horizontal_line' />
-                      <Col lg={8} md={8} sm={12}>
-                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
-                      </Col>
-                      <Col lg={3} md={3} sm={12}>
-                        <button className='talent_btn'>Find Talent</button>
-                      </Col>
-                    </Row>
-                   </div>
-                </Col>
-              </Row>
-          </Col>
+
+        <div>
+        <Row className='container join_full_container justify-content-center mx-auto'>
+              <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
+                    <Row className="join_work_container justify-content-md-between">
+                    <Col className="d-flex justify-content-start " lg={4} md={4} sm={12} xs={12}>
+                      <img
+                      src="/joinimg.png"
+                      alt="Picture of the author"
+                      className="join_img"
+                      />
+                    </Col>
+                    <Col lg={8} md={8} sm={12} xs={12}>
+                        <p className='join_title'>Join the world’s work marketplace</p>
+                      <div  className='join_footer_row'>
+                      <Row className="justify-content-lg-between justify-content-md-around">
+                        <hr className='horizontal_line' />
+                          <Col lg={8} md={8} sm={12}>
+                            <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
+                          </Col>
+                          <Col lg={3} md={3} sm={12}>
+                            <button className='talent_btn'>Find Talent</button>
+                          </Col>
+                        </Row>
+                      </div>
+                    </Col>
+                  </Row>
+              </Col>
           </Row>
+        </div>
          
-          <MainFooter/>
+          {/* <MainFooter/> */}
           <div className="table_content_btn_row">
                <button onClick={handleShow} className='table_content_btn'>Table of Content</button>
           </div>
