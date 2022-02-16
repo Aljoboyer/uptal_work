@@ -1,39 +1,8 @@
 import { Row ,Col} from "react-bootstrap";
 import Navbartwo from "../../components/Navbars/Navbartwo";
 import MainFooter from '../../components/Footers/MainFooter'
-<<<<<<< HEAD
 
 export default function Applyjob() {
-=======
-import { createClient } from 'contentful'
-import { useRouter } from 'next/router';
-
-
-export async function getStaticProps() {
-
-  const client = createClient({
-    space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_TOKEN,
-  })
-
-  const res = await client.getEntries({ content_type: "jobs" })
-
-  return {
-    props: {
-      jobs: res.items,
-    },
-    revalidate: 1
-  }
-}
-
-
-
-export default function Applyjob({jobs}) {
-  const router = useRouter()
-    const ClickHandler = (slug) => {
-        router.push(`/jobs/${slug}`)
-    }
->>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
   return (
 <div style={{width: "100%"}}>
     <Row className="mx-auto">
@@ -141,22 +110,7 @@ export default function Applyjob({jobs}) {
                         />
                     </Col>
                 </Row>
-<<<<<<< HEAD
             </div>
-=======
-                <Row className="container mx-auto">
-                <p  className="brand_title">Based on Skills</p>
-                {jobs.map((job)=>{
-                  return(
-                    <Col onClick={()=>{ClickHandler(job.fields.slug)}} key={job.sys.id}>
-                      <img src={'https:' + job.fields.skillLogo.fields.file.url}></img>
-                      <p>{job.fields.skill}</p>
-                    </Col>)
-                  
-                })}
-                </Row>
-            </div> 
->>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
 
             <div className="expact_section">
                 <Row className="container  mx-auto expact_row">
@@ -282,8 +236,4 @@ export default function Applyjob({jobs}) {
     </Row>
 </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
