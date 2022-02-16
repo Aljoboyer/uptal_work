@@ -139,13 +139,12 @@ export default function Applyjob({jobs}) {
                 <Row className="container mx-auto">
                 <p  className="brand_title">Based on Skills</p>
                 {jobs.map((job)=>{
-                  const {skill,skillLogo,slug} = job.fields
                   return(
-                    <Col onClick={()=>{ClickHandler(slug)}}>
-                      <img src={'https:' + skillLogo.fields.file.url}></img>
-                      <p>{skill}</p>
-                    </Col>
-                  )
+                    <Col onClick={()=>{ClickHandler(job.fields.slug)}} key={job.sys.id}>
+                      <img src={'https:' + job.fields.skillLogo.fields.file.url}></img>
+                      <p>{job.fields.skill}</p>
+                    </Col>)
+                  
                 })}
                 </Row>
             </div> 
