@@ -186,7 +186,10 @@
     bottom: 84%;
     z-index: 1;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .details_title{
         font-size: 30px;
@@ -285,11 +288,14 @@
         bottom: 81%;
         z-index: 1;
     }
+<<<<<<< HEAD
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 5px 30px 3px;
         border-radius: 5px;
     }
+=======
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
     .details_title{
@@ -370,7 +376,10 @@
     .horizontal_line{
         margin-left: 10px; 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
     .indicator{
         position: sticky;
         top: 0px;
@@ -440,14 +449,20 @@
         left: 20%;
     }
     .join_img{
+<<<<<<< HEAD
         width: 100%;
         height: 100%;
+=======
+        width: 220px;
+        height: 92%;
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
         border-radius: 5px;
     }
     .join_title{
         font-size: 24px;
         font-weight: 600;
         color: white;
+<<<<<<< HEAD
         margin-top: 20px;
     }
     .join_work_container{
@@ -459,6 +474,14 @@
        
         margin-top: 70px;
         padding-bottom: 20px;
+=======
+        margin-left: 70px;
+    }
+    .join_footer_row{
+        margin-left: 70px;
+        margin-top: 70px;
+        padding-bottom: 10px;
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
     }
     .horizontal_line{
         margin-left: 10px; 
@@ -551,7 +574,11 @@
 
   }
 
+<<<<<<< HEAD
   @media only screen and (min-width:992px) and (max-width: 3021px) {
+=======
+  @media only screen and (min-width:992px) and (max-width: 1321px) {
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 10px 15px 3px;
@@ -570,15 +597,23 @@
         margin-top: 50px;
     }
   }
+<<<<<<< HEAD
   @media only screen and (min-width:1322px) and (max-width: 2000) {
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 10px 30px 3px;
+=======
+  @media only screen and (min-width:1322px) and (max-width: 3000) {
+    .join_work_container{
+        background-color: #1f57c3;
+        padding: 15px 10px 15px 3px;
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
         border-radius: 5px;
     }
     .indicator{
         position: sticky;
         top: 0px;
+<<<<<<< HEAD
         bottom: 91%;
         z-index: 1;
     }
@@ -591,4 +626,15 @@
     .join_img{
         padding-bottom: 10px;
     }
+=======
+        bottom: 90%;
+        z-index: 1;
+    }
+    .join_footer_row{
+        margin-top: 100px;
+    }
+    .talent_btn{
+        margin-top: 50px;
+    }
+>>>>>>> 714ae094f06b3de618bd012ffe08e6bea21ffcb5
   }
