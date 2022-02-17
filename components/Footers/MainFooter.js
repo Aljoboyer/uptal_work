@@ -8,8 +8,13 @@ import { useRouter } from "next/router";
 
 export default function MainFooter() {
     const router = useRouter()
-    const ClickHandler = () => {
-        router.push('/blog')
+    const FooterHandler = (routes) => {
+        if(routes === 'blog'){
+            router.push('/blog')
+        }
+        else if (routes === 'sitemap'){
+            router.push('/sitemap')
+        }
     }
     return (
         <Row className="Footer mx-auto">
@@ -37,7 +42,7 @@ export default function MainFooter() {
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
                             <p className="foter_link fw-bold">Company</p>
-                            <p onClick={ClickHandler} className="foter_link ">Blog</p>
+                            <p onClick={() => FooterHandler('sitemap')}  className="foter_link ">Blog</p>
                             <p className="foter_link ">Press</p>
                             <p className="foter_link ">About Us</p>
                             <p className="foter_link ">Non-Developer Jobs</p>
@@ -75,7 +80,7 @@ export default function MainFooter() {
                 </Col>
                 <Col className="d-flex justify-content-evenly align-items-end" lg={5} md={6} sm={12}>
                     <div className="d-flex ">
-                        <p className="bottomfooter_text ms-2 bottom_text_containertwo">Sitemap</p>
+                        <p onClick={() => FooterHandler('sitemap')} className="bottomfooter_text ms-2 bottom_text_containertwo">Sitemap</p>
                         <p className="bottomfooter_text ms-2 bottom_text_containertwo">Terms of Service</p>
                         <p className="bottomfooter_text ms-2 bottom_text_containertwo">Privacy Policy</p>
                     </div>

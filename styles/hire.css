@@ -33,12 +33,13 @@
   font-weight: 600;
 }
 .hire_blog_inputs{
-  height: 48px;
+  height: 47px;
   width: 280px;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   border: 0.5px solid rgb(182, 182, 182);
   padding-left: 10px;
+  margin-top: 4.5px;
 }
 .hire_blog_developer_btn{
   height: 46.5px;
@@ -157,7 +158,9 @@
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
+  display: inline-block;
   margin-top: 50px;
+  margin-left: 0px;
   
 }
 .accordion_title{

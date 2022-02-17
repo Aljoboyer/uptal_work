@@ -4,8 +4,18 @@ import { faFacebook, faInstagram, faLinkedinIn, faTwitter, faYoutube } from "@fo
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image'
 import logo from '../../public/my-img.png'
+import { useRouter } from "next/router";
 
 export default function Footer() {
+    const router = useRouter()
+    const FooterHandler = (routes) => {
+        if(routes === 'blog'){
+            router.push('/blog')
+        }
+        else if (routes === 'sitemap'){
+            router.push('/sitemap')
+        }
+    }
     return (
         <Row className="Footer mx-auto">
             <Row className="footerbtn_container justify-content-center gy-3">
@@ -42,7 +52,7 @@ export default function Footer() {
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
                             <p className="foter_link fw-bold">Company</p>
-                            <p className="foter_link ">Blog</p>
+                            <p onClick={() => FooterHandler('blog')}  className="foter_link ">Blog</p>
                             <p className="foter_link ">Press</p>
                             <p className="foter_link ">About Us</p>
                             <p className="foter_link ">Non-Developer Jobs</p>
@@ -64,7 +74,7 @@ export default function Footer() {
                      <FontAwesomeIcon className="social_icons" icon={faTwitter} />
                      <FontAwesomeIcon className="social_icons" icon={faYoutube} />
                      <div className="d-flex ">
-                        <p className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</p>
+                        <p onClick={() => FooterHandler('sitemap')}  className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</p>
                         <p className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</p>
                         <p className="bottomfooter_text ms-2 mt-2  bottom_text_containerOne">Privacy Policy</p>
                      </div> 

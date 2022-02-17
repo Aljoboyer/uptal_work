@@ -240,8 +240,6 @@ export default function HireDevelopers({post}) {
             </Row>
          </div>
      
-
-         
          <div>
           <Row className='container join_full_container justify-content-center mx-auto'>
                 <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
@@ -275,7 +273,7 @@ export default function HireDevelopers({post}) {
           <div className='hire_faq_section'>
               <Row className='container justify-content-center mx-auto '>
                 <Row className=' mx-auto hire_faq_row pb-4 pt-4'>
-                    <p className='hire_details_faq ms-4'>Frequently Asked Questions</p>
+                    <p className='hire_details_faq ms-3'>Frequently Asked Questions</p>
                 
                         <Accordion >
                           <Accordion.Item eventKey="0">
@@ -319,7 +317,6 @@ export default function HireDevelopers({post}) {
                 </Row>
             </Row>
           </div>
-
 
             <div className="technology_section">
                 <Row className='container mx-auto'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Row} from 'react-bootstrap'
 import { useRouter } from 'next/router';
-
+import { IoIosArrowForward } from 'react-icons/io';
 
 export default function HireCard({data}) {
 
@@ -13,11 +13,12 @@ export default function HireCard({data}) {
 
   return(
 
-      <Col className='card-colam pb-4 ps-4 pe-4' onClick={ClickHandler} lg={4} md={6} sm={12}>
-          <img className='cards-img' src={'https:' + skillLogo.fields.file.url}  alt={skill} />
-          <p className="blog-title mt-3">{skill}</p>
+      <div className='technology_colam' onClick={ClickHandler} lg={4} md={6} sm={12}>
+          <img className='hire_tech_img' src={'https:' + skillLogo.fields.file.url}  alt={skill} />
+          <p className="technology_text">{skill}</p>
+          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
           {/* <p className="category_text">{category.fields.categoryName}</p> */}
-      </Col>
+      </div>
   )
 }
 {/* <img src={'https:' + thumbnail.fields.file.url} width="100%" height="200px" alt='' /> */}

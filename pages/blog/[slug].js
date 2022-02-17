@@ -202,7 +202,7 @@ export default function Post({post}) {
           </Row>
         </div>
          
-          {/* <MainFooter/> */}
+          <MainFooter/>
           <div className="table_content_btn_row">
                <button onClick={handleShow} className='table_content_btn'>Table of Content</button>
           </div>
