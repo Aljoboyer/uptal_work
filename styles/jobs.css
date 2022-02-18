@@ -31,6 +31,12 @@
 .interested_title{
     color: #206ee9;
 }
+.job_description_section{
+    padding-top: 60px;
+}
+.responsibility_title{
+    padding-top: 30px;
+}
 @media only screen and (min-width: 200px)  and (max-width: 767px) {
     .job_apply_now_btn{
         height: 50px;

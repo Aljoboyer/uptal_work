@@ -187,10 +187,11 @@ export default function HireDevelopers({post}) {
                   </Row>
             </div>
             <div className='job_description_section'>
-              <Row className="container-fluid mx-auto">
-                  <Col lg={7} md={12} sm={12}>
-                    <h3 className='ms-2'>Job Responsibilities</h3>
-                    <p>{documentToReactComponents(jobResponsibilities)}</p>
+              <Row className="container-fluid mx-auto justify-content-center">
+                  <Col lg={8} md={12} sm={12}>
+                    <h3 className='ms-2'>Job description</h3>
+                    <h5 className='ms-2 responsibility_title'>Job responsibilities</h5>
+                    <p className='mt-4'>{documentToReactComponents(jobResponsibilities)}</p>
                     <h3 className='ms-2'>Minimum Requirement</h3>
                     <p>{documentToReactComponents(minimumRequirements)}</p>
                     <div className='interested_job_row'>
@@ -241,24 +242,23 @@ export default function HireDevelopers({post}) {
                 </Row>
             </div>
 
-         <div>
-          <Row className='container-fluid  justify-content-lg-start justify-content-sm-center  justify-content-md-center description_container hire_description_container'>
-              <Col className="table_colam pt-0" lg={2}>
-                <div className='hire_table_content'>
-                    <p className='table_content_title'>TABLE OF CONTENTS</p>
-                    <p>{documentToReactComponents(content,options)}</p>
-                </div>
-              </Col>
-              <Col className='description_colam' lg={10} md={12} sm={12} xs={12}>
-                <div  className='container'>
-                  <p className='description'>{documentToReactComponents(content,main)}</p>
-                </div>
-              </Col>
-          
-            </Row>
-         </div>
+              <div>
+                <Row className='container-fluid  justify-content-lg-start justify-content-sm-center  justify-content-md-center description_container hire_description_container mx-auto'>
+                    <Col className="table_colam pt-0" lg={2}>
+                      <div className='hire_table_content'>
+                          <p className='table_content_title'>TABLE OF CONTENTS</p>
+                          <p>{documentToReactComponents(content,options)}</p>
+                      </div>
+                    </Col>
+                    <Col className='description_colam' lg={10} md={12} sm={12} xs={12}>
+                      <div  className='container'>
+                        <p className='description'>{documentToReactComponents(content,main)}</p>
+                      </div>
+                    </Col>
+                
+                  </Row>
+              </div>
      
-
               <div>
                 <Row className='container-fluid join_full_container justify-content-center mx-auto'>
                       <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
