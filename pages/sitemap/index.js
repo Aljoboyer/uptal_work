@@ -32,7 +32,7 @@ export default function Sitemap() {
                     </div>
                     <div className="sitemap_div">
                         <p onClick={() => SitemapHandler('apply-for-job')}  className="sitemap_colamtitle">Apply for Jobs</p>                    
-                        <p className="sitemap_linktext">Skill-based jobs</p>
+                        <p onClick={() => SitemapHandler('jobs')} className="sitemap_linktext">Skill-based jobs</p>
                         <p className="sitemap_linktext">Month-wise top software jobs</p>
                         <p className="sitemap_linktext">Latest remote developer jobs</p>
                         <p className="sitemap_linktext">Resume guides</p>

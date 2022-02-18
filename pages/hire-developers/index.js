@@ -8,6 +8,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createClient } from 'contentful'
 import { useRouter } from "next/router";
 import { useState } from "react";
+import JobCard from "../../components/JobCard";
 export async function getStaticProps() {
 
   const client = createClient({
@@ -15,16 +16,17 @@ export async function getStaticProps() {
     accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_TOKEN,
   })
 
-  const res = await client.getEntries({ content_type: "hire" })
+  const res = await client.getEntries({ content_type: "jobs" })
 
   return {
     props: {
-      hire: res.items,
+      job: res.items,
     },
     revalidate: 1
   }
 }
-export default function Intro({hire}) {
+export default function Intro({job}) {
+ 
   const [tech, setTech] = useState(false)
   const router = useRouter()
   const TechnologyHandler = (tech) => {

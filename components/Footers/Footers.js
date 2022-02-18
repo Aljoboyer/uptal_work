@@ -15,6 +15,7 @@ export default function Footer() {
         else if (routes === 'sitemap'){
             router.push('/sitemap')
         }
+    
     }
     return (
         <Row className="Footer mx-auto">
@@ -74,7 +75,7 @@ export default function Footer() {
                      <FontAwesomeIcon className="social_icons" icon={faTwitter} />
                      <FontAwesomeIcon className="social_icons" icon={faYoutube} />
                      <div className="d-flex ">
-                        <p onClick={() => FooterHandler('sitemap')}  className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</p>
+                        <p onClick={() => FooterHandler('sitemap')} className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</p>
                         <p className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</p>
                         <p className="bottomfooter_text ms-2 mt-2  bottom_text_containerOne">Privacy Policy</p>
                      </div> 
