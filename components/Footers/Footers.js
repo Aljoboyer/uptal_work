@@ -1,10 +1,13 @@
 import { Row, Col} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedinIn, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image'
 import logo from '../../public/my-img.png'
 import { useRouter } from "next/router";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FaFacebook} from 'react-icons/fa';
+import { AiFillYoutube} from 'react-icons/ai';
+import { GrLinkedinOption} from 'react-icons/gr';
+import { BsInstagram, BsTwitter} from 'react-icons/bs';
 
 export default function Footer() {
     const router = useRouter()
@@ -69,11 +72,11 @@ export default function Footer() {
             </Row>
             <Row className="bottom_footer justify-content-between">
                 <Col lg={5} md={5} sm={12}>
-                     <FontAwesomeIcon className="social_icons" icon={faFacebook} />
-                     <FontAwesomeIcon className="social_icons" icon={faLinkedinIn} />
-                     <FontAwesomeIcon className="social_icons" icon={faInstagram} />
-                     <FontAwesomeIcon className="social_icons" icon={faTwitter} />
-                     <FontAwesomeIcon className="social_icons" icon={faYoutube} />
+                     <FaFacebook className="social_icons" size={25} />
+                     <GrLinkedinOption className="social_icons" size={25} />
+                     <BsInstagram className="social_icons" size={25}/>
+                     <BsTwitter className="social_icons" size={25} />
+                     <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                         <p onClick={() => FooterHandler('sitemap')} className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</p>
                         <p className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</p>
@@ -91,7 +94,7 @@ export default function Footer() {
                 </Col>
                 <Col className="d-flex justify-content-evenly align-items-end" lg={5} md={6} sm={12}>
                     <div className="d-flex ">
-                        <p className="bottomfooter_text ms-2 bottom_text_containertwo">Sitemap</p>
+                        <p onClick={() => FooterHandler('sitemap')} className="bottomfooter_text ms-2 bottom_text_containertwo">Sitemap</p>
                         <p className="bottomfooter_text ms-2 bottom_text_containertwo">Terms of Service</p>
                         <p className="bottomfooter_text ms-2 bottom_text_containertwo">Privacy Policy</p>
                     </div>

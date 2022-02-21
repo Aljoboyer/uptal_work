@@ -24,7 +24,7 @@ export default function Sitemap() {
                         <p onClick={() => SingleSitemapHandler('hire-developers')}  className="sitemap_colamtitle">Hire Remote Developers</p>                    
                         <p onClick={() => SitemapHandler('hire-developers')} className="sitemap_linktext">Hire skill-based developers</p>
                         <p className="sitemap_linktext">Hire location-based developers</p>
-                        <p className="sitemap_linktext">Interview Q/A</p>
+                        <p onClick={() => SitemapHandler('interview-questions')} className="sitemap_linktext">Interview Q/A</p>
                         <p className="sitemap_linktext">Job description templates</p>
                         <p className="sitemap_linktext">Development services</p>
                         <p className="sitemap_linktext">Customer signup</p>

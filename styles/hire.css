@@ -352,7 +352,7 @@
     grid-row-gap: 30px;
   }
   }
-@media only screen and (min-width: 768px) and (max-width:990.5px) {
+@media only screen and (min-width: 768px) and (max-width:990px) {
   .hire_details_banner_section{
     display: none;
   }
@@ -396,7 +396,7 @@
   }
 }
 
-@media only screen and (min-width:990.5px) and (max-width:1220.5px) {
+@media only screen and (min-width:991px) and (max-width:1221px) {
   .technology_div{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
