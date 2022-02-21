@@ -121,6 +121,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible1 && <button className='view_btn' onClick={()=>{setVisible1(!visible1)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible1 && <hr/>
+                  }
                 </>
             )
          },
@@ -181,6 +184,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible2 && <button className='view_btn' onClick={()=>{setVisible2(!visible2)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible2 && <hr/>
+                  }
                 </>
             )
         }
@@ -212,6 +218,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible3 && <button className='view_btn' onClick={()=>{setVisible3(!visible3)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible3 && <hr/>
+                  }
                   </>
               )
            },
@@ -257,6 +266,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible4 && <button className='view_btn' onClick={()=>{setVisible4(!visible4)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible4 && <hr/>
+                  }
                 </>
             )
         },
@@ -302,6 +314,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible5 && <button className='view_btn' onClick={()=>{setVisible5(!visible5)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible5 && <hr/>
+                  }
                   </>
               )
           },
@@ -347,6 +362,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible6 && <button className='view_btn' onClick={()=>{setVisible6(!visible6)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible6 && <hr/>
+                  }
                   </>
               )
            },
@@ -437,6 +455,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible8 && <button className='view_btn' onClick={()=>{setVisible8(!visible8)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible8 && <hr/>
+                  }
                     </>
                 )
             },
@@ -482,6 +503,9 @@ export default function HireDevelopers({post, hire}, {}) {
                 {
                   visible9 && <button className='view_btn' onClick={()=>{setVisible9(!visible9)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                {
+                    visible9 && <hr/>
+                  }
                   </>
               )
            },
@@ -524,22 +548,28 @@ export default function HireDevelopers({post, hire}, {}) {
                   {
                   visible10 || <button className='view_btn' onClick={()=>{setVisible10(!visible10)}}>View Answer <BsArrowRight/></button>
                 }
+              
                 {
                   visible10 && <button className='view_btn' onClick={()=>{setVisible10(!visible10)}}>Hide Answer <BsArrowLeft/></button>
                 }
+                  {
+                    visible10 && <hr/>
+                  }
                   </>
               )
             },
             [BLOCKS.UL_LIST]: (node, next) =>{
                 return(
                     <>
-                    {visible10?<p>{next}</p>:''}
+                   
+                    {visible10? <p>{next}</p>:''}
                     </>
                 )
             },
             [BLOCKS.OL_LIST]: (node, next) =>{
                 return(
                     <>
+                    <hr />
                     {visible10?<p>{next}</p>:''}
                     </>
                 )
