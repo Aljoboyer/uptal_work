@@ -35,7 +35,7 @@ export default function Sitemap() {
                         <p onClick={() => SitemapHandler('jobs')} className="sitemap_linktext">Skill-based jobs</p>
                         <p className="sitemap_linktext">Month-wise top software jobs</p>
                         <p className="sitemap_linktext">Latest remote developer jobs</p>
-                        <p className="sitemap_linktext">Resume guides</p>
+                        <p onClick={() => SitemapHandler('resume')}  className="sitemap_linktext">Resume guides</p>
                         <p className="sitemap_linktext">Developer signup</p>
                         <p className="sitemap_linktext">Jobs for LatAm developers</p>
                     </div>

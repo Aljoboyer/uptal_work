@@ -10,6 +10,7 @@ import Footer from '../../components/Footers/Footers';
 import HireCard from '../../components/HireCard';
 import { BsArrowRight , BsArrowLeft} from 'react-icons/bs';
 import { RiArrowDownSFill} from 'react-icons/ri';
+import QuestionCard from '../../components/QuestionCard';
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -40,6 +41,7 @@ export const getStaticProps = async ({ params }) => {
     'fields.slug': params.slug
   }) 
   const res = await client.getEntries({ content_type: "hire" })
+  const question = await client.getEntries({ content_type: "interviewQuestions" })
 
   if (!items.length) {
     return {
@@ -51,13 +53,13 @@ export const getStaticProps = async ({ params }) => {
   }
   // console.log(res.items)
   return {
-    props: { post: items[0] , hire: res.items},
+    props: { post: items[0] , hire: res.items, question: question.items},
     revalidate: 1
   }
 }
 
 
-export default function HireDevelopers({post, hire}, {}) {
+export default function HireDevelopers({post, hire, question}, {}) {
 
   const [tech, setTech] = useState(false)
   const [show, setShow] = useState(false);
@@ -672,23 +674,25 @@ export default function HireDevelopers({post, hire}, {}) {
 
             <div className="technology_section interview_question">
                 <Row className='container-fluid mx-auto'>
-                  <p className='checkout_title pb-2'>Check out more interview questions</p>
+                <p className="checkout_title">Check out more interview questions</p>
                   <p className="based_text ms-2 mt-4">Based on Skills</p>
                   <div className="technology_div mt-2 hire_tech_div">
-                    {hire?.map(data => (
-                        <HireCard key={data.sys.id} data={data} />
-                    ))}
+                  {question.map(data => (
+                 <QuestionCard key={data.sys.id} data={data} />
+                  ))}
                  </div>
                 </Row>
             </div>
             <div className="technology_section_mobile interview_question">
                   <Row className='container-fluid mx-auto'>
+                  <p className="checkout_title">Check out more interview questions</p>
+
                     <p className="based_text ">Based on Skills</p>
                     <p className="sitemap_based_text">Hire developers based on skill</p>
                     <div className="technology_div mt-2">
-                      {hire?.map(data => (
-                          <HireCard key={data.sys.id} data={data} />
-                      ))}
+                    {question.map(data => (
+                 <QuestionCard key={data.sys.id} data={data} />
+                  ))}
                  </div>
                   </Row>
             </div>
