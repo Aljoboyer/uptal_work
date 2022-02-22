@@ -2,16 +2,16 @@ import { Row ,Col} from "react-bootstrap";
 import HomeHeader from "../components/HomeComponents/HomeHeader";
 import Homeslide from "../components/HomeComponents/Homeslide";
 import { useRouter } from "next/router";
-
+import Link from "next/link";
 export default function Home() {
-  const router = useRouter()
-  const ClickHandler = () => {
-      router.push('/hire-developers')
-  }
-  const ApplyBtnHandler = () => {
-    router.push('/apply-for-job')
+  // const router = useRouter()
+  // const ClickHandler = () => {
+  //     router.push('/hire-developers')
+  // }
+  // const ApplyBtnHandler = () => {
+  //   router.push('/apply-for-job')
     
-  }
+  // }
   // backgroundColor: "#f4f4f6"
   return (
     <div className="homesection" style={{width:"100%", backgroundColor: "#f4f4f6"}}>
@@ -27,7 +27,8 @@ export default function Home() {
                     Uptal lets you hire  vetted  <br />
                     remote developers with  <br />  strong technical and communication skills.
                   </p>
-                    <button onClick={ClickHandler} className="hirebtn">Hire Now</button>
+                    <Link href="/hire-developers"><button  className="hirebtn">Hire Now</button>
+                    </Link>
                 </Col>
                 <Col className="text-center pb-4 ps-3 pe-3  content-colam" lg={4}  md={10} sm={12}>
           
@@ -37,8 +38,10 @@ export default function Home() {
                     Join a community of developers <br />
                     and get full time, long term  <br /> remote jobs with better compensation.
                   </p>
-                    <button onClick={ApplyBtnHandler} className="joinbtn">Apply Now</button>
-                  
+                    <Link href="/apply-for-job">
+                      
+                      <button  className="joinbtn">Apply Now</button>
+                      </Link>
                 </Col>
             </Row>
         </Row>
