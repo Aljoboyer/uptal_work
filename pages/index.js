@@ -39,7 +39,6 @@ export default function Home() {
                     and get full time, long term  <br /> remote jobs with better compensation.
                   </p>
                     <Link href="/apply-for-job">
-                      
                       <button  className="joinbtn">Apply Now</button>
                       </Link>
                 </Col>

@@ -138,7 +138,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   cursor: pointer;
-
+  text-decoration: none;
 }
 .brand_img{
   width: 140px;
@@ -165,16 +165,16 @@
 .homeslide{
   display: none;
 }
-@media only screen and (min-width: 200px)  and (max-width: 322px) {
+@media only screen and (min-width: 200px)  and (max-width: 321px) {
   .website_title{
     /* margin-right: 38px; */
     /* margin-left: 100px; */
     text-align: start;
   }
- .Header_Btn1{
-   /* margin-left: 45px; */
-   text-align: end;
- }
+  .Header_Btn1{
+    margin-left: 170px;
+    text-align: end;
+  }
  .content-colam{
   margin-bottom: 40px;
  
@@ -204,15 +204,11 @@
   cursor: pointer;
 }
 }
-@media only screen and (min-width: 322px)  and (max-width: 430px) {
+@media only screen and (min-width: 322px)  and (max-width: 429px) {
   .homesection{
     margin-left: 15px;
   }
 
- .Header_Btn1{
-   /* margin-left: 75px; */
-   text-align: end;
- }
 
   .maintitle{
     color: #2c3454;
@@ -248,6 +244,10 @@
     opacity: 1;
     cursor: pointer;
   }
+  .Header_Btn1{
+    margin-left: 140px;
+ 
+  }
 }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
   .website_title{
@@ -255,10 +255,10 @@
     /* margin-left: 120px; */
     text-align: start;
   }
- .Header_Btn1{
-   /* margin-left: 75px; */
-   text-align: end;
- }
+  .home_blog_btn{
+    margin-left: 140px;
+    text-align: end;
+  }
   .maintitle{
     color: #2c3454;
     font-size: 25px;
@@ -322,10 +322,10 @@
     background-color: #f4f4f6;
  
   }
-  /* .Header_Btn{
-    margin-left: 0px;
-    margin-right: 15px;
-  } */
+  .home_blog_btn{
+    margin-left: 150px;
+    text-align: end;
+  }
   .homeslide{
     display: block;
   }
@@ -353,11 +353,13 @@
     /* margin-left: 120px; */
     text-align: start;
   }
- .Header_Btn1{
-   /* margin-left: 75px; */
-   margin-left: 0px;
-   text-align: end;
- }
+  .home_brand_section{
+    padding-top: 110px;
+   }
+   .home_blog_btn{
+    margin-left: 110px;
+    text-align: end;
+  }
 }
 @media only screen and (min-width:1016px) and (max-width:1540px){
   .website_title{
@@ -374,7 +376,7 @@
   margin-left: 40px;
 }
 .home_blog_btn{
-  margin-right: 110px;
+  margin-left: 110px;
   text-align: end;
 }
 .home_brand_section{
@@ -387,11 +389,7 @@
     /* margin-left: 120px; */
     text-align: center;
   }
- .Header_Btn1{
-   /* margin-left: 75px; */
-   margin-right: 35px;
-   text-align: end;
- }
+
  /* .home_brand_section{
    padding-top: 20px;
    padding-bottom: 150px;
@@ -407,6 +405,6 @@
   margin-left: 40px;
 }
 .home_blog_btn{
-  margin-right: 90px;
+  margin-left: 90px;
 }
 }
