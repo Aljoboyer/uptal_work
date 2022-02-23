@@ -6,6 +6,7 @@ import logo from '../../public/my-img.png'
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Indicator from "../Indicator";
+import Link from "next/link";
 
 export default function Navbartwo() {
 
@@ -18,21 +19,21 @@ export default function Navbartwo() {
         router.push('/')
     }
     const HireButtonHandler = () =>  {
-      if(router.route === '/hire-developers')
+      if(router.route === '')
       {
-        router.push('https://client.uptal.org/')
+        router.push('')
       }
       else{
-        router.push('/hire-developers')
+        router.push('')
       }
     }
     const ApplyHandler = () => {
       if(router.route === '/apply-for-job')
       {
-        router.push('https://developer.uptal.org/')
+        router.push('')
       }
       else{
-        router.push('/apply-for-job')
+        router.push()
       }
     }
     const BlogHandler = () => {
@@ -41,46 +42,45 @@ export default function Navbartwo() {
   return (
 
      <div  className="navtwo" style={{width: '100%'}}>
-          <Navbar collapseOnSelect expand="lg" bg="" variant="light">
+        <Navbar collapseOnSelect expand="lg" bg="" variant="light">
+        <Navbar.Brand > <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
 
-<Navbar.Brand onClick={ClickHandler}> <p className="navtwo_logo">Uptal.</p> </Navbar.Brand>
+        <Navbar.Toggle className="mb-4" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
+        <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+            
+            </Nav>
+            <div className="nav-itmes">
+            <Nav >
+                <Nav.Link className="mt-2 "> <Link href={router.route === '/apply-for-job' ? 'https://developer.uptal.org/' : '/apply-for-job'}><a className="right-nav-span">Apply As Developer</a></Link> </Nav.Link>
 
-<Navbar.Toggle className="mb-4" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
-<Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
-    
-    </Nav>
-    <div className="nav-itmes">
-    <Nav >
-
-        <Nav.Link onClick={ApplyHandler} className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
-        <Nav.Link className="mx-2" >
-                <button onClick={HireButtonHandler} className="getstarted_btn">Hire Remote Developers</button>
-        </Nav.Link>
-        <Nav.Link onClick={BlogHandler} className="mt-2"> <span className="right-nav-span">Blog</span>
-        </Nav.Link>
                 
-    </Nav>
-    </div>    
-</Navbar.Collapse>      
+                <Nav.Link className="mt-2"> <Link href={router.route === '/hire-developers' ? 'https://client.uptal.org/' : '/hire-developers'}><a className="getstarted_btn">Hire Remote Developers</a></Link> </Nav.Link>
+
+                <Nav.Link onClick={BlogHandler} className="mt-2"> <span className="right-nav-span">Blog</span>
+                </Nav.Link>
+                        
+            </Nav>
+            </div>    
+        </Navbar.Collapse>      
         </Navbar>
         <Offcanvas className="offcanvas_container w-100" show={show} onHide={handleClose} scroll={true} placement="end">
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title onClick={ClickHandler}><img
-          src="/my-img.png"
-          alt="Picture of the author"
-          className="canvas_img"
-        /></Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-
-              <div style={{width: '100%'}}>
-                <button onClick={HireButtonHandler}  className="offcangetstarted_btn">Hire Remote Developers</button>
-                <button onClick={ApplyHandler} className="Applydev_btn">Apply As Developer</button>
-                <button onClick={BlogHandler} className="Login_btn">Blog</button>
-              </div>    
-          </Offcanvas.Body>
-        </Offcanvas>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title><img
+        src="/my-img.png"
+        alt="Picture of the author"
+        className="canvas_img"
+      /></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+   
+            <div style={{width: '100%'}}>
+             <button href='/hire-developers'  className="offcangetstarted_btn">Hire Remote Developers</button>
+             <button href='/apply-for-job' className="Applydev_btn">Apply As Developer</button>
+             <button  className="Login_btn">Login</button>
+            </div>    
+        </Offcanvas.Body>
+      </Offcanvas>
       </div>
     
   );

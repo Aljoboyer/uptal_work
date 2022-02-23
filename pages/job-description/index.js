@@ -3,6 +3,7 @@ import Navbartwo from "../../components/Navbars/Navbartwo";
 import MainFooter from '../../components/Footers/MainFooter'
 import { createClient } from 'contentful'
 import { useRouter } from 'next/router';
+import Link from "next/link";
 
 
 export async function getStaticProps() {
@@ -46,9 +47,11 @@ export default function Applyjob({jobs}) {
                 <p  className="brand_title">Based on Skills</p>
                 {jobs.map((job)=>{
                   return(
-                    <Col onClick={()=>{ClickHandler(job.fields.slug)}} key={job.sys.id}>
+                    <Col  key={job.sys.id}>
+                      <Link href={`/job-description/${job.fields.slug}`}><a >
                       <img src={'https:' + job.fields.skillLogo.fields.file.url}></img>
                       <p>{job.fields.skill}</p>
+                      </a></Link>
                     </Col>)
                   
                 })}

@@ -27,8 +27,7 @@ export default function Home() {
                     Uptal lets you hire  vetted  <br />
                     remote developers with  <br />  strong technical and communication skills.
                   </p>
-                    <Link href="/hire-developers"><button  className="hirebtn">Hire Now</button>
-                    </Link>
+                    <Link  href="/hire-developers"><a className="hirebtn">Hire Now</a></Link>
                 </Col>
                 <Col className="text-center pb-4 ps-3 pe-3  content-colam" lg={4}  md={10} sm={12}>
           
@@ -37,10 +36,8 @@ export default function Home() {
                     <p className="card-pera">
                     Join a community of developers <br />
                     and get full time, long term  <br /> remote jobs with better compensation.
-                  </p>
-                    <Link href="/apply-for-job">
-                      <button  className="joinbtn">Apply Now</button>
-                      </Link>
+                  </p>          
+                     <Link  href="/apply-for-job"><a className="joinbtn">Apply Now</a></Link>
                 </Col>
             </Row>
         </Row>

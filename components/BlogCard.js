@@ -17,12 +17,14 @@ export default function BlogCard({blog}) {
 
   return(
 
-      <Col className='card-colam pb-4 ps-4 pe-4' onClick={ClickHandler} lg={4} md={6} sm={12}>
+      <Col className='card-colam pb-4 ps-4 pe-4' lg={4} md={6} sm={12} >
+          <Link href={`/blog/${slug}`}><a>
           <img className='cards-img' src={'https:' + thumbnail.fields.file.url}  alt='' />
           <p className="blog-title mt-3">{title}</p>
           <p className="blog-content">{intro}</p>
           <p className="date_text">{month} {dates}, {years}</p>
           {/* <p className="category_text">{category.fields.categoryName}</p> */}
+          </a></Link>
       </Col>
   )
 }

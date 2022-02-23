@@ -2,6 +2,7 @@ import { Row ,Col} from "react-bootstrap";
 import Navbartwo from "../../components/Navbars/Navbartwo";
 import MainFooter from '../../components/Footers/MainFooter'
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Sitemap() {
     const router = useRouter()
@@ -19,69 +20,72 @@ export default function Sitemap() {
         <Row className="container-fluid mx-auto">
                 <h2 className="sitemap_title">Uptal Sitemap</h2>
                 <Col className="site_mapcolam" lg={4} md={4} sm={12}>
-                    <p className="sitemap_home">Home</p>
+                    <a className="sitemap_home">Home</a>
                     <div className="sitemap_div">
-                        <p onClick={() => SingleSitemapHandler('hire-developers')}  className="sitemap_colamtitle">Hire Remote Developers</p>                    
-                        <p onClick={() => SitemapHandler('hire-developers')} className="sitemap_linktext">Hire skill-based developers</p>
-                        <p className="sitemap_linktext">Hire location-based developers</p>
-                        <p onClick={() => SitemapHandler('interview-questions')} className="sitemap_linktext">Interview Q/A</p>
-                        <p className="sitemap_linktext">Job description templates</p>
-                        <p className="sitemap_linktext">Development services</p>
-                        <p className="sitemap_linktext">Customer signup</p>
-                        <p className="sitemap_linktext">How to hire</p>
+                        <Link href='/hire-developers'><a className="sitemap_colamtitle">Hire Remote</a></Link> 
+
+                        <Link href='/sitemap/hire-developers'><a className="sitemap_linktext">Hire skill-based developers</a></Link>                 
+                        <a className="sitemap_linktext">Hire location-based developers</a>
+
+                        <Link href='/sitemap/interview-questions'><a className="sitemap_linktext">Interview Q/A</a></Link> 
+
+                        <a className="sitemap_linktext">Job description templates</a>
+                        <a className="sitemap_linktext">Development services</a>
+                        <a className="sitemap_linktext">Customer signup</a>
+                        <a className="sitemap_linktext">How to hire</a>
                     </div>
                     <div className="sitemap_div">
-                        <p onClick={() => SitemapHandler('apply-for-job')}  className="sitemap_colamtitle">Apply for Jobs</p>                    
-                        <p onClick={() => SitemapHandler('jobs')} className="sitemap_linktext">Skill-based jobs</p>
-                        <p className="sitemap_linktext">Month-wise top software jobs</p>
-                        <p className="sitemap_linktext">Latest remote developer jobs</p>
-                        <p onClick={() => SitemapHandler('resume')}  className="sitemap_linktext">Resume guides</p>
-                        <p className="sitemap_linktext">Developer signup</p>
-                        <p className="sitemap_linktext">Jobs for LatAm developers</p>
+                        <Link href='/apply-for-job'><a className="sitemap_colamtitle">Apply for Jobs</a></Link>
+                        <Link href='/sitemap/jobs'><a className="sitemap_linktext">Skill-based jobs</a></Link>             
+                        <a className="sitemap_linktext">Month-wise top software jobs</a>
+                        <a className="sitemap_linktext">Latest remote developer jobs</a>
+                        <Link href='/sitemap/resume'><a className="sitemap_linktext">Resume guides</a></Link> 
+                        <a className="sitemap_linktext">Developer signup</a>
+                        <a className="sitemap_linktext">Jobs for LatAm developers</a>
                     </div>
                 </Col>
                 <Col lg={8} md={8} sm={12}>
                     <Row className="">
                         <Col lg={6} md={6} sm={12}>
                             <div className="sitemap_rightcolam_div">
-                            <p className="sitemap_colamtitle">Uptal Reviews</p> 
-                            <p className="sitemap_linktext">Customer reviews</p>
-                            <p className="sitemap_linktext">Developer reviews</p>
-                            <p className="sitemap_linktext">Developer stories</p>
+                            <a className="sitemap_colamtitle">Uptal Reviews</a> 
+                            <a className="sitemap_linktext">Customer reviews</a>
+                            <a className="sitemap_linktext">Developer reviews</a>
+                            <a className="sitemap_linktext">Developer stories</a>
                             </div>               
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                           <div className="sitemap_rightcolam_div">
-                            <p className="sitemap_colamtitle">Support</p> 
-                            <p className="sitemap_linktext">Contact us</p>
-                            <p className="sitemap_linktext">Developer support</p>
-                            <p className="sitemap_linktext">Customer support</p>
+                            <a className="sitemap_colamtitle">Support</a> 
+                            <a className="sitemap_linktext">Contact us</a>
+                            <a className="sitemap_linktext">Developer support</a>
+                            <a className="sitemap_linktext">Customer support</a>
                           </div> 
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                             <div className="sitemap_rightcolam_div">
-                            <p className="sitemap_colamtitle">Company</p> 
-                            <p onClick={() => SitemapHandler('blog')} className="sitemap_linktext">Blog</p>
-                            <p className="sitemap_linktext">Press</p>
-                            <p className="sitemap_linktext">About us</p>
-                            <p className="sitemap_linktext">Privacy policy</p>
-                            <p className="sitemap_linktext">Terms of service</p>
+                            <a className="sitemap_colamtitle">Company</a> 
+                            <Link href='/sitemap/blog'><a className="sitemap_linktext">Blog</a></Link> 
+                            <a className="sitemap_linktext">Press</a>
+                            <a className="sitemap_linktext">About us</a>
+                            <a className="sitemap_linktext">Privacy policy</a>
+                            <a className="sitemap_linktext">Terms of service</a>
                             </div>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                             <div className="sitemap_rightcolam_div">
-                            <p className="sitemap_colamtitle">Social Media</p> 
-                            <p className="sitemap_linktext">Twitter</p>
-                            <p className="sitemap_linktext">LinkedIn</p>
-                            <p className="sitemap_linktext">Facebook</p>
-                            <p className="sitemap_linktext">Instagram</p>
-                            <p className="sitemap_linktext">Youtube</p>
+                            <a className="sitemap_colamtitle">Social Media</a> 
+                            <a className="sitemap_linktext">Twitter</a>
+                            <a className="sitemap_linktext">LinkedIn</a>
+                            <a className="sitemap_linktext">Facebook</a>
+                            <a className="sitemap_linktext">Instagram</a>
+                            <a className="sitemap_linktext">Youtube</a>
                             </div>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                             <div className="sitemap_career_div">
-                                <p className="sitemap_colamtitle">Careers</p> 
-                                <p className="sitemap_linktext">Non-developer jobs</p>
+                                <a className="sitemap_colamtitle">Careers</a> 
+                                <a className="sitemap_linktext">Non-developer jobs</a>
                             </div>
                         </Col>
                     </Row>

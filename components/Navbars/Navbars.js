@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logo from '../../public/my-img.png'
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Nabars({navigation}) {
 
@@ -13,24 +14,24 @@ export default function Nabars({navigation}) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const router = useRouter()
-    const ClickHandler = (id) => {
-        router.push('/')
-    }
-    const HireButtonHandler = () =>  {
+    // const ClickHandler = (id) => {
+    //     router.push('/')
+    // }
+    // const HireButtonHandler = () =>  {
 
-        router.push('/hire-developers')
+    //     router.push('/hire-developers')
       
-    }
-    const ApplyHandler = () => {
+    // }
+    // const ApplyHandler = () => {
     
-        router.push('/apply-for-job')
+    //     router.push('/apply-for-job')
       
-    }
+    // }
   return (
     <div style={{width: '100%',}}>
         <Navbar collapseOnSelect expand="lg" bg="" variant="light">
 
-        <Navbar.Brand onClick={ClickHandler}> <p className="navtwo_logo">Uptal.</p> </Navbar.Brand>
+        <Navbar.Brand > <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
        
         <Navbar.Toggle className="mb-4" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,10 +41,9 @@ export default function Nabars({navigation}) {
             <div className="nav-itmes">
             <Nav >
 
-                <Nav.Link onClick={ApplyHandler} className="mt-2 "> <span className="right-nav-span">Apply As Developer</span></Nav.Link>
-                <Nav.Link className="mx-2" >
-                        <button onClick={HireButtonHandler} className="getstarted_btn">Hire Remote Developers</button>
-                </Nav.Link>
+                <Nav.Link  className="mt-2 "> <Link href='/apply-for-job'><a  className="right-nav-span">Apply As Developer</a></Link></Nav.Link>
+                <Nav.Link  className="mt-2 "> <Link href='/hire-developers'><a   className="getstarted_btn">Hire Remote Developers</a></Link></Nav.Link>
+                
                 <Nav.Link  className="mt-2"> <span className="right-nav-span">Login</span>
                 </Nav.Link>
                        
@@ -63,8 +63,8 @@ export default function Nabars({navigation}) {
         <Offcanvas.Body>
    
             <div style={{width: '100%'}}>
-             <button onClick={HireButtonHandler}  className="offcangetstarted_btn">Hire Remote Developers</button>
-             <button onClick={ApplyHandler} className="Applydev_btn">Apply As Developer</button>
+             <button href='/hire-developers'  className="offcangetstarted_btn">Hire Remote Developers</button>
+             <button href='/apply-for-job' className="Applydev_btn">Apply As Developer</button>
              <button  className="Login_btn">Login</button>
             </div>    
         </Offcanvas.Body>

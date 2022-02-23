@@ -2,6 +2,7 @@ import React from 'react';
 import {Col, Row} from 'react-bootstrap'
 import { useRouter } from 'next/router';
 import { IoIosArrowForward } from 'react-icons/io';
+import Link from 'next/link';
 
 export default function QuestionCard({data}) {
 
@@ -14,10 +15,12 @@ export default function QuestionCard({data}) {
   return(
 
       <div className='technology_colam' onClick={ClickHandler} lg={4} md={6} sm={12}>
+          <Link href={`/interview-questions/${slug}`}><a>
           <img className='hire_tech_img' src={'https:' + skillLogo.fields.file.url}  alt={skill} />
           <p className="technology_text">{skill}</p>
           <IoIosArrowForward className="hire_arrow_icon ms-2"/>
           {/* <p className="category_text">{category.fields.categoryName}</p> */}
+          </a></Link>
       </div>
   )
 }

@@ -1,5 +1,7 @@
 
 .getstarted_btn{
+    text-decoration: none;
+    padding: 12px;
     border-radius: 5px;
     border: none;
     background-color: #206ee9;
@@ -13,8 +15,11 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-}
 
+}
+.getstarted_btn:hover{
+    color: white;
+}
 .getstartright{
     display: block;
 }
@@ -22,12 +27,16 @@
     display: none;
 }
 .right-nav-span{
-    font-size: 15px;
+    font-size: 16px;
     color: #515e72;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    text-decoration: none;
+}
+.right-nav-span:hover{
+    color: #515e72;
 }
 .anchor-text{
     text-decoration: none;
@@ -96,7 +105,7 @@
     text-align: center;
     font-size: 15px;
     color: white;
-    height: 40px;
+    padding: 10px 0px 10px 0px;
     width: 93vw;
     font-weight: 500;
     font-family: 'Charm', cursive;
@@ -104,6 +113,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     display: block;
+    text-decoration: none;
 }
 .Applydev_btn{
     border-radius: 5px;
@@ -112,7 +122,7 @@
     text-align: center;
     font-size: 15px;
     color: #206ee9;
-    height: 40px;
+    padding: 10px 0px 15px 0px;
     width: 93vw;
     font-weight: 500;
     font-family: 'Charm', cursive;
@@ -121,6 +131,7 @@
     font-family: 'Poppins', sans-serif;
     display: block;
     margin-top: 10px;
+    text-decoration: none;
 }
 .Login_btn{
     border-radius: 5px;
@@ -149,6 +160,10 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+.navtwo_logo:hover{
+    color: #000000;
 }
 .canvas_img{
     width: 120px;

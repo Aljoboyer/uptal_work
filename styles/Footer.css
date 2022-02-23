@@ -29,11 +29,15 @@
 .foter_link{
     cursor: pointer;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 35px;
 }
 .foter_link:hover{
     text-decoration: underline;
     transition: 0.8s ease-in-out;
+    color: white;
 }
 .footerbtn_container{
     padding-bottom: 80px;
@@ -41,12 +45,14 @@
 .bottomfooter_text{
     cursor: pointer;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 8px;
+    text-decoration: none;
 }
 .bottomfooter_text:hover{
     text-decoration: underline;
     transition: 0.8s ease-in-out;
+    color: white;
 }
 .social_icons{
     color: rgb(160, 159, 159);
@@ -61,6 +67,7 @@
     padding: 0px;
     margin-bottom: 0px;
     margin-top: 10px;
+    text-decoration: none;
 }
 .bottom_text_containerOne{
     display: none;

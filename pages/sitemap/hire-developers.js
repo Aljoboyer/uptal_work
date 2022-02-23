@@ -4,7 +4,7 @@ import MainFooter from '../../components/Footers/MainFooter'
 import HireCard from "../../components/HireCard";
 import { createClient } from 'contentful'
 import { useRouter } from "next/router";
-
+import Link from 'next/link'
 export async function getStaticProps() {
 
     const client = createClient({
@@ -26,7 +26,7 @@ export default function SitemapHireDevelopers({hire}) {
     const router = useRouter()
 console.log(hire)
     const GoBackHandler = () => {
-        router.push('/sitemap')
+        router.push('')
     }
   return (
 <div style={{width: "100%"}}>
@@ -34,7 +34,7 @@ console.log(hire)
     <Navbartwo/>
         <div className="sitemap_hire_section">  
              <Row className="container mx-auto">
-                 <p onClick={GoBackHandler} className="go_back_btn">Go Back</p>
+            <Link href='/sitemap'><a className="go_back_btn">Go Back</a></Link>
             <p className="sitemap_hire_title">Hire Developers</p>
              <p className="sitemap_based_text">Hire developers based on skill</p>
              <div className="technology_div mt-4">

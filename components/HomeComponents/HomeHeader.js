@@ -14,7 +14,7 @@ export default function HomeHeader() {
               <p className="website_title">Uptal.</p>
           </Col>
           <Col className="mt-3" lg={3} md={3} sm={4} xs={6}>
-             <Link href="/blog"><a className="home_blog_btn Header_Btn1 mt-2">Blog</a></Link>  
+             <Link href="/blog"><a className="home_blog_btn mt-2">Blog</a></Link>  
           </Col>
         </Row>
         </div>

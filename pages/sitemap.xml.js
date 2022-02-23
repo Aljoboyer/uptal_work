@@ -14,13 +14,24 @@ export async function getServerSideProps({ res }){
  
   const re = await client.getEntries({ content_type: "blog" })
   const blogs = re.items
+  const re2 = await client.getEntries({ content_type: "hire" })
+  const hire = re2.items
+  const re3 = await client.getEntries({ content_type: "interviewQuestions" })
+  const questions = re3.items
+  const re4 = await client.getEntries({ content_type: "jobs" })
+  const jobs = re4.items
+  const re5 = await client.getEntries({ content_type: "resumeGuide" })
+  const resume = re5.items
   const extraUrl = ['/index.js',
                     '/blog',
                     '/blog/category/digital-workplace',
                     '/blog/category/diversity-inclusion',
                     '/blog/category/employer-branding',
                     '/blog/category/hiring-tips',
-                    '/blog/category/remote-work'
+                    '/blog/category/remote-work',
+                    '/sitemap/hire-developers',
+                    '/sitemap/interview-questions',
+                    '/sitemap/resume',
                     ]
 
   
@@ -43,6 +54,58 @@ export async function getServerSideProps({ res }){
         return `
             <url>
               <loc>${baseUrl +'/blog/'+(blog.fields.slug)}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          `;
+        
+      }).join("")
+
+      }
+      ${hire.map(blog => {
+        return `
+            <url>
+              <loc>${baseUrl +'/hire/'+(blog.fields.slug)}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          `;
+        
+      }).join("")
+
+      }
+      ${questions.map(blog => {
+        return `
+            <url>
+              <loc>${baseUrl +'/interview-questions/'+(blog.fields.slug)}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          `;
+        
+      }).join("")
+
+      }
+      ${jobs.map(blog => {
+        return `
+            <url>
+              <loc>${baseUrl +'/jobs/'+(blog.fields.slug)}</loc>
+              <lastmod>${new Date().toISOString()}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+          `;
+        
+      }).join("")
+
+      }
+      ${resume.map(blog => {
+        return `
+            <url>
+              <loc>${baseUrl +'/resume/'+(blog.fields.slug)}</loc>
               <lastmod>${new Date().toISOString()}</lastmod>
               <changefreq>monthly</changefreq>
               <priority>1.0</priority>

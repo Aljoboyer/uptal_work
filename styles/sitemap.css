@@ -18,7 +18,11 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: black;
 }
+
 .sitemap_div{
     padding-top: 60px;
 }
@@ -35,19 +39,31 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     padding-top: 40px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.sitemap_home:hover{
+    color: black;
 }
 .sitemap_linktext{
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    text-decoration: none;
+    display: block;
+    color: black;
+    line-height: 40px;
 }
 .sitemap_linktext:hover{
     text-decoration: underline;
+    color: black;
 }
 .sitemap_colamtitle:hover{
     text-decoration: underline;
+    color: black;
 }
 .sitemap_based_text{
     font-size: 22px;
@@ -69,9 +85,12 @@
     padding-bottom: 80px;
 }
 .go_back_btn{
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 .go_back_btn:hover{
     text-decoration: underline;
+    color: black
 }

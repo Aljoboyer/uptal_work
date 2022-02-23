@@ -79,6 +79,10 @@
     margin-left: 10px;
     padding-top: 10px;
     padding-left: 5px;
+    color: black;
+  }
+  .technology_text:hover{
+    color: black;
   }
   .technology_div{
     display: grid;
