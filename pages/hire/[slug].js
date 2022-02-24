@@ -322,8 +322,8 @@ export default function HireDevelopers({post, hire}) {
 
           <div className="technology_section">
               
-              <Row className="container  mt-4">
-              <p className="based_text ms-4">Based on Skills</p>
+              <Row className="container  mt-4 mx-auto">
+              <p className="based_text ms-2">Based on Skills</p>
               <div className="technology_div hire_tech_div">
                 {hire.map(data => (
                     <HireCard key={data.sys.id} data={data} />
