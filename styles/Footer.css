@@ -12,8 +12,14 @@
     background: white;
     border: none;
     border-radius: 2px;
-    height: 40px;
-    width: 90%;
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px 13px 50px;
+
+}
+.remote_btn:hover{
+    text-decoration: none;
+    color: black;
 }
 .apply_btn{
     text-align: center;
@@ -21,10 +27,13 @@
     background: black;
     border: white solid 1px;
     border-radius: 2px;
-    height: 40px;
-    width: 90%;
+    text-decoration: none;
+    padding: 10px 50px 15px 50px;
     color: white;
-
+}
+.apply_btn:hover{
+    text-decoration: none;
+    color: white;
 }
 .foter_link{
     cursor: pointer;
@@ -33,6 +42,16 @@
     text-decoration: none;
     display: block;
     line-height: 35px;
+}
+.foter_link_title{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 35px;
+}
+.foter_link_title:hover{
+    color: white;
 }
 .foter_link:hover{
     text-decoration: underline;
@@ -84,6 +103,9 @@
     display: inline-block;
 
     
+}
+.apply_arrow_icons{
+    color: white;
 }
 .footer_title{
     font-size: 34;

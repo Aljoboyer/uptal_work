@@ -1,5 +1,6 @@
 
 .getstarted_btn{
+   
     text-decoration: none;
     padding: 12px;
     border-radius: 5px;
@@ -15,7 +16,9 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-
+}
+.hire_remote_nav_btn{
+    padding-top: 30px;
 }
 .getstarted_btn:hover{
     color: white;
@@ -34,6 +37,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-decoration: none;
+    margin-top: 15px;
 }
 .right-nav-span:hover{
     color: #515e72;

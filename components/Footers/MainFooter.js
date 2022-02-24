@@ -29,31 +29,31 @@ export default function MainFooter() {
                 <Col lg={10} md={8} sm={12}>
                     <Row className="gy-3  justify-content-center">
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
-                            <a className="foter_link fw-bold">Customers</a>
-                            <a className="foter_link ">Hire Developers</a>
+                            <a className="foter_link_title fw-bold">Customers</a>
+                            <Link href="/hire-developers"><a className="foter_link ">Hire Developers</a></Link>
                             <a className="foter_link ">Book a Call</a>
                             <a className="foter_link ">Hire for Specific Skills</a>
                             <a className="foter_link ">Customer Reviews</a>
                             <a className="foter_link ">How to Hire</a>
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
-                            <a className="foter_link fw-bold">Developers</a>
-                            <a className="foter_link ">Apply for Jobs</a>
+                            <a className="foter_link_title fw-bold">Developers</a>
+                            <Link href="/apply-for-job"><a className="foter_link ">Apply for Jobs</a></Link>
                             <a className="foter_link ">Developer Login</a>
                             <a className="foter_link ">Remote Developer Jobs</a>
                             <a className="foter_link ">Developer Community</a>
                             <a className="foter_link ">Developer Stories</a>
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
-                            <a className="foter_link fw-bold">Company</a>
+                            <a className="foter_link_title fw-bold">Company</a>
                             <Link href='/blog'><a className="foter_link ">Blog</a></Link>
-                            <a className="foter_link ">Press</a>
+                            <a className="foter_link_title">Press</a>
                             <a className="foter_link ">About Us</a>
                             <a className="foter_link ">Non-Developer Jobs</a>
                             <a className="foter_link ">Uptal Reviews</a>
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
-                            <a className="foter_link fw-bold">Contact</a>
+                            <a className="foter_link_title fw-bold">Contact</a>
                             <a className="foter_link ">Contact Us</a>
                             <a className="foter_link ">Help Center</a>
                         </Col>
@@ -63,9 +63,9 @@ export default function MainFooter() {
             <Row className="bottom_footer justify-content-between">
                 <Col lg={5} md={5} sm={12}>
                      <FaFacebook className="social_icons" size={25} />
-                     <GrLinkedinOption className="social_icons" size={25} />
-                     <BsInstagram className="social_icons" size={25}/>
-                     <BsTwitter className="social_icons" size={25} />
+                     <a href="https://www.linkedin.com/company/uptal"><GrLinkedinOption className="social_icons" size={25} /></a>
+                     <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
+                     <a href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
                      <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>

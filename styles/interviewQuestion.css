@@ -10,8 +10,9 @@
 .Question_section{
     padding-top: 80px;
 }
+/* #f4f4f6; */
 .Question_row{
-    background-color: #f4f4f6;
+    background-color:  #f4f4f6; 
     border-radius: 15px;
     padding-top: 70px;
     padding-bottom: 30px;
@@ -47,7 +48,42 @@
   border-radius: 7px;
   padding: 15px;
   position: sticky;
-  top: 100px;
+  top: 78px;
+  background-color: white;
+}
+.silicon_fb{
+  color: #45619d;
+}
+.silicon_linkedin{
+  color: #007ab9;
+  border-radius: 50%;
+}
+.silicon_whatsapp{
+  color: #25d366;
+  border-radius: 55%;
+}
+.silicon_twitter{
+  color: #55acee;
+}
+.silicon_icon_div{
+  display: flex;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  position: sticky;
+  top: 360px;
+  background-color: white;
+  border-radius: 7px;
+}
+.silicon_resume_icon_div{
+  display: flex;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  position: sticky;
+  top: 420px;
+  background-color: white;
+  border-radius: 7px;
 }
 /* #ccc */
 .Questions{
@@ -78,6 +114,9 @@
 }
 .interview_question{
   padding-bottom: 90px;
+}
+.resume_description{
+  padding-bottom: 70px;
 }
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
  .interview_q_btn{

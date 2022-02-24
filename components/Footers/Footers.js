@@ -7,7 +7,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FaFacebook} from 'react-icons/fa';
 import { AiFillYoutube} from 'react-icons/ai';
 import { GrLinkedinOption} from 'react-icons/gr';
-import { BsInstagram, BsTwitter} from 'react-icons/bs';
+import { BsInstagram, BsTwitter, BsArrowRight} from 'react-icons/bs';
 import Link from "next/link";
 
 export default function Footer() {
@@ -16,12 +16,12 @@ export default function Footer() {
         <Row className="Footer mx-auto">
             <Row className="footerbtn_container justify-content-center gy-3">
                 <p className="footer_title text-center">Join Uptal to unleash the world’s <br /> untapped human potential</p>
-                <Col className="text-center" lg={3} md={5} sm={12}>
-                    <button className="remote_btn ms-4">Hire Remote Developers<FontAwesomeIcon className="remote_arrow_icons ms-2" icon={faArrowRight} /></button>
+                <Col className="d-flex justify-content-sm-center" lg={3} md={5} sm={12}>
+                <Link href="/hire-developers"><a className="remote_btn">Apply as a Developer<BsArrowRight className="remote_arrow_icons ms-2"  /></a></Link>
                 </Col>
                 <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-2">OR</p></Col>
                 <Col className="d-flex justify-content-sm-center"  lg={3} md={5} sm={12}>
-                    <button className="apply_btn  ">Apply as a Developer  <FontAwesomeIcon className="apply_arrow_icons ms-2" icon={faArrowRight} /></button> 
+                <Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer<BsArrowRight className="apply_arrow_icons ms-2"  /></a></Link>
                 </Col>
             </Row>
             <Row className="footerlink_container pb-3 mx-auto ">
@@ -32,7 +32,7 @@ export default function Footer() {
                     <Row className="gy-3  justify-content-center">
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
                             <a className="foter_link fw-bold">Customers</a>
-                            <a className="foter_link ">Hire Developers</a>
+                            <Link href="/hire-developers"><a className="foter_link ">Hire Developers</a></Link>
                             <a className="foter_link ">Book a Call</a>
                             <a className="foter_link ">Hire for Specific Skills</a>
                             <a className="foter_link ">Customer Reviews</a>
@@ -40,7 +40,7 @@ export default function Footer() {
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
                             <a className="foter_link fw-bold">Developers</a>
-                            <a className="foter_link ">Apply for Jobs</a>
+                            <Link href="/apply-for-job"><a className="foter_link ">Apply for Jobs</a></Link>
                             <a className="foter_link ">Developer Login</a>
                             <a className="foter_link ">Remote Developer Jobs</a>
                             <a className="foter_link ">Developer Community</a>
@@ -65,9 +65,9 @@ export default function Footer() {
             <Row className="bottom_footer justify-content-between">
                 <Col lg={5} md={5} sm={12}>
                      <FaFacebook className="social_icons" size={25} />
-                     <GrLinkedinOption className="social_icons" size={25} />
-                     <BsInstagram className="social_icons" size={25}/>
-                     <BsTwitter className="social_icons" size={25} />
+                     <a href="https://www.linkedin.com/company/uptal"><GrLinkedinOption className="social_icons" size={25} /></a>
+                     <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
+                     <a href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
                      <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>

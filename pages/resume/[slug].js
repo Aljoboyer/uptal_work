@@ -10,6 +10,9 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { useRouter } from "next/router";
 import { Button, TextField } from '@mui/material';
 import Footer from '../../components/Footers/Footers';
+import {  BsLinkedin} from 'react-icons/bs';
+import { FaFacebook, FaWhatsappSquare} from 'react-icons/fa';
+import { AiFillTwitterCircle} from 'react-icons/ai';
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -158,6 +161,8 @@ export default function HireDevelopers({post}) {
                       </div>
                       <div className='mt-3'>
                       <button className="interview_q_btn">Apply for {skill} jobs</button>
+                      <p className='mt-4'>Looking for a React JS developer job?<span className='text-primary ms-2'>Try Uptal jobs</span></p>
+
                       </div>
                     </Col>
                     <Col lg={4} md={6} sm={6} xs={12}>
@@ -184,12 +189,25 @@ export default function HireDevelopers({post}) {
                   </Row>
             </div>
 
-            <div className='Question_section'>
+            <div className='Question_section resume_description'>
               <Row className='Question_row container-fluid mx-auto ' >
                   <Col  lg={8} md={8} sm={12}>
                     <p>{documentToReactComponents(content)}</p>
                   </Col>
-
+                  <Col lg={4} md={4} sm={12}>
+                  <div className='silicon_div'>
+                      <p className='silicon_title'>Hire Silicon Valley-caliber {skill} developers at half the cost</p>
+                      <p className='silicon_text'>Uptal helps companies match with top-quality {skill} developers from across the world in a matter of days. Scale your engineering team with pre-vetted {skill} developers at the push of a button.</p>
+                      <button className="silicon_btn">Hire Developer</button>
+                      </div>
+                       <div className='silicon_resume_icon_div'>
+                        <p className='mt-2 '>Search Job</p>
+                          <FaFacebook className="silicon_fb mx-2" size={35} />
+                          <BsLinkedin className="silicon_linkedin" size={35} />
+                          <AiFillTwitterCircle className="silicon_twitter mx-2" size={40} />
+                          <FaWhatsappSquare className="silicon_whatsapp" size={40} />
+                      </div>
+                  </Col>
               </Row>
             </div>
   
