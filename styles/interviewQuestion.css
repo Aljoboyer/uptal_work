@@ -47,8 +47,6 @@
   box-shadow: #b8b8b840 0px 14px 28px, #b8b8b840 0px 10px 10px;
   border-radius: 7px;
   padding: 15px;
-  position: sticky;
-  top: 78px;
   background-color: white;
 }
 .silicon_fb{
@@ -58,9 +56,8 @@
   color: #007ab9;
   border-radius: 50%;
 }
-.silicon_whatsapp{
-  color: #25d366;
-  border-radius: 55%;
+.silicon_insta{
+  color: #f4514a;
 }
 .silicon_twitter{
   color: #55acee;
@@ -70,8 +67,6 @@
   margin-top: 20px;
   padding-top: 10px;
   padding-left: 20px;
-  position: sticky;
-  top: 360px;
   background-color: white;
   border-radius: 7px;
 }
@@ -80,17 +75,20 @@
   margin-top: 20px;
   padding-top: 10px;
   padding-left: 20px;
-  position: sticky;
-  top: 420px;
-  background-color: white;
   border-radius: 7px;
+  background-color: white;
 }
 /* #ccc */
 .Questions{
   border: solid #ccc  1px;
   padding: 10px 20px 10px 20px;
   border-radius: 8px;
+}
+/*  */
 
+.sticky_silicon_div{
+  position: sticky;
+  top: 100px;
 }
 .question_heading{
   font-size: 18px;

@@ -10,7 +10,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { useRouter } from "next/router";
 import { Button, TextField } from '@mui/material';
 import Footer from '../../components/Footers/Footers';
-import {  BsLinkedin} from 'react-icons/bs';
+import {  BsLinkedin, BsInstagram} from 'react-icons/bs';
 import { FaFacebook, FaWhatsappSquare} from 'react-icons/fa';
 import { AiFillTwitterCircle} from 'react-icons/ai';
 
@@ -195,18 +195,21 @@ export default function HireDevelopers({post}) {
                     <p>{documentToReactComponents(content)}</p>
                   </Col>
                   <Col lg={4} md={4} sm={12}>
+                  <div className='sticky_silicon_div'>
                   <div className='silicon_div'>
                       <p className='silicon_title'>Hire Silicon Valley-caliber {skill} developers at half the cost</p>
                       <p className='silicon_text'>Uptal helps companies match with top-quality {skill} developers from across the world in a matter of days. Scale your engineering team with pre-vetted {skill} developers at the push of a button.</p>
                       <button className="silicon_btn">Hire Developer</button>
                       </div>
-                       <div className='silicon_resume_icon_div'>
+                      <div className='silicon_resume_icon_div'>
                         <p className='mt-2 '>Search Job</p>
-                          <FaFacebook className="silicon_fb mx-2" size={35} />
-                          <BsLinkedin className="silicon_linkedin" size={35} />
-                          <AiFillTwitterCircle className="silicon_twitter mx-2" size={40} />
-                          <FaWhatsappSquare className="silicon_whatsapp" size={40} />
+                          <FaFacebook className="silicon_fb mx-2 silicon_icons" size={35} />
+                          <a href="https://www.linkedin.com/company/uptal"><BsLinkedin className="silicon_linkedin silicon_icons" size={35} /></a>
+                          <a href="https://twitter.com/uptalorg"><AiFillTwitterCircle className="silicon_twitter mx-2 silicon_icons" size={40} /></a>
+                          <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="silicon_insta silicon_icons" size={35}/></a>
+
                       </div>
+                  </div>
                   </Col>
               </Row>
             </div>

@@ -20,7 +20,7 @@ export default function Sitemap() {
         <Row className="container-fluid mx-auto">
                 <h2 className="sitemap_title">Uptal Sitemap</h2>
                 <Col className="site_mapcolam" lg={4} md={4} sm={12}>
-                    <a className="sitemap_home">Home</a>
+                    <Link href="/"><a className="sitemap_home">Home</a></Link>
                     <div className="sitemap_div">
                         <Link href='/hire-developers'><a className="sitemap_colamtitle">Hire Remote</a></Link> 
 
@@ -28,8 +28,7 @@ export default function Sitemap() {
                         <a className="sitemap_linktext">Hire location-based developers</a>
 
                         <Link href='/sitemap/interview-questions'><a className="sitemap_linktext">Interview Q/A</a></Link> 
-
-                        <a className="sitemap_linktext">Job description templates</a>
+                        <Link href="/sitemap/job-description"><a className="sitemap_linktext">Job description templates</a></Link>
                         <a className="sitemap_linktext">Development services</a>
                         <a className="sitemap_linktext">Customer signup</a>
                         <a className="sitemap_linktext">How to hire</a>

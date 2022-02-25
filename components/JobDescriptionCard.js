@@ -1,21 +1,15 @@
 import React from 'react';
-import {Col, Row} from 'react-bootstrap'
-import { useRouter } from 'next/router';
 import { IoIosArrowForward } from 'react-icons/io';
 import Link from 'next/link';
 
-export default function QuestionCard({data}) {
+export default function JobDescriptionCard({data}) {
 
     const {skill, skillLogo, slug} = data.fields
-    const router = useRouter()
-    const ClickHandler = () => {
-        router.push(`/interview-questions/${slug}`)
-    }
 
   return(
 
-      <div className='technology_colam'  lg={4} md={6} sm={12}>
-          <Link href={`/interview-questions/${slug}`}><a>
+      <div className='technology_colam' lg={4} md={6} sm={12}>
+          <Link href={`/job-description/${slug}`}><a>
           <img className='hire_tech_img' src={'https:' + skillLogo.fields.file.url}  alt={skill} />
           <p className="technology_text">{skill}</p>
           <IoIosArrowForward className="hire_arrow_icon ms-2"/>

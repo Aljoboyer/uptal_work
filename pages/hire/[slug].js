@@ -36,6 +36,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const res = await client.getEntries({ content_type: "hire" })
+  const blogs = await client.getEntries({ content_type: "blog" })
+
+  // console.log(blogs.items)
 
   const { items } = await client.getEntries({
     content_type: 'hire',
