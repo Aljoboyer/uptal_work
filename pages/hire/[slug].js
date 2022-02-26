@@ -328,18 +328,18 @@ export default function HireDevelopers({post, hire}) {
               <Row className="container  mt-4 mx-auto">
               <p className="based_text ms-2">Based on Skills</p>
               <div className="technology_div hire_tech_div">
-                {hire.map(data => (
-                    <HireCard key={data.sys.id} data={data} />
-                ))}
+              {hire.map((data) => {
+                    return <HireCard key={data.sys.id} data={data} />
+                })}
             </div>
               </Row>
               </div>
             <div className="technology_section_mobile">
                   <p className="based_text ">Based on Skills</p>
                   <div className="technology_div ">
-                {hire.map(data => (
-                    <HireCard key={data.sys.id} data={data} />
-                ))}
+                {hire.map((data) => {
+                    return <HireCard key={data.sys.id} data={data} />
+                })}
             </div>
                 {tech === false ? <p onClick={() => setTech(true)} className="see_more mt-3">+ See more positions</p> : <p onClick={() => setTech(false)} className="see_more mt-3">- See more positions</p>}
             </div>
