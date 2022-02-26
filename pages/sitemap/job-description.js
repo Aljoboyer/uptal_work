@@ -23,8 +23,6 @@ export async function getStaticProps() {
   }
 }
 
-
-
 export default function Applyjob({jobs}) {
   const router = useRouter()
     const ClickHandler = (slug) => {
@@ -40,9 +38,9 @@ export default function Applyjob({jobs}) {
             <p className="sitemap_hire_title">Hire Developers</p>
              <p className="sitemap_based_text">Hire developers based on skill</p>
              <div className="technology_div mt-4">
-                {jobs.map(data => (
-                    <JobDescriptionCard key={data.sys.id} data={data} />
-                ))}
+                {jobs.map(data => {
+                    return <JobDescriptionCard key={data.sys.id} data={data} />
+                })}
             </div>
              </Row>
         </div>

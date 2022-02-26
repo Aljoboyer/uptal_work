@@ -599,7 +599,7 @@ export default function HireDevelopers({post, hire, question}, {}) {
                         <p className='hire_banner_text'>{titleIntro}</p>
                       </div>
                       <div className='mt-3'>
-                      <button className="interview_q_btn">Hire {skill} Developer</button>
+                      <a href='https://client.uptal.org/'><button className="interview_q_btn">Hire {skill} Developer</button></a>
                       <p className='mt-4'>Looking for a {skill} developer job?<span className='text-primary ms-2'>Try Uptal jobs</span></p>
                       </div>
                     </Col>
@@ -620,14 +620,14 @@ export default function HireDevelopers({post, hire, question}, {}) {
                         <p className='blog_detailsone'>{titleIntro}</p>
                       </div>
                       <div  className='mt-3'>
-                      <button className="interview_q_btn">Hire {skill} Developer</button>
-                      <p className='mt-4'>Looking for a {skill} developer job?<span className='text-primary'>Try Turing jobs</span></p>
+                        <a href='https://client.uptal.org/'><button className="interview_q_btn">Hire {skill} Developer</button></a>
+                      <p className='mt-4'>Looking for a {skill} developer job?<span className='text-primary'>Try Upal jobs</span></p>
                       </div>
                     </Col>
                    
                   </Row>
             </div>
-
+            
             <div className='Question_section'>
               <Row className='Question_row container-fluid mx-auto' >
                   <Col lg={8} md={8} sm={12}>
@@ -669,7 +669,7 @@ export default function HireDevelopers({post, hire, question}, {}) {
                   <div className='silicon_div'>
                       <p className='silicon_title'>Hire Silicon Valley-caliber {skill} developers at half the cost</p>
                       <p className='silicon_text'>Uptal helps companies match with top-quality {skill} developers from across the world in a matter of days. Scale your engineering team with pre-vetted {skill} developers at the push of a button.</p>
-                      <button className="silicon_btn">Hire Developer</button>
+                       <a  href='https://client.uptal.org/'><button className="silicon_btn">Hire Developer</button></a>
                       </div>
                       <div className='silicon_resume_icon_div'>
                         <p className='mt-2 '>Search Job</p>
@@ -689,9 +689,9 @@ export default function HireDevelopers({post, hire, question}, {}) {
                 <p className="checkout_title">Check out more interview questions</p>
                   <p className="based_text ms-2 mt-4">Based on Skills</p>
                   <div className="technology_div mt-2 hire_tech_div">
-                  {question.map(data => (
-                 <QuestionCard key={data.sys.id} data={data} />
-                  ))}
+                  {question.map(data => {
+                      return <QuestionCard key={data.sys.id} data={data} />
+                  })}
                  </div>
                 </Row>
             </div>
@@ -702,9 +702,9 @@ export default function HireDevelopers({post, hire, question}, {}) {
                     <p className="based_text ">Based on Skills</p>
                     <p className="sitemap_based_text">Hire developers based on skill</p>
                     <div className="technology_div mt-2">
-                    {question.map(data => (
-                 <QuestionCard key={data.sys.id} data={data} />
-                  ))}
+                    {question.map(data => {
+                      return <QuestionCard key={data.sys.id} data={data} />
+                  })}
                  </div>
                   </Row>
             </div>

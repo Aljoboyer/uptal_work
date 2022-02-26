@@ -102,6 +102,10 @@
     color: white;
     font-size: 16px;
     padding: 5px 0px 5px 0px;
+    text-decoration: none;
+}
+.talent_btn:hover{
+    color: #ffff;
 }
 .join_text{
     font-size: 16px;

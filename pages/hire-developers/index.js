@@ -9,6 +9,7 @@ import { createClient } from 'contentful'
 import { useRouter } from "next/router";
 import { useState } from "react";
 import JobCard from "../../components/JobCard";
+import Link from 'next/link'
 export async function getStaticProps() {
 
   const client = createClient({
@@ -710,8 +711,8 @@ export default function Intro({job}) {
                             <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                           </Col>
                           <Col lg={3} md={3} sm={12}>
-                            <button className='talent_btn'>Find Talent</button>
-                          </Col>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                            </Col>
                         </Row>
                       </div>
                     </Col>

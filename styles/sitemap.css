@@ -94,3 +94,10 @@
     text-decoration: underline;
     color: black
 }
+
+@media only screen and (max-width: 1000px) {
+    .sitemap_main_div{
+        width: 100%;
+        padding-bottom: 80px;
+    }
+}

@@ -17,7 +17,7 @@ export default function Footer() {
             <Row className="footerbtn_container justify-content-center gy-3">
                 <p className="footer_title text-center">Join Uptal to unleash the world’s <br /> untapped human potential</p>
                 <Col className="d-flex justify-content-sm-center" lg={3} md={5} sm={12}>
-                <Link href="/hire-developers"><a className="remote_btn">Apply as a Developer<BsArrowRight className="remote_arrow_icons ms-2"  /></a></Link>
+                <Link href="/hire-developers"><a className="remote_btn">Hire remote developers<BsArrowRight className="remote_arrow_icons ms-2"  /></a></Link>
                 </Col>
                 <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-2">OR</p></Col>
                 <Col className="d-flex justify-content-sm-center"  lg={3} md={5} sm={12}>
@@ -71,8 +71,10 @@ export default function Footer() {
                      <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>
-                        <a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</a>
-                        <a className="bottomfooter_text ms-2 mt-2  bottom_text_containerOne">Privacy Policy</a>
+                        <Link href='/terms-of-service'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</a></Link>
+
+                        <Link href='/policy'><a className="bottomfooter_text ms-2 mt-2  bottom_text_containerOne">Privacy Policy</a></Link>
+                        
                      </div> 
                 </Col>
                 <Col  lg={5} md={5} sm={12}>
@@ -87,9 +89,10 @@ export default function Footer() {
                 <Col className="d-flex justify-content-evenly align-items-end" lg={5} md={6} sm={12}>
                     <div className="d-flex ">
                         <Link href='/sitemap'><a className="bottomfooter_text ms-2 bottom_text_containertwo">Sitemap</a></Link>
+                        <Link href='/terms-of-service'><a className="bottomfooter_text ms-2 bottom_text_containertwo">Terms of Service</a></Link>
 
-                        <a className="bottomfooter_text ms-2 bottom_text_containertwo">Terms of Service</a>
-                        <a className="bottomfooter_text ms-2 bottom_text_containertwo">Privacy Policy</a>
+                        <Link href='/policy'><a className="bottomfooter_text ms-2 bottom_text_containertwo">Privacy Policy</a></Link>
+                    
                     </div>
                 </Col>
             </Row>

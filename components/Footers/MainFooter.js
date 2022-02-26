@@ -69,8 +69,9 @@ export default function MainFooter() {
                      <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>
-                        <a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</a>
-                        <a className="bottomfooter_text ms-2 mt-2  bottom_text_containerOne">Privacy Policy</a>
+                        <Link href='/terms-of-service'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</a></Link>
+                        
+                        <Link href='/policy'><a className="bottomfooter_text ms-2 mt-2  bottom_text_containerOne">Privacy Policy</a></Link>
                      </div> 
                 </Col>
                 <Col  lg={5} md={5} sm={12}>
@@ -85,9 +86,9 @@ export default function MainFooter() {
                 <Col className="d-flex justify-content-evenly align-items-end" lg={5} md={6} sm={12}>
                     <div className="d-flex ">
                         <Link href='/sitemap'><a className="bottomfooter_text ms-2 bottom_text_containertwo">Sitemap</a></Link>
-
-                        <a className="bottomfooter_text ms-2 bottom_text_containertwo">Terms of Service</a>
-                        <a className="bottomfooter_text ms-2 bottom_text_containertwo">Privacy Policy</a>
+                        <Link href='/terms-of-service'><a className="bottomfooter_text ms-2 bottom_text_containertwo">Terms of Service</a></Link> 
+                        
+                        <Link href='/policy'><a className="bottomfooter_text ms-2 bottom_text_containertwo">Privacy Policy</a></Link>
                     </div>
                 </Col>
             </Row>

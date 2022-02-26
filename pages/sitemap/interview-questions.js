@@ -41,9 +41,9 @@ export default function InterviewQuestion({jobs}) {
          <p className="sitemap_hire_title">Interview questions and answers</p>
           <p className="sitemap_based_text">Based on skill</p>
           <div className="technology_div mt-4">
-             {jobs.map(data => (
-                 <QuestionCard key={data.sys.id} data={data} />
-             ))}
+             {jobs.map(data => {
+               return  <QuestionCard key={data.sys.id} data={data} />
+            })}
          </div>
          
           </Row>

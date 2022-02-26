@@ -38,9 +38,9 @@ export default function Blog({ blogs }) {
      <Filteritem />
     
       <Row className="mx-auto mt-3">
-          {blogs.map(blog => (
-            <BlogCard key={blog.sys.id} blog={blog} />
-          ))}
+          {blogs.map(blog => {
+            return <BlogCard key={blog.sys.id} blog={blog} />
+          })}
       </Row>
       <Footer/>
     </Row>

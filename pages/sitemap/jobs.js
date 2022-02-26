@@ -38,9 +38,10 @@ export default function SitemapHireDevelopers({job}) {
             <p className="sitemap_hire_title">Remote US software jobs</p>
              <p className="sitemap_based_text">Remote software developer jobs based on skill</p>
              <div className="technology_div mt-4">
-                {job.map(data => (
-                    <JobCard key={data.sys.id} data={data} />
-                ))}
+                {job.map(data => {
+                 return <JobCard key={data.sys.id} data={data} />
+                }
+                )}
             </div>
              </Row>
         </div>

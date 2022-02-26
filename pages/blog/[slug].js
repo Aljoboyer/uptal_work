@@ -8,6 +8,7 @@ import { Row, Col, Offcanvas} from "react-bootstrap";
 import MainFooter from '../../components/Footers/MainFooter';
 import { useRouter } from "next/router";
 import Indicator from '../../components/Indicator';
+import Link from 'next/link';
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -192,8 +193,8 @@ export default function Post({post}) {
                             <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                           </Col>
                           <Col lg={3} md={3} sm={12}>
-                            <button className='talent_btn'>Find Talent</button>
-                          </Col>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                            </Col>
                         </Row>
                       </div>
                     </Col>

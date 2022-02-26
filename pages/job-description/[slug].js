@@ -161,7 +161,7 @@ export default function HireDevelopers({post}) {
                       </div>
                       <div className='mt-3'>
                       <input type="text" className="hire_blog_inputs" placeholder='Your work Email'/>
-                      <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
+                      <a  href='https://client.uptal.org/'><button className="hire_blog_developer_btn">Hire {skill} Developer</button></a>
                       </div>
                     </Col>
                     <Col lg={4} md={6} sm={6} xs={12}>
@@ -182,7 +182,7 @@ export default function HireDevelopers({post}) {
                       </div>
                       <div  className='mt-3'>
                       <input type="text" className="hire_blog_inputs" placeholder='Your work Email'/>
-                      <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
+                      <a  href='https://client.uptal.org/'><button className="hire_blog_developer_btn">Hire {skill} Developer</button></a>
                       </div>
                     </Col>
                    
@@ -199,7 +199,8 @@ export default function HireDevelopers({post}) {
                       <div className='silicon_div'>
                       <p className='silicon_title'>Hire Silicon Valley-caliber {skill} developers at half the cost</p>
                       <p className='silicon_text'>Uptal helps companies match with top-quality {skill} developers from across the world in a matter of days. Scale your engineering team with pre-vetted {skill} developers at the push of a button.</p>
-                      <button className="silicon_btn">Hire Developer</button>
+                      
+                      <a  href='https://client.uptal.org/'><button className="silicon_btn">Hire Developer</button></a>
                       </div>
                        <div className='silicon_resume_icon_div'>
                         <p className='mt-2 '>Search Job</p>

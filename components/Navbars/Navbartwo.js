@@ -15,7 +15,7 @@ export default function Navbartwo() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const router = useRouter()
-
+console.log('router.route', router.route)
   return (
 
      <div  className="navtwo" style={{width: '100%'}}>
@@ -29,17 +29,12 @@ export default function Navbartwo() {
             </Nav>
             <div className="nav-itmes">
             <Nav >
-              <Nav.Link className="mt-2 "> 
-              <Link href={router.route === '/apply-for-job' ? 'https://developer.uptal.org/' : '/apply-for-job'}><a className="right-nav-span">Apply As Developer</a></Link> 
-              </Nav.Link>
-
-              <Nav.Link className="mt-2"> 
+            <Link href={router.route === '/apply-for-job' ? 'https://developer.uptal.org/' : '/apply-for-job'}><a className="right-nav-span">Apply As Developer</a></Link> 
+              
               <Link href={router.route === '/hire-developers' ? 'https://client.uptal.org/' : '/hire-developers'}><a className="getstarted_btn">Hire Remote Developers</a></Link> 
-              </Nav.Link>
-
-              <Nav.Link  className="mt-2"> <Link href='/blog'><a className="right-nav-span">Blog</a></Link>
-              </Nav.Link>
-                        
+         
+             <Link href='/blog'><a className="right-nav-span">Blog</a></Link>
+                 
             </Nav>
             </div>    
         </Navbar.Collapse>      

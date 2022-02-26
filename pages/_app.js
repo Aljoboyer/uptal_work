@@ -8,6 +8,7 @@ import "../styles/foremploye.css";
 import "../styles/hire.css";
 import "../styles/jobs.css";
 import "../styles/sitemap.css";
+import "../styles/termAndService.css";
 import "../styles/interviewQuestion.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

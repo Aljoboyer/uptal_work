@@ -1,7 +1,7 @@
 import { Row ,Col} from "react-bootstrap";
 import Navbartwo from "../../components/Navbars/Navbartwo";
 import MainFooter from '../../components/Footers/MainFooter'
-
+import Link from 'next/link'
 export default function Applyjob() {
   return (
 <div style={{width: "100%"}}>
@@ -196,8 +196,8 @@ export default function Applyjob() {
                             <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                           </Col>
                           <Col lg={3} md={3} sm={12}>
-                            <button className='talent_btn'>Find Talent</button>
-                          </Col>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                            </Col>
                         </Row>
                       </div>
                     </Col>
@@ -224,7 +224,7 @@ export default function Applyjob() {
                           <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
                         </Col>
                         <Col lg={3} md={3} sm={12}>
-                          <button className='talent_btn'>Find Talent</button>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
                         </Col>
                       </Row>
                       </div>

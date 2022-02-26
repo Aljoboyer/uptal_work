@@ -9,13 +9,14 @@
     text-align: center;
     font-size: 15px;
     color: white;
-    height: 40px;
-    width: 200px;
+    height: 48px;
+    width: 250px;
     font-weight: 500;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
 }
 .hire_remote_nav_btn{
     padding-top: 30px;
@@ -37,7 +38,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-decoration: none;
-    margin-top: 15px;
+    margin-top: 12px;
+    margin-right: 10px;
 }
 .right-nav-span:hover{
     color: #515e72;

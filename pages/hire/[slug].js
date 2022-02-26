@@ -163,9 +163,9 @@ export default function HireDevelopers({post, hire}) {
                       </div>
                       <div className='mt-3'>
                       <input type="text" className="hire_blog_inputs" placeholder='Your work Email'/>
-                      <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
+                      <a href='https://client.uptal.org/'><button className="hire_blog_developer_btn">Hire {skill} Developer</button></a>
                       </div>
-                    </Col>
+                    </Col> 
                     <Col lg={4} md={6} sm={6} xs={12}>
                       <img src={'https:' + skillLogo.fields.file.url} className='details_img' />
                     </Col>
@@ -221,9 +221,7 @@ export default function HireDevelopers({post, hire}) {
                         </div>
                     </div>
                     <div className="talk_two_btn_div text-center">
-
-                        <button className="hire_expect_btn mt-3">Remote Developers</button>
-
+                      <a href='https://client.uptal.org/'> <button className="hire_expect_btn mt-3">Remote Developers</button></a>
                     </div>
                 </Row>
             </div>
@@ -265,7 +263,7 @@ export default function HireDevelopers({post, hire}) {
                               <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                             </Col>
                             <Col lg={3} md={3} sm={12}>
-                              <button className='talent_btn'>Find Talent</button>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
                             </Col>
                           </Row>
                         </div>
@@ -341,7 +339,6 @@ export default function HireDevelopers({post, hire}) {
                     return <HireCard key={data.sys.id} data={data} />
                 })}
             </div>
-                {tech === false ? <p onClick={() => setTech(true)} className="see_more mt-3">+ See more positions</p> : <p onClick={() => setTech(false)} className="see_more mt-3">- See more positions</p>}
             </div>
               
             <div className="Based_role_section based_hire_section">

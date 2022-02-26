@@ -38,9 +38,9 @@ console.log(hire)
             <p className="sitemap_hire_title">Hire Developers</p>
              <p className="sitemap_based_text">Hire developers based on skill</p>
              <div className="technology_div mt-4">
-                {hire.map(data => (
-                    <HireCard key={data.sys.id} data={data} />
-                ))}
+                {hire.map(data => {
+                    return <HireCard key={data.sys.id} data={data} />
+                })}
             </div>
              </Row>
         </div>

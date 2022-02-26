@@ -20,7 +20,7 @@ export default function Sitemap() {
         <Row className="container-fluid mx-auto">
                 <h2 className="sitemap_title">Uptal Sitemap</h2>
                 <Col className="site_mapcolam" lg={4} md={4} sm={12}>
-                    <Link href="/"><a className="sitemap_home">Home</a></Link>
+                    <Link href="/"><a className="sitemap_colamtitle mt-4">Home</a></Link>
                     <div className="sitemap_div">
                         <Link href='/hire-developers'><a className="sitemap_colamtitle">Hire Remote</a></Link> 
 

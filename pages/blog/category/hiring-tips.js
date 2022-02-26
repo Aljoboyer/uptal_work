@@ -40,10 +40,10 @@ export default function Blog({ blogs }) {
       <Filteritem />
  
        <Row className="mx-auto mt-3">
-          {blogs.map(blog => (
-              blog.fields.category.fields.categoryName==="Hiring Tips"?
-            <BlogCard key={blog.sys.id} blog={blog} />:""
-          ))}
+          {blogs.map(blog => {
+              return <>{blog.fields.category.fields.categoryName==="Hiring Tips"?
+              <BlogCard key={blog.sys.id} blog={blog} />:""}</>
+            })}
        </Row>
      </Row>
   );

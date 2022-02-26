@@ -40,9 +40,9 @@ export default function ResumeGuide({jobs}) {
          <p className="sitemap_hire_title">Resume guides for remote software developer jobs</p>
           <p className="sitemap_based_text">Based on skill</p>
           <div className="technology_div mt-4">
-             {jobs.map(data => (
-                 <ResumeCard key={data.sys.id} data={data} />
-             ))}
+             {jobs.map(data => {
+                return <ResumeCard key={data.sys.id} data={data} />
+            })}
          </div>
          
           </Row>
