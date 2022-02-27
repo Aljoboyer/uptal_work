@@ -14,19 +14,7 @@ export default function Nabars({navigation}) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const router = useRouter()
-    // const ClickHandler = (id) => {
-    //     router.push('/')
-    // }
-    // const HireButtonHandler = () =>  {
 
-    //     router.push('/hire-developers')
-      
-    // }
-    // const ApplyHandler = () => {
-    
-    //     router.push('/apply-for-job')
-      
-    // }
   return (
     <div style={{width: '100%',}}>
         <Navbar collapseOnSelect expand="lg" bg="" variant="light">

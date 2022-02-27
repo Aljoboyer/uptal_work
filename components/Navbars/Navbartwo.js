@@ -15,7 +15,7 @@ export default function Navbartwo() {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const router = useRouter()
-console.log('router.route', router.route)
+
   return (
 
      <div  className="navtwo" style={{width: '100%'}}>
@@ -29,9 +29,9 @@ console.log('router.route', router.route)
             </Nav>
             <div className="nav-itmes">
             <Nav >
-            <Link href={router.route === '/apply-for-job' ? 'https://developer.uptal.org/' : '/apply-for-job'}><a className="right-nav-span">Apply As Developer</a></Link> 
+            <Link href={router.route === '/apply-for-job' ? 'https://developer.uptal.org/' : '/apply-for-job'}><a target={router.route === '/apply-for-job' ? 'blank' : ''}className="right-nav-span">Apply As Developer</a></Link> 
               
-              <Link href={router.route === '/hire-developers' ? 'https://client.uptal.org/' : '/hire-developers'}><a className="getstarted_btn">Hire Remote Developers</a></Link> 
+              <Link href={router.route === '/hire-developers' ? 'https://client.uptal.org/' : '/hire-developers'} ><a target={router.route === '/hire-developers' ? 'blank' : ''} className="getstarted_btn">Hire Remote Developers</a></Link> 
          
              <Link href='/blog'><a className="right-nav-span">Blog</a></Link>
                  

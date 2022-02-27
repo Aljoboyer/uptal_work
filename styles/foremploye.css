@@ -545,7 +545,7 @@
     }
 }
 
-@media only screen and (min-width:991px) and (max-width:1163px) {
+@media only screen and (min-width:992px) and (max-width:1163px) {
     .employe_title{
         color: #14a800;
         font-size: 45px;

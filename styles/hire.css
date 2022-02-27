@@ -59,8 +59,6 @@
     margin-left: 25px;
 }
 
-
-
   .hire_tech_img{
     width: 28px;
     height: 28px;
@@ -181,6 +179,9 @@
 .hire_based_role_div{
   margin-right: 30px;
 }
+.blog_section{
+  padding-top: 70px;
+}
   @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .hire_details_banner_section{
       display: none;
@@ -242,6 +243,15 @@
     }
     .hire_details_faq{
       font-size: 22px;
+    }
+    .hire_blog_inputs{
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    .hire_blog_developer_btn{
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+  
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -305,6 +315,15 @@
   .hire_details_faq{
     font-size: 22px;
   }
+  .hire_blog_inputs{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .hire_blog_developer_btn{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
+  }
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -355,6 +374,15 @@
     grid-column-gap: 25px;
     grid-row-gap: 30px;
   }
+  .hire_blog_inputs{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .hire_blog_developer_btn{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
+  }
   }
 @media only screen and (min-width: 768px) and (max-width:990px) {
   .hire_details_banner_section{
@@ -398,6 +426,15 @@
     grid-column-gap: 25px;
     grid-row-gap: 30px;
   }
+  .hire_blog_inputs{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .hire_blog_developer_btn{
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
+  }
 }
 
 @media only screen and (min-width:991px) and (max-width:1221px) {
@@ -411,6 +448,16 @@
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
+  }
+  .hire_blog_inputs{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .hire_blog_developer_btn{
+    margin-top: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
   }
 }
 @media only screen and (min-width:1222px) and (max-width:3000px) {

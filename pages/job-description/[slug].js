@@ -13,6 +13,8 @@ import Footer from '../../components/Footers/Footers';
 import {  BsLinkedin, BsInstagram} from 'react-icons/bs';
 import { FaFacebook, FaWhatsappSquare} from 'react-icons/fa';
 import { AiFillTwitterCircle} from 'react-icons/ai';
+import BlogCard from '../../components/BlogCard';
+import RecentBlogCard from '../../components/RecentBlogCard';
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -37,7 +39,8 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  
+  const blogs = await client.getEntries({ content_type: "blog" })
+
   const { items } = await client.getEntries({
     content_type: 'jobDescription',
     'fields.slug': params.slug
@@ -53,18 +56,39 @@ export const getStaticProps = async ({ params }) => {
   }
 
   return {
-    props: { post: items[0] },
+    props: { post: items[0], blogs: blogs.items},
     revalidate: 1
   }
 }
 
 
-export default function HireDevelopers({post}) {
+export default function HireDevelopers({post, blogs}) {
   const [tech, setTech] = useState(false)
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const  TodayDate = new Date();
+  const today = TodayDate.setDate(TodayDate.getDate() - 30);
+  const todaymonth = new Date(today).toLocaleString('default', { month: 'long' });
+  const todaydates = new Date(today).getDate();
+  const todayyears = new Date(today).getFullYear();
+
+  const thisday = `${todaymonth} ${todaydates}, ${todayyears}`
+  const emptyarr = []
+  for(const blog of blogs){
+    const month = new Date(blog.fields.date).toLocaleString('default', { month: 'long' });
+    const dates = new Date(blog.fields.date).getDate();
+    const years = new Date(blog.fields.date).getFullYear();
+
+    if( `${month} ${dates}, ${years}` < thisday) {
+      emptyarr.push(blog)
+  } else {
+      console.log("Second date is more recent");
+  }
+
+  }
+  const filterBlogs = emptyarr.slice(0, 4)
+
   const TechnologyHandler = (tech) => {
     if(tech === 'react')
     {
@@ -76,8 +100,7 @@ export default function HireDevelopers({post}) {
     }
   }
     const { title,skill, skillLogo ,content ,intro} = post.fields;
- 
-    
+
     const headingTypes = [BLOCKS.HEADING_2]
   
   //const headings = content.json.content.filter(item => headingTypes.includes(item.nodeType))
@@ -215,6 +238,13 @@ export default function HireDevelopers({post}) {
               </Row>
             </div>
 
+            <div className='blog_section'>
+            <Row className="container-fluid mx-auto mt-3">
+                  {filterBlogs.map(blog => {
+                return <RecentBlogCard key={blog.sys.id} blog={blog} />
+                  })}
+              </Row>
+            </div>
           <Footer/>
       </Row>
       </div>

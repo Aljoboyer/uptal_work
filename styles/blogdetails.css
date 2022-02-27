@@ -285,7 +285,7 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 81%;
+        bottom: 87%;
         z-index: 1;
     }
     .join_work_container{
@@ -376,7 +376,7 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 81%;
+        bottom: 87%;
         z-index: 1;
     }
   }
@@ -468,7 +468,7 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 81%;
+        bottom: 87%;
         z-index: 1;
     }
   }
@@ -547,13 +547,13 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 81%;
+        bottom: 87%;
         z-index: 1;
     }
 
   }
 
-  @media only screen and (min-width:992px) and (max-width: 3021px) {
+  @media only screen and (min-width:992px) and (max-width: 1321px) {
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 10px 15px 3px;
@@ -562,7 +562,7 @@
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 85%;
+        bottom: 87%;
         z-index: 1;
     }
     .join_footer_row{
@@ -572,25 +572,23 @@
         margin-top: 50px;
     }
   }
-  @media only screen and (min-width:1322px) and (max-width: 2000) {
+  @media only screen and (min-width:1322px) and (max-width: 2000px) {
     .join_work_container{
         background-color: #1f57c3;
-        padding: 15px 10px 30px 3px;
+        padding: 15px 10px 15px 3px;
         border-radius: 5px;
     }
     .indicator{
         position: sticky;
         top: 0px;
-        bottom: 91%;
+        bottom: 88%;
         z-index: 1;
     }
     .join_footer_row{
-        margin-top: 300px;
+        margin-top: 130px;
         }
     .talent_btn{
         margin-top: 50px;
     }
-    .join_img{
-        padding-bottom: 10px;
-    }
+  
   }

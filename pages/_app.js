@@ -9,6 +9,7 @@ import "../styles/hire.css";
 import "../styles/jobs.css";
 import "../styles/sitemap.css";
 import "../styles/termAndService.css";
+import "../styles/contact.css";
 import "../styles/interviewQuestion.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

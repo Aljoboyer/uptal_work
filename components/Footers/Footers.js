@@ -56,7 +56,7 @@ export default function Footer() {
                         </Col>
                         <Col className="justify-content-center" lg={3} md={6} sm={6} xs={6}>
                             <a className="foter_link fw-bold">Contact</a>
-                            <a className="foter_link ">Contact Us</a>
+                            <Link href='/contact'><a className="foter_link ">Contact Us</a></Link>
                             <a className="foter_link ">Help Center</a>
                         </Col>
                     </Row>
