@@ -50,7 +50,7 @@ export default function Footer() {
                             <a className="foter_link fw-bold">Company</a>
                             <Link href='/blog'><a className="foter_link ">Blog</a></Link>
                             <a className="foter_link ">Press</a>
-                            <a className="foter_link ">About Us</a>
+                            <Link href='/about'><a className="foter_link ">About Us</a></Link>
                             <a className="foter_link ">Non-Developer Jobs</a>
                             <a className="foter_link ">Uptal Reviews</a>
                         </Col>

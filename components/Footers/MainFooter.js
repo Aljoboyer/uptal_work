@@ -48,7 +48,7 @@ export default function MainFooter() {
                             <a className="foter_link_title fw-bold">Company</a>
                             <Link href='/blog'><a className="foter_link ">Blog</a></Link>
                             <a className="foter_link_title">Press</a>
-                            <a className="foter_link ">About Us</a>
+                            <Link href='/about'><a className="foter_link ">About Us</a></Link>
                             <a className="foter_link ">Non-Developer Jobs</a>
                             <a className="foter_link ">Uptal Reviews</a>
                         </Col>

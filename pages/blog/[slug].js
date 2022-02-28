@@ -9,6 +9,7 @@ import MainFooter from '../../components/Footers/MainFooter';
 import { useRouter } from "next/router";
 import Indicator from '../../components/Indicator';
 import Link from 'next/link';
+import RecentBlogCard from '../../components/RecentBlogCard';
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -33,11 +34,34 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  
+  const allBlogs = await client.getEntries({ content_type: "blog" })
   const { items } = await client.getEntries({
     content_type: 'blog',
     'fields.slug': params.slug
   }) 
+  const FilterBlog = allBlogs.items.filter(blog => blog.fields.category.fields.categoryName === items[0].fields.category.fields.categoryName);
+  
+  const  TodayDate = new Date();
+  const today = TodayDate.setDate(TodayDate.getDate() - 30);
+  const todaymonth = new Date(today).toLocaleString('default', { month: 'long' });
+  const todaydates = new Date(today).getDate();
+  const todayyears = new Date(today).getFullYear();
+
+  const thisday = `${todaymonth} ${todaydates}, ${todayyears}`
+  const emptyarr = []
+  for(const blog of FilterBlog){
+    const month = new Date(blog.fields.date).toLocaleString('default', { month: 'long' });
+    const dates = new Date(blog.fields.date).getDate();
+    const years = new Date(blog.fields.date).getFullYear();
+
+    if( `${month} ${dates}, ${years}` < thisday) {
+      emptyarr.push(blog)
+  } else {
+      console.log("Second date is more recent");
+  }
+
+  }
+  const recentBlog = emptyarr.slice(0, 4)
 
   if (!items.length) {
     return {
@@ -49,13 +73,13 @@ export const getStaticProps = async ({ params }) => {
   }
 
   return {
-    props: { post: items[0] },
+    props: { post: items[0],  recentBlog: recentBlog },
     revalidate: 1
   }
 }
 
 
-export default function Post({post}) {
+export default function Post({post, recentBlog}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -202,7 +226,13 @@ export default function Post({post}) {
               </Col>
           </Row>
         </div>
-         
+        <div className='blog_section'>
+            <Row className="container-fluid mx-auto mt-3">
+                  {recentBlog.map(blog => {
+                return <RecentBlogCard key={blog.sys.id} blog={blog} />
+                  })}
+              </Row>
+            </div>
           <MainFooter/>
           <div className="table_content_btn_row">
                <button onClick={handleShow} className='table_content_btn'>Table of Content</button>

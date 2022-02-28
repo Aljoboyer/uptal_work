@@ -26,7 +26,6 @@ export async function getStaticProps() {
   }
 }
 
-
 export default function Blog({ blogs }) {
 
 

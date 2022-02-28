@@ -181,6 +181,7 @@
 }
 .blog_section{
   padding-top: 70px;
+  padding-bottom: 50px;
 }
   @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .hire_details_banner_section{
