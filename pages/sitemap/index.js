@@ -6,12 +6,7 @@ import Link from "next/link";
 
 export default function Sitemap() {
     const router = useRouter()
-    const SitemapHandler = (routes) => {
-        router.push(`/sitemap/${routes}`)
-    }
-    const SingleSitemapHandler  = (routes) => {
-        router.push(`/${routes}`)
-    }
+
   return (
 <div style={{width: "100%"}}>
  
@@ -56,7 +51,7 @@ export default function Sitemap() {
                         <Col lg={6} md={6} sm={12}>
                           <div className="sitemap_rightcolam_div">
                             <a className="sitemap_colamtitle">Support</a> 
-                            <a className="sitemap_linktext">Contact us</a>
+                            <Link href="/contact"><a className="sitemap_linktext">Contact us</a></Link>
                             <a className="sitemap_linktext">Developer support</a>
                             <a className="sitemap_linktext">Customer support</a>
                           </div> 
@@ -64,20 +59,20 @@ export default function Sitemap() {
                         <Col lg={6} md={6} sm={12}>
                             <div className="sitemap_rightcolam_div">
                             <a className="sitemap_colamtitle">Company</a> 
-                            <Link href='/sitemap/blog'><a className="sitemap_linktext">Blog</a></Link> 
+                            <Link href='/blog'><a className="sitemap_linktext">Blog</a></Link> 
                             <a className="sitemap_linktext">Press</a>
-                            <a className="sitemap_linktext">About us</a>
-                            <a className="sitemap_linktext">Privacy policy</a>
-                            <a className="sitemap_linktext">Terms of service</a>
+                            <Link href="/about"><a className="sitemap_linktext">About us</a></Link>
+                            <Link href="/policy"><a className="sitemap_linktext">Privacy policy</a></Link>
+                           <Link href="/terms-of-service"><a className="sitemap_linktext">Terms of service</a></Link>
                             </div>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                             <div className="sitemap_rightcolam_div">
                             <a className="sitemap_colamtitle">Social Media</a> 
-                            <a className="sitemap_linktext">Twitter</a>
-                            <a className="sitemap_linktext">LinkedIn</a>
+                            <a target="blank" href="https://twitter.com/uptalorg" className="sitemap_linktext">Twitter</a>
+                            <a target="blank" href="https://www.linkedin.com/company/uptal" className="sitemap_linktext">LinkedIn</a>
                             <a className="sitemap_linktext">Facebook</a>
-                            <a className="sitemap_linktext">Instagram</a>
+                            <a target="blank" href="https://www.instagram.com/uptalorg/" className="sitemap_linktext">Instagram</a>
                             <a className="sitemap_linktext">Youtube</a>
                             </div>
                         </Col>

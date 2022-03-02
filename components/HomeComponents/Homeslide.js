@@ -6,11 +6,11 @@ export default function Homeslide() {
         <div className="homeslide">
             <Carousel>
                 <Carousel.Item  className="text-center" interval={1000}>
-                <img
-                src="/paypal-color-v1.svg"
-                alt="Picture of the author"
-                className="brand_img"
-              />
+                    <img
+                    src="/paypal-color-v1.svg"
+                    alt="Picture of the author"
+                    className="brand_img"
+                    />
                 </Carousel.Item>
                 <Carousel.Item  className="text-center" interval={500}>
                         <img
@@ -50,6 +50,5 @@ export default function Homeslide() {
                 </Carousel.Item>
             </Carousel>
         </div>
-    
     );
   }

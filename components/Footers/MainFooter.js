@@ -11,15 +11,7 @@ import { BsInstagram, BsTwitter} from 'react-icons/bs';
 import Link from "next/link";
 
 export default function MainFooter() {
-    const router = useRouter()
-    const FooterHandler = (routes) => {
-        if(routes === 'blog'){
-            router.push('/blog')
-        }
-        else if (routes === 'sitemap'){
-            router.push('/sitemap')
-        }
-    }
+
     return (
         <Row className="Footer mx-auto">
              <Row className=" footerlink_container pb-3 mx-auto pt-4 mt-2">
@@ -40,7 +32,7 @@ export default function MainFooter() {
                             <a className="foter_link_title fw-bold">Developers</a>
                             <Link href="/apply-for-job"><a className="foter_link ">Apply for Jobs</a></Link>
                             <a className="foter_link ">Developer Login</a>
-                            <a className="foter_link ">Remote Developer Jobs</a>
+                            <Link href="/remote-developer-jobs"><a className="foter_link ">Remote Developer Jobs</a></Link>
                             <a className="foter_link ">Developer Community</a>
                             <a className="foter_link ">Developer Stories</a>
                         </Col>
@@ -63,9 +55,9 @@ export default function MainFooter() {
             <Row className="bottom_footer justify-content-between">
                 <Col lg={5} md={5} sm={12}>
                      <FaFacebook className="social_icons" size={25} />
-                     <a href="https://www.linkedin.com/company/uptal"><GrLinkedinOption className="social_icons" size={25} /></a>
-                     <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
-                     <a href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
+                     <a target="blank"  href="https://www.linkedin.com/company/uptal"><GrLinkedinOption className="social_icons" size={25} /></a>
+                     <a target="blank"  href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
+                     <a target="blank"  href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
                      <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>

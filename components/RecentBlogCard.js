@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row} from 'react-bootstrap'
+import {Col, Row, Carousel} from 'react-bootstrap'
 import Link from 'next/link'
 import { useRouter } from 'next/router';
 
@@ -16,8 +16,8 @@ export default function RecentBlogCard({blog}) {
     const years = new Date(date).getFullYear();
 
   return(
-
-      <Col className='card-colam pb-4 ps-4 pe-4' lg={3} md={6} sm={12} >
+ 
+    <Col className='card-colam pb-4 ps-4 pe-4' lg={3} md={6} sm={12} >
           <Link href={`/blog/${slug}`}><a>
           <img className='cards-img' src={'https:' + thumbnail.fields.file.url}  alt='' />
           <p className="blog-title mt-3">{title}</p>
@@ -25,7 +25,9 @@ export default function RecentBlogCard({blog}) {
           <p className="date_text">{month} {dates}, {years}</p>
           {/* <p className="category_text">{category.fields.categoryName}</p> */}
           </a></Link>
-      </Col>
+    </Col>
+
+
   )
 }
 {/* <img src={'https:' + thumbnail.fields.file.url} width="100%" height="200px" alt='' /> */}

@@ -7,11 +7,7 @@ import Link from 'next/link';
 export default function JobCard({data}) {
 
     const {skill, skillLogo, slug} = data.fields
-    const router = useRouter()
-    const ClickHandler = () => {
-        router.push(`/jobs/${slug}`)
-    }
-
+    console.log('slug', slug)
   return(
 
       <div className='technology_colam'  lg={4} md={6} sm={12}>

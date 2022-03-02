@@ -16,11 +16,11 @@ export default function Footer() {
         <Row className="Footer mx-auto">
             <Row className="footerbtn_container justify-content-center gy-3">
                 <p className="footer_title text-center">Join Uptal to unleash the world’s <br /> untapped human potential</p>
-                <Col className="d-flex justify-content-sm-center" lg={3} md={5} sm={12}>
+                <Col className="d-flex justify-content-center " xl={3} lg={5} md={5} sm={12}>
                 <Link href="/hire-developers"><a className="remote_btn">Hire remote developers<BsArrowRight className="remote_arrow_icons ms-2"  /></a></Link>
                 </Col>
                 <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-2">OR</p></Col>
-                <Col className="d-flex justify-content-sm-center"  lg={3} md={5} sm={12}>
+                <Col className="d-flex justify-content-center" xl={3}  lg={5} md={5} sm={12}>
                 <Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer<BsArrowRight className="apply_arrow_icons ms-2"  /></a></Link>
                 </Col>
             </Row>
@@ -65,9 +65,9 @@ export default function Footer() {
             <Row className="bottom_footer justify-content-between">
                 <Col lg={5} md={5} sm={12}>
                      <FaFacebook className="social_icons" size={25} />
-                     <a href="https://www.linkedin.com/company/uptal"><GrLinkedinOption className="social_icons" size={25} /></a>
-                     <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
-                     <a href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
+                     <a target="blank" href="https://www.linkedin.com/company/uptal"><GrLinkedinOption className="social_icons" size={25} /></a>
+                     <a target="blank" href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
+                     <a target="blank" href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
                      <AiFillYoutube className="social_icons" size={25} />
                      <div className="d-flex ">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>

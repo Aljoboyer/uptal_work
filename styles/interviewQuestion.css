@@ -116,19 +116,43 @@
 .resume_description{
   padding-bottom: 70px;
 }
+.recent_blog_carusal_section{
+  display: none;
+}
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
  .interview_q_btn{
     width: 250px;
  }
+ .recent_blog_carusal_section{
+  display: block;
+}
+.blog_section{
+  display: none;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
-
+  .recent_blog_carusal_section{
+    display: block;
   }
+  .blog_section{
+    display: none;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+}
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
-
+  .recent_blog_carusal_section{
+    display: block;
   }
+  .blog_section{
+    display: none;
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width:990px) {
 
 }

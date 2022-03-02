@@ -21,7 +21,7 @@ export default function Nabars({navigation}) {
 
         <Navbar.Brand > <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
        
-        <Navbar.Toggle className="mb-4" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
+        <Navbar.Toggle className="mb-2" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{color: 'black'}} />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
            
