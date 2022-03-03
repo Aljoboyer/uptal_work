@@ -36,7 +36,7 @@ const client = createClient({
 
 export default function HireDevelopers({jobs, techs}) {
   const lastElelment = jobs.slice(-1);
-  console.log(lastElelment)
+
   const [itemslug, setItemslug] = useState(jobs[0].fields.slug)
 
   const filterjobs = jobs.find(item => item.fields.slug === itemslug)
@@ -137,57 +137,36 @@ export default function HireDevelopers({jobs, techs}) {
             </Row>
         </div>
 
-        
-
-        <div className="technology_section">
-          
-          <Row className="container-fluid  mt-4 mx-auto">
-              <p className="based_text ms-4 ps-4">Based on Skills</p>
-              <div className="technology_div ms-4">
-                {techs.map(data => (
-                    <HireCard key={data.sys.id} data={data} />
-                ))}
-            </div>
-          </Row>
-        </div>
-        <div className="technology_section_mobile">
-        <p className="based_text ">Based on Skills</p>
-          <div className="technology_div">
-              {techs.map(data => (
-                  <HireCard key={data.sys.id} data={data} />
-              ))}
-          </div>
-        </div>
-
         <div className='remote_dev_content-section'>
-            <Row className='container-fluid mx-auto justify-content-around'>
+            <Row className='container-fluid mx-auto justify-content-center remote_dev_row'>
               <Col lg={3} md={3}>
               <div className='remote_dev_scroll_div'>
               {jobs.map(data => {
-                  return <div onClick={() => setItemslug(data.fields.slug)} key={data.sys.id}> <h5 className='side_manu_title'>{data.fields.skill} (Backend Heavy)</h5> 
-                    <div className='remote_side_icons_div'>
-                        <div><p className='icons_text'> <CgCalculator/> Other</p></div>
-                        <div><p className='icons_text'><MdPeople/>1-10</p></div>
-                        <div><p className='icons_text'>23 Hours</p></div>
-                    </div>
+                  return <div className={itemslug === data.fields.slug ? 'scroll_side_manu__color_div' : 'scroll_side_manu_div'} onClick={() => setItemslug(data.fields.slug)} key={data.sys.id}>
+                    <h5 className='side_manu_title'>{data.fields.skill} Developer</h5> 
+                      <div className='remote_side_icons_div'>
+                          <div><p className='icons_text'> <CgCalculator/><span className='ms-2'>Other</span></p></div>
+                          <div><p className='icons_text'><MdPeople/><span className='ms-2'>1-10</span></p></div>
+                          <div><p className='icons_text'><span className='ms-2'>23 Hours</span></p></div>
+                      </div>
                   </div>
                   }
                   )}
               </div>
               </Col>
-              <Col lg={8} md={9}>
+              <Col className='pt-4' lg={8} md={9}>
                   {
                       itemslug ? <Row className="container-fluid mx-auto justify-content-center">
                       <h4>{skill} Developers</h4>
                       <div className='remote_dev_grid_div'>
                           <div className='remote_icons_div'>
                               <div><p> <CgCalculator/> Industry: Technology</p></div>
-                              <div><p> <MdLocationOn/> remote</p></div>
-                              <div><p><MdPeople/>Company size: 11-50</p></div>
+                              <div><p> <MdLocationOn/> <span>remote</span></p></div>
+                              <div><p><MdPeople/><span className="ms-2">Company size: 11-50</span></p></div>
                               <div><p><BsCalendarCheck/> Full-time</p></div>
                           </div>
                           <div className='apply_btn_div'>
-                              <button className="job_apply_now_btn">Apply Now</button>
+                              <a target="blank" href="https://developer.uptal.org/" className="job_apply_now_btn">Apply Now</a>
                           </div>
                       </div>
                       <h3 className='ms-2'>Job description</h3>
@@ -198,7 +177,43 @@ export default function HireDevelopers({jobs, techs}) {
                       <div className='view_jobs_div'>
                           <Link href={`/jobs/${itemslug}`}><a className='view_jobs_btn'>View Jobs description</a></Link>
                       </div>
-                  
+                    <div className="hire_expact_section">
+                        <Row className="container  mx-auto ">
+                            <div className="expact_description_div" >
+                              <p className="expact_title text-center">How to become a Turing developer?</p>
+                              <p className="expact_text text-center">Work with the best software companies in just 4 easy steps</p>
+                            </div>
+                            <div className="apply_expact_point_div">
+                                <div className="apply_expact_point">
+                                <img  style={{ marginLeft: '5px',
+                    height: '30px'}}  alt="Picture of the author"  src="/numone.png"/>
+                                    <p className="expact_text ms-2 mt-2"> <span className="fw-bold" fs-5>Create your profile</span> <br/>
+                                    Fill in your basic details - Name, location, skills, salary, & experience.</p>
+                                </div>
+                                <div className="apply_expact_point">
+                                <img style={{ marginLeft: '5px',
+                    height: '30px'}}  alt="Picture of the author"  src="/twoicon.png"/>
+                                    <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5">Take our tests and interviews</span> <br/>
+                                    Solve questions and appear for technical interview.</p>
+                                </div>
+                                <div className="apply_expact_point">
+                                <img style={{ marginLeft: '5px',
+                    height: '30px'}}  alt="Picture of the author"  src="/numthree.png"/>
+                                    <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5"> Receive job offers</span> <br/>
+                                    Get matched with the best US and Silicon Valley companies.</p>
+                                </div>
+                                <div className="apply_expact_point">
+                                <img  style={{ marginLeft: '5px',
+                    height: '30px'}}  alt="Picture of the author"  src="/numfour.png"/>
+                                    <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5">Start working on your dream job</span> <br/>
+                                    Once you join Turing, you’ll never have to apply for another job.</p>
+                                </div>
+                            </div>
+                            <div className="apply_now_btn_div">
+                                <a target="blank" href="https://developer.uptal.org/" className="job_apply_now_btn">Apply Now</a>
+                            </div>
+                        </Row>
+                   </div>
                   </Row> : ''
                   }
               </Col>

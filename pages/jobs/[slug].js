@@ -102,43 +102,16 @@ export default function HireDevelopers({post, hire, blogs}) {
       }
     ]
 };
-const  TodayDate = new Date();
-const today = TodayDate.setDate(TodayDate.getDate() - 30);
-const todaymonth = new Date(today).toLocaleString('default', { month: 'long' });
-const todaydates = new Date(today).getDate();
-const todayyears = new Date(today).getFullYear();
 
-const thisday = `${todaymonth} ${todaydates}, ${todayyears}`
-const emptyarr = []
-for(const blog of blogs){
-  const month = new Date(blog.fields.date).toLocaleString('default', { month: 'long' });
-  const dates = new Date(blog.fields.date).getDate();
-  const years = new Date(blog.fields.date).getFullYear();
+const filterBlogs = blogs.slice(0, 4);
 
-  if( `${month} ${dates}, ${years}` < thisday) {
-    emptyarr.push(blog)
-} else {
-    console.log("Second date is more recent");
-}
-
-}
-const filterBlogs = emptyarr.slice(0, 4)
 
   const [tech, setTech] = useState(false)
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const TechnologyHandler = (tech) => {
-    if(tech === 'react')
-    {
-      router.push('https://www.uptal.org/hire/reactjs')
-    }
-    else if(tech === 'python')
-    {
-      router.push('https://www.uptal.org/hire/python')
-    }
-  }
+
     const { title,skill, skillLogo ,content ,intro,jobResponsibilities,minimumRequirements} = post.fields;
  
     
@@ -268,7 +241,7 @@ const filterBlogs = emptyarr.slice(0, 4)
                             <p>Apply to Turing today.</p>
                         </div>
                         <div>
-                          <button className="job_apply_now_btn">Apply Now</button>
+                       <a target="blank" href="https://developer.uptal.org/"  className="job_apply_now_btn">Apply Now</a>
                         </div>
                     </div>
                   </Col>
@@ -278,34 +251,37 @@ const filterBlogs = emptyarr.slice(0, 4)
             <div className="hire_expact_section">
                 <Row className="container-fluid  mx-auto expact_row">
                     <div className="expact_description_div" >
-                      <p className="expact_title">What you can expect</p>
-                      <p className="expact_text">It all starts with a conversation—we’ll work with you to find out what hard and soft <br />
-                      skills you’re looking for, quickly zero in on a shortlist of talents, and help guide your <br />
-                      through the hiring process.</p>
+                      <p className="expact_title text-center">How to become a Turing developer?</p>
+                      <p className="expact_text text-center">Work with the best software companies in just 4 easy steps</p>
                     </div>
-                    <div className="expact_point_div">
-                        <div className="expact_point">
-                        <img style={{
+                    <div className="apply_expact_point_div">
+                        <div className="apply_expact_point">
+                        <img  style={{ marginLeft: '5px',
             height: '30px'}}  alt="Picture of the author"  src="/numone.png"/>
-                            <p className="expact_text ms-3"> <span className="fw-bold">Sign up and set up your meeting</span> <br/>
-                            Give us a few details and set up
-                            a time to talk with your recruiter</p>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold" fs-5>Create your profile</span> <br/>
+                            Fill in your basic details - Name, location, skills, salary, & experience.</p>
                         </div>
-                        <div className="expact_point">
-                        <img style={{
+                        <div className="apply_expact_point">
+                        <img style={{ marginLeft: '5px',
             height: '30px'}}  alt="Picture of the author"  src="/twoicon.png"/>
-                            <p className="expact_text ms-3"> <span className="fw-bold"> Meet with your recruiter</span> <br/>
-                            Your recruiter will show up with a shortlist of “top matches”</p>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5">Take our tests and interviews</span> <br/>
+                            Solve questions and appear for technical interview.</p>
                         </div>
-                        <div className="expact_point">
-                        <img style={{
+                        <div className="apply_expact_point">
+                        <img style={{ marginLeft: '5px',
             height: '30px'}}  alt="Picture of the author"  src="/numthree.png"/>
-                            <p className="expact_text ms-3"> <span className="fw-bold"> Review and hire talent</span> <br/>
-                            Interview the top matches, see who’s a hire, or get anothershortlist</p>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5"> Receive job offers</span> <br/>
+                            Get matched with the best US and Silicon Valley companies.</p>
+                        </div>
+                        <div className="apply_expact_point">
+                        <img  style={{ marginLeft: '5px',
+            height: '30px'}}  alt="Picture of the author"  src="/numfour.png"/>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5">Start working on your dream job</span> <br/>
+                            Once you join Turing, you’ll never have to apply for another job.</p>
                         </div>
                     </div>
-                    <div className="talk_two_btn_div text-center">
-                        <button className="hire_expect_btn mt-3">Hire Developers</button>
+                    <div className="apply_now_btn_div">
+                        <a target="blank" href="https://developer.uptal.org/" className="job_apply_now_btn">Hire Remote Developers</a>
                     </div>
                 </Row>
             </div>
@@ -531,7 +507,7 @@ const filterBlogs = emptyarr.slice(0, 4)
               </div>
               
       <div className='blog_section'>
-              <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+              {filterBlogs.length > 0 ? <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2> : ''}
           <Row className="container-fluid mx-auto mt-3">
               {filterBlogs.map(blog => {
             return <RecentBlogCard key={blog.sys.id} blog={blog} />

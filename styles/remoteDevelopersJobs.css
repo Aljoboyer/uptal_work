@@ -35,7 +35,6 @@
     font-weight: 500;
     cursor: pointer;
     margin-top: 30px;
-
 }
 .icons_text{
   color: #525252;
@@ -50,6 +49,7 @@
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+
 }
 .remote_apply_btn:hover{
   color: white;
@@ -65,7 +65,7 @@
 }
 .view_jobs_div{
   text-align: center;
-  background-color: white;
+  /* background-color: white; */
   margin-bottom: 40px;
 }
 .remote_dev_mobile a{
@@ -75,6 +75,25 @@
 .remote_dev_mobile:hover a{
   text-decoration: none;
   color: black;
+}
+.scroll_side_manu_div{
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.scroll_side_manu__color_div{
+  border-left: #206ee9 solid 6px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: rgba(46,110,223,0.08);
+}
+.remote_dev_content_section_mobile{
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+.remote_dev_row{
+  background-color: #f4f4f6;
+  border-radius: 7px;
 }
 /* width */
 

@@ -40,28 +40,8 @@ export const getStaticProps = async ({ params }) => {
     'fields.slug': params.slug
   }) 
   const FilterBlog = allBlogs.items.filter(blog => blog.fields.category.fields.categoryName === items[0].fields.category.fields.categoryName);
-  
-  const  TodayDate = new Date();
-  const today = TodayDate.setDate(TodayDate.getDate() - 30);
-  const todaymonth = new Date(today).toLocaleString('default', { month: 'long' });
-  const todaydates = new Date(today).getDate();
-  const todayyears = new Date(today).getFullYear();
 
-  const thisday = `${todaymonth} ${todaydates}, ${todayyears}`
-  const emptyarr = []
-  for(const blog of FilterBlog){
-    const month = new Date(blog.fields.date).toLocaleString('default', { month: 'long' });
-    const dates = new Date(blog.fields.date).getDate();
-    const years = new Date(blog.fields.date).getFullYear();
-
-    if( `${month} ${dates}, ${years}` < thisday) {
-      emptyarr.push(blog)
-  } else {
-      console.log("Second date is more recent");
-  }
-
-  }
-  const recentBlog = emptyarr.slice(0, 4)
+  const recentBlog = FilterBlog.slice(0, 4)
 
   if (!items.length) {
     return {

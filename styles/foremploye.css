@@ -175,7 +175,20 @@
     padding: 5px 20px 5px 20px;
 }
 /* -------------expect section css end--------------- */
+/* -------------expect section css start--------------- */
+.apply_now_btn_div{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.apply_expact_point_div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    padding-top: 35px;
+}
 
+/* -------------expect section css end--------------- */
 /* -------------faq section css start--------------- */
 .faq_section{
     margin-left: 35px;
@@ -318,8 +331,14 @@
     .join_work_section{
         display: none;
     }
-
- 
+    .apply_expact_point_div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .apply_expact_point{
+        display: flex;
+        flex-direction: row;
+    }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
     .anchor_talkbtn{
@@ -406,6 +425,14 @@
     .join_work_section{
         display: none;
     }
+    .apply_expact_point_div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .apply_expact_point{
+        display: flex;
+        flex-direction: row;
+    }
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -482,6 +509,14 @@
     .faq_section{
         margin-left: 0px;
     }
+    .apply_expact_point_div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .apply_expact_point{
+        display: flex;
+        flex-direction: row;
+    }
   }
 @media only screen and (min-width: 768px) and (max-width:991px) {
     .join_work_section{
@@ -541,6 +576,14 @@
         margin-right: 15px;
         text-align: center;
         color: white;
+    }
+    .apply_expact_point_div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .apply_expact_point{
+        display: flex;
+        flex-direction: row;
     }
 }
 

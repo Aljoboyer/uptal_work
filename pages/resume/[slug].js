@@ -111,27 +111,7 @@ export default function HireDevelopers({post, blogs}) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const  TodayDate = new Date();
-  const today = TodayDate.setDate(TodayDate.getDate() - 30);
-  const todaymonth = new Date(today).toLocaleString('default', { month: 'long' });
-  const todaydates = new Date(today).getDate();
-  const todayyears = new Date(today).getFullYear();
-
-  const thisday = `${todaymonth} ${todaydates}, ${todayyears}`
-  const emptyarr = []
-  for(const blog of blogs){
-    const month = new Date(blog.fields.date).toLocaleString('default', { month: 'long' });
-    const dates = new Date(blog.fields.date).getDate();
-    const years = new Date(blog.fields.date).getFullYear();
-
-    if( `${month} ${dates}, ${years}` < thisday) {
-      emptyarr.push(blog)
-  } else {
-      console.log("Second date is more recent");
-  }
-
-  }
-  const filterBlogs = emptyarr.slice(0, 4)
+  const filterBlogs = blogs.slice(0, 4)
 
   const TechnologyHandler = (tech) => {
     if(tech === 'react')

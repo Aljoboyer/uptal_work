@@ -29,36 +29,36 @@ export default function Applyjob() {
 
         <div>
           <div className="talent_section">
-                <Row className="container mx-auto">
-                  <p className="talent_title">Pre-vetted talent available to start in these fields</p>
-                  <div className="talent_div">
-                      <div className="talent_item">
+              <Row className="container mx-auto">
+                <p className="talent_title">Pre-vetted talent available to start in these fields</p>
+                <div className="talent_div">
+                    <div className="talent_item">
+                      <img
+                            src="/fullstack.png"
+                            alt="Picture of the author"
+                            className="talent_img"
+                        />
+                        <p className="talent_text">FullStack Developer</p>
+                    </div>
+                    <div className="talent_item">
+                      <img
+                            src="/datascience.png"
+                            alt="Picture of the author"
+                            className="talent_img"
+                        />
+                        <p className="talent_text">Data Science</p>
+                    </div>
+                    <div className="talent_item">
                         <img
-                              src="/fullstack.png"
-                              alt="Picture of the author"
-                              className="talent_img"
-                          />
-                          <p className="talent_text">FullStack Developer</p>
-                      </div>
-                      <div className="talent_item">
-                        <img
-                              src="/datascience.png"
-                              alt="Picture of the author"
-                              className="talent_img"
-                          />
-                          <p className="talent_text">Data Science</p>
-                      </div>
-                      <div className="talent_item">
-                          <img
-                              src="/cloud.png"
-                              alt="Picture of the author"
-                              className="talent_img"
-                          />
-                          <p  className="talent_text">Cloud</p>
-                      </div>
-                  </div>
-                </Row>
-            </div>
+                            src="/cloud.png"
+                            alt="Picture of the author"
+                            className="talent_img"
+                        />
+                        <p  className="talent_text">Cloud</p>
+                    </div>
+                </div>
+              </Row>
+          </div>
 
             <div className="brand_section">
                 <Row className="container mx-auto">
@@ -115,34 +115,37 @@ export default function Applyjob() {
             <div className="expact_section">
                 <Row className="container  mx-auto expact_row">
                     <div className="expact_description_div" >
-                      <p className="expact_title">What you can expect</p>
-                      <p className="expact_text">It all starts with a conversation—we’ll work with you to find out what hard and soft <br />
-                      skills you’re looking for, quickly zero in on a shortlist of talents, and help guide your <br />
-                      through the hiring process.</p>
+                      <p className="expact_title text-center">How to become a Turing developer?</p>
+                      <p className="expact_text text-center">Work with the best software companies in just 4 easy steps</p>
                     </div>
-                    <div className="expact_point_div">
-                        <div className="expact_point">
-                        <img style={{
+                    <div className="apply_expact_point_div">
+                        <div className="apply_expact_point">
+                        <img  style={{marginTop: '7px', marginLeft: '5px',
             height: '30px'}}  alt="Picture of the author"  src="/numone.png"/>
-                            <p className="expact_text ms-3"> <span className="fw-bold">Sign up and set up your meeting</span> <br/>
-                            Give us a few details and set up
-                            a time to talk with your recruiter</p>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold" fs-5>Create your profile</span> <br/>
+                            Fill in your basic details - Name, location, skills, salary, & experience.</p>
                         </div>
-                        <div className="expact_point">
-                        <img style={{
+                        <div className="apply_expact_point">
+                        <img style={{marginTop: '7px', marginLeft: '5px',
             height: '30px'}}  alt="Picture of the author"  src="/twoicon.png"/>
-                            <p className="expact_text ms-3"> <span className="fw-bold"> Meet with your recruiter</span> <br/>
-                            Your recruiter will show up with a shortlist of “top matches”</p>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5">Take our tests and interviews</span> <br/>
+                            Solve questions and appear for technical interview.</p>
                         </div>
-                        <div className="expact_point">
-                        <img style={{
+                        <div className="apply_expact_point">
+                        <img style={{marginTop: '7px', marginLeft: '5px',
             height: '30px'}}  alt="Picture of the author"  src="/numthree.png"/>
-                            <p className="expact_text ms-3"> <span className="fw-bold"> Review and hire talent</span> <br/>
-                            Interview the top matches, see who’s a hire, or get anothershortlist</p>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5"> Receive job offers</span> <br/>
+                            Get matched with the best US and Silicon Valley companies.</p>
+                        </div>
+                        <div className="apply_expact_point">
+                        <img  style={{marginTop: '7px', marginLeft: '5px',
+            height: '30px'}}  alt="Picture of the author"  src="/numfour.png"/>
+                            <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5">Start working on your dream job</span> <br/>
+                            Once you join Turing, you’ll never have to apply for another job.</p>
                         </div>
                     </div>
-                    <div className="talk_two_btn_div">
-                        <button className="talk_two_btn">Talk to a recruitor</button>
+                    <div className="apply_now_btn_div">
+                        <a target="blank" href="https://developer.uptal.org/" className="job_apply_now_btn">Apply Now</a>
                     </div>
                 </Row>
             </div>
