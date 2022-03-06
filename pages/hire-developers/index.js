@@ -692,33 +692,58 @@ export default function Intro({job}) {
               </Row>
             </div>
 
-            <Row className='container join_full_container justify-content-center mx-auto'>
-              <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
-                    <Row className="join_work_container justify-content-md-between">
-                    <Col className="d-flex justify-content-start " lg={4} md={4} sm={12} xs={12}>
-                      <img
+            <div className="join_work_section">
+              <Row className='container-fluid join_full_container justify-content-center mx-auto'>
+                <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
+                      <Row className="join_work_container justify-content-md-between">
+                      <Col className="d-flex justify-content-start " lg={4} md={4} sm={12} xs={12}>
+                        <img
+                        src="/joinimg.png"
+                        alt="Picture of the author"
+                        className="join_img"
+                        />
+                      </Col>
+                      <Col lg={8} md={8} sm={12} xs={12}>
+                          <p className='join_title'>Join the world’s work marketplace</p>
+                        <div  className='join_footer_row'>
+                        <Row className="justify-content-lg-between justify-content-md-around">
+                          <hr className='horizontal_line' />
+                            <Col lg={8} md={8} sm={12}>
+                              <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
+                            </Col>
+                            <Col lg={3} md={3} sm={12}>
+                                <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                              </Col>
+                          </Row>
+                        </div>
+                      </Col>
+                    </Row>
+                </Col>
+              </Row> 
+            </div>
+            <div className="join_work_container_mobile mx-auto">
+                <div className="join_flex_div_one">
+                  <img
                       src="/joinimg.png"
                       alt="Picture of the author"
-                      className="join_img"
+                      className="join_img_foremploye_mobile"
                       />
-                    </Col>
-                    <Col lg={8} md={8} sm={12} xs={12}>
-                        <p className='join_title'>Join the world’s work marketplace</p>
-                      <div  className='join_footer_row'>
-                      <Row className="justify-content-lg-between justify-content-md-around">
-                        <hr className='horizontal_line' />
-                          <Col lg={8} md={8} sm={12}>
-                            <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
-                          </Col>
-                          <Col lg={3} md={3} sm={12}>
-                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
-                            </Col>
-                        </Row>
-                      </div>
-                    </Col>
-                  </Row>
-              </Col>
-            </Row>        
+                </div>
+                <div className="ps-2">
+                  <p className='join_title'>Join the world’s work marketplace</p>
+                    <div  className='join_footer_row'>
+                    <Row className="justify-content-lg-between justify-content-md-between">
+                      <hr className='horizontal_line' />
+                      <Col lg={8} md={8} sm={12}>
+                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                      </Col>
+                      <Col lg={3} md={3} sm={12}>
+                            <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                      </Col>
+                    </Row>
+                    </div>
+                </div>
+            </div>    
         </div>
 
       <MainFooter/>

@@ -154,9 +154,9 @@ export default function HireDevelopers({jobs, techs}) {
                   )}
               </div>
               </Col>
-              <Col className='pt-4' lg={8} md={9}>
+              <Col className='pt-4 ' lg={8} md={9}>
                   {
-                      itemslug ? <Row className="container-fluid mx-auto justify-content-center">
+                      itemslug ? <div><Row className="romote_content_colam container-fluid mx-auto justify-content-center">
                       <h4>{skill} Developers</h4>
                       <div className='remote_dev_grid_div'>
                           <div className='remote_icons_div'>
@@ -214,7 +214,8 @@ export default function HireDevelopers({jobs, techs}) {
                             </div>
                         </Row>
                    </div>
-                  </Row> : ''
+                  </Row>
+                        </div> : ''
                   }
               </Col>
             </Row>

@@ -59,7 +59,7 @@ export default function MainFooter() {
                      <a target="blank"  href="https://www.instagram.com/uptalorg/"><BsInstagram className="social_icons" size={25}/></a>
                      <a target="blank"  href="https://twitter.com/uptalorg"><BsTwitter className="social_icons" size={25} /></a>
                      <AiFillYoutube className="social_icons" size={25} />
-                     <div className="d-flex ">
+                     <div className="d-flex pt-4 justify-content-between">
                          <Link href='/sitemap'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Sitemap</a></Link>
                         <Link href='/terms-of-service'><a className="bottomfooter_text ms-2 mt-2 bottom_text_containerOne">Terms of Service</a></Link>
                         
@@ -70,10 +70,10 @@ export default function MainFooter() {
                 
                 </Col>
             </Row>
-            <Row className="justify-content-between pb-3">
+            <Row className="justify-content-between pb-3 pt-3">
                 <Col lg={5} md={6} sm={12}>
-                    <a className="copyright_title">© 2021 Uptal</a>
-                    <a className="bottomfooter_text">Goodworks Lab, Electronic city, Bengaluru, IN 560100</a>
+                <a className="copyright_title">© 2021 Uptal</a>
+                    <a className="bottomfooter_text">Goodworks Lab, Electronic city, <span className="ms-2">Bengaluru, IN 560100</span></a>
                 </Col>
                 <Col className="d-flex justify-content-evenly align-items-end" lg={5} md={6} sm={12}>
                     <div className="d-flex ">

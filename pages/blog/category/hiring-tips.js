@@ -7,6 +7,7 @@ import { createClient } from 'contentful'
 import { Row } from "react-bootstrap";
 import Nabars from "../../../components/Navbars/Navbars";
 import Filteritem from "../../../components/Filteritem";
+import Footer from "../../../components/Footers/Footers";
 
 
 
@@ -45,6 +46,7 @@ export default function Blog({ blogs }) {
               <BlogCard key={blog.sys.id} blog={blog} />:""}</>
             })}
        </Row>
+       <Footer/>
      </Row>
   );
 }

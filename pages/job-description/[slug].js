@@ -5,13 +5,9 @@ import { BLOCKS, MARKS } from '@contentful/rich-text-types';
 import Navbartwo from '../../components/Navbars/Navbartwo';
 import Meta from '../../partial/seo-meta';
 import { Row, Col, Offcanvas,Card , Accordion, useAccordionButton} from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IoIosArrowForward } from 'react-icons/io';
-import { useRouter } from "next/router";
-import { Button, TextField } from '@mui/material';
 import Footer from '../../components/Footers/Footers';
-import {  BsLinkedin, BsInstagram} from 'react-icons/bs';
-import { FaFacebook, FaWhatsappSquare} from 'react-icons/fa';
+import {BsTwitter,  BsLinkedin, BsInstagram} from 'react-icons/bs';
+import {FaTwitterSquare, FaFacebook, FaWhatsappSquare} from 'react-icons/fa';
 import { AiFillTwitterCircle} from 'react-icons/ai';
 import BlogCard from '../../components/BlogCard';
 import RecentBlogCard from '../../components/RecentBlogCard';
@@ -107,16 +103,6 @@ export default function HireDevelopers({post, blogs}) {
   
   const filterBlogs = blogs.slice(0, 4)
 
-  const TechnologyHandler = (tech) => {
-    if(tech === 'react')
-    {
-      router.push('https://www.uptal.org/hire/reactjs')
-    }
-    else if(tech === 'python')
-    {
-      router.push('https://www.uptal.org/hire/python')
-    }
-  }
     const { title,skill, skillLogo ,content ,intro} = post.fields;
 
     const headingTypes = [BLOCKS.HEADING_2]
@@ -247,7 +233,7 @@ export default function HireDevelopers({post, blogs}) {
                         <p className='mt-2 '>Search Job</p>
                           <FaFacebook className="silicon_fb mx-2 silicon_icons" size={35} />
                           <a href="https://www.linkedin.com/company/uptal"><BsLinkedin className="silicon_linkedin silicon_icons" size={35} /></a>
-                          <a href="https://twitter.com/uptalorg"><AiFillTwitterCircle className="silicon_twitter mx-2 silicon_icons" size={40} /></a>
+                          <a href="https://twitter.com/uptalorg"><FaTwitterSquare className="silicon_twitter mx-2 silicon_icons" size={38} /></a>
                           <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="silicon_insta silicon_icons" size={35}/></a>
 
                       </div>
@@ -256,23 +242,23 @@ export default function HireDevelopers({post, blogs}) {
               </Row>
             </div>
 
-      <div className='blog_section'>
-        <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Row className="container-fluid mx-auto mt-3">
-              {filterBlogs.map(blog => {
-            return <RecentBlogCard key={blog.sys.id} blog={blog} />
-              })}
-          </Row>
-      </div>
+            <div className='blog_section'>
+              <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+                <Row className="container-fluid mx-auto mt-3">
+                    {filterBlogs.map(blog => {
+                  return <RecentBlogCard key={blog.sys.id} blog={blog} />
+                    })}
+                </Row>
+            </div>
 
-      <div className='recent_blog_carusal_section'>
-          <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Slider className="bg-light"  {...settings}>
-              {filterBlogs.map(blog => {
-                  return <RecentBlogSlide key={blog.sys.id} blog={blog} />
-                })}
-          </Slider>
-      </div>
+            <div className='recent_blog_carusal_section'>
+                <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+                <Slider className="bg-light"  {...settings}>
+                    {filterBlogs.map(blog => {
+                        return <RecentBlogSlide key={blog.sys.id} blog={blog} />
+                      })}
+                </Slider>
+            </div>
     <Footer/>
   </Row>
 </div>

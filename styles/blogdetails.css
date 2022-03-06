@@ -177,6 +177,7 @@
 .indicator_container{
     height: 5px;
     width: 100%;
+
   }
   
 .indicator_bar {
@@ -187,8 +188,8 @@
 .indicator{
     position: sticky;
     top: 0px;
-    bottom: 84%;
     z-index: 1;
+   
 }
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .details_title{
@@ -282,12 +283,12 @@
         font-weight: bold;
         margin-top: 15px;
     }
-    .indicator{
+    /* .indicator{
         position: sticky;
         top: 0px;
         bottom: 87%;
         z-index: 1;
-    }
+    } */
     .join_work_container{
         background-color: #1f57c3;
         padding: 15px 5px 30px 3px;
@@ -373,12 +374,12 @@
     .horizontal_line{
         margin-left: 10px; 
     }
-    .indicator{
+    /* .indicator{
         position: sticky;
         top: 0px;
         bottom: 87%;
         z-index: 1;
-    }
+    } */
   }
   
 @media only screen and (min-width: 576px) and (max-width: 787px) {
@@ -459,18 +460,18 @@
     }
     .join_footer_row{
        
-        margin-top: 70px;
-        padding-bottom: 20px;
+        margin-top: 60px;
+        padding-bottom: 15px;
     }
     .horizontal_line{
         margin-left: 10px; 
     }
-    .indicator{
+    /* .indicator{
         position: sticky;
         top: 0px;
         bottom: 87%;
         z-index: 1;
-    }
+    } */
   }
 @media only screen and (min-width: 788px) and (max-width:991px) {
     .details_title{
@@ -544,12 +545,12 @@
     .join_footer_row{
         margin-left: 40px;
     }
-    .indicator{
+    /* .indicator{
         position: sticky;
         top: 0px;
         bottom: 87%;
         z-index: 1;
-    }
+    } */
 
   }
 
@@ -559,12 +560,12 @@
         padding: 15px 10px 15px 3px;
         border-radius: 5px;
     }
-    .indicator{
+    /* .indicator{
         position: sticky;
         top: 0px;
         bottom: 87%;
         z-index: 1;
-    }
+    } */
     .join_footer_row{
         margin-top: 100px;
     }
@@ -578,12 +579,12 @@
         padding: 15px 10px 15px 3px;
         border-radius: 5px;
     }
-    .indicator{
+    /* .indicator{
         position: sticky;
         top: 0px;
         bottom: 88%;
         z-index: 1;
-    }
+    } */
     .join_footer_row{
         margin-top: 130px;
         }

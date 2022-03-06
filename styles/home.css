@@ -145,7 +145,8 @@
   font-weight: 900;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 5px;
+  margin-top: 22px;
+  display: block;
 }
 .home_blog_btn:hover{
   color: #515e72;

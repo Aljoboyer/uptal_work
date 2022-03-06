@@ -39,7 +39,7 @@ export default function Navbartwo() {
             </div>    
         </Navbar.Collapse>      
         </Navbar>
-
+      
         <Offcanvas className="offcanvas_container w-100" show={show} onHide={handleClose} scroll={true} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title><img
@@ -51,12 +51,13 @@ export default function Navbartwo() {
         <Offcanvas.Body>
    
             <div style={{width: '100%'}}>
-             <button href='/hire-developers'  className="offcangetstarted_btn">Hire Remote Developers</button>
-             <button href='/apply-for-job' className="Applydev_btn">Apply As Developer</button>
-             <button  className="Login_btn">Blog</button>
+              <Link href='/hire-developers'><a  className="offcangetstarted_btn">Hire Remote Developers</a></Link>
+             <Link href='/apply-for-job'><a  className="Applydev_btn">Apply As Developer</a></Link>
+             <Link href="/blog"><a  className="Login_btn">Blog</a></Link>
             </div>    
         </Offcanvas.Body>
         </Offcanvas>
+
       </div>
     
   );

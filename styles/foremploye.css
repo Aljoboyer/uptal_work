@@ -161,18 +161,37 @@
     font-family: 'Open Sans', sans-serif;
     display: block;
 }
-
-.talk_two_btn{
+.expact_text_apply_job{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.how_to_become_title{
+    font-size: 34px;
+        font-weight: bold;
+        color: #001e00;
+        font-family: 'Charm', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 15px;
+        text-align: center;
+}
+.expect_apply_btn{
     background-color: #14a800;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     color: white;
     font-size: 15px;
     font-weight: 300;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    padding: 5px 20px 5px 20px;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    
 }
 /* -------------expect section css end--------------- */
 /* -------------expect section css start--------------- */
@@ -243,6 +262,7 @@
     width: 90%;
     margin-left: 80px;
 }
+
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .anchor_talkbtn{
         display: flex;
@@ -320,15 +340,30 @@
     .faq_section{
         margin-left: 0px;
     }
-    .join_work_container_mobile{
-        display: block;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-right: 10px;
-        padding-left: 10px;
-
-    }
     .join_work_section{
+        display: none;
+    }
+    .join_work_container_mobile{
+        background-color: #1f57c3;
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+    .join_img_foremploye_mobile{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .join_flex_div_one{
+        width: 100%;
+    }
+    .join_work_section_hire{
         display: none;
     }
     .apply_expact_point_div{
@@ -338,6 +373,13 @@
     .apply_expact_point{
         display: flex;
         flex-direction: row;
+    }
+    .how_to_become_title{
+        text-align: start;
+        font-size: 24px;
+    }
+    .expact_text_apply_job{
+        text-align: start;
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -415,15 +457,31 @@
     .faq_section{
         margin-left: 0px;
     }
-    .join_work_container_mobile{
-        display: block;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
     .join_work_section{
         display: none;
+    }
+    .join_work_section_hire{
+        display: none;
+    }
+    .join_work_container_mobile{
+        background-color: #1f57c3;
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+    .join_img_foremploye_mobile{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .join_flex_div_one{
+        width: 100%;
     }
     .apply_expact_point_div{
         display: grid;
@@ -433,13 +491,16 @@
         display: flex;
         flex-direction: row;
     }
+    .how_to_become_title{
+        text-align: start;
+        font-size: 25px;
+    }
+    .expact_text_apply_job{
+        text-align: start;
+    }
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .join_work_section{
-        width: 87%;
-        margin-left: 50px;
-    }
     .anchor_talkbtn{
 
         padding-bottom: 30px;
@@ -517,6 +578,35 @@
         display: flex;
         flex-direction: row;
     }
+    .join_work_container_mobile{
+        background-color: #1f57c3;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        border-radius: 10px;
+        padding-top: 5px;
+    }
+    .join_img_foremploye_mobile{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .join_flex_div_one{
+        width: 100%;
+    }
+    .join_work_section_hire{
+        display: none;
+    }
+    .join_work_section{
+        display: none;
+    }
+    .how_to_become_title{
+        text-align: start;
+        font-size: 27px;
+    }
   }
 @media only screen and (min-width: 768px) and (max-width:991px) {
     .join_work_section{
@@ -547,36 +637,7 @@
         border-bottom-right-radius: 15px;
     
     }
-    .number_one{
-        display: block;
-        width: 100px;
-        height: 23px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_two{
-        display: block;
-        width: 90px;
-        height: 23px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_three{
-        display: block;
-        width: 90px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 100%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
+
     .apply_expact_point_div{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -634,36 +695,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
-    .number_one{
-        display: block;
-        width: 57px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_two{
-        display: block;
-        width: 57px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 50%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
-    .number_three{
-        display: block;
-        width: 57px;
-        height: 25px;
-        background-color: #001e00;
-        border-radius: 100%;
-        margin-right: 15px;
-        text-align: center;
-        color: white;
-    }
+
     .faq_section{
     margin-left: 35px;
     padding-top: 80px;

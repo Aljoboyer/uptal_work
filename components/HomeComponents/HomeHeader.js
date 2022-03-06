@@ -13,8 +13,8 @@ export default function HomeHeader() {
           <Col className="text-center" lg={3} md={3} sm={4} xs={6}>
               <p className="website_title">Uptal.</p>
           </Col>
-          <Col className="mt-3" lg={3} md={3} sm={4} xs={6}>
-             <Link href="/blog"><a className="home_blog_btn mt-2">Blog</a></Link>  
+          <Col className="" lg={3} md={3} sm={4} xs={6}>
+             <Link href="/blog"><a className="home_blog_btn ">Blog</a></Link>  
           </Col>
         </Row>
         </div>

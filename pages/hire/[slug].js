@@ -258,7 +258,7 @@ const filterBlogs = blogs.slice(0, 4)
                         </div>
                     </div>
                     <div className="talk_two_btn_div text-center">
-                      <a href='https://client.uptal.org/'> <button className="hire_expect_btn mt-3">Remote Developers</button></a>
+                      <a href='https://client.uptal.org/'> <button className="hire_expect_btn mt-3">Hire Remote Developers</button></a>
                     </div>
                 </Row>
             </div>
@@ -280,7 +280,7 @@ const filterBlogs = blogs.slice(0, 4)
             </Row>
          </div>
      
-         <div>
+         <div className='join_work_section_hire'>
           <Row className='container join_full_container justify-content-center mx-auto'>
                 <Col lg={12} md={12} sm={12} xs={12} className='w-100 '>
                       <Row className="join_work_container justify-content-md-between">
@@ -307,9 +307,31 @@ const filterBlogs = blogs.slice(0, 4)
                       </Col>
                     </Row>
                 </Col>
-            </Row>
+          </Row>
          </div>
-          
+         <div className="join_work_container_mobile mx-auto">
+                <div className="join_flex_div_one">
+                  <img
+                      src="/joinimg.png"
+                      alt="Picture of the author"
+                      className="join_img_foremploye_mobile"
+                      />
+                </div>
+                <div className="ps-2">
+                  <p className='join_title'>Join the world’s work marketplace</p>
+                    <div  className='join_footer_row'>
+                    <Row className="justify-content-lg-between justify-content-md-between">
+                      <hr className='horizontal_line' />
+                      <Col lg={8} md={8} sm={12}>
+                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                      </Col>
+                      <Col lg={3} md={3} sm={12}>
+                            <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                      </Col>
+                    </Row>
+                    </div>
+                </div>
+          </div>  
           <div className='hire_faq_section'>
               <Row className='container justify-content-center mx-auto '>
                 <Row className=' mx-auto hire_faq_row pb-4 pt-4'>
@@ -358,17 +380,17 @@ const filterBlogs = blogs.slice(0, 4)
             </Row>
           </div>
 
-          <div className="technology_section">
-              
-              <Row className="container  mt-4 mx-auto">
-              <p className="based_text ms-2">Based on Skills</p>
-              <div className="technology_div hire_tech_div">
-              {hire.map((data) => {
-                    return <HireCard key={data.sys.id} data={data} />
-                })}
-            </div>
-              </Row>
+            <div className="technology_section">
+                
+                <Row className="container  mt-4 mx-auto">
+                <p className="based_text ms-2">Based on Skills</p>
+                <div className="technology_div hire_tech_div">
+                {hire.map((data) => {
+                      return <HireCard key={data.sys.id} data={data} />
+                  })}
               </div>
+                </Row>
+            </div>
             <div className="technology_section_mobile">
                   <p className="based_text ">Based on Skills</p>
                   <div className="technology_div ">
@@ -482,23 +504,23 @@ const filterBlogs = blogs.slice(0, 4)
                       </div>
                   </div>
             </div>
-      <div className='blog_section'>
-              <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Row className="container-fluid mx-auto mt-3">
-              {filterBlogs.map(blog => {
-            return <RecentBlogCard key={blog.sys.id} blog={blog} />
-              })}
-          </Row>
-      </div>
+            <div className='blog_section'>
+                    <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+                <Row className="container-fluid mx-auto mt-3">
+                    {filterBlogs.map(blog => {
+                  return <RecentBlogCard key={blog.sys.id} blog={blog} />
+                    })}
+                </Row>
+            </div>
 
-      <div className='recent_blog_carusal_section'>
-          <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Slider className="bg-light"  {...settings}>
-              {filterBlogs.map(blog => {
-                  return <RecentBlogSlide key={blog.sys.id} blog={blog} />
-                })}
-          </Slider>
-      </div>
+            <div className='recent_blog_carusal_section'>
+                <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+                <Slider className="bg-light"  {...settings}>
+                    {filterBlogs.map(blog => {
+                        return <RecentBlogSlide key={blog.sys.id} blog={blog} />
+                      })}
+                </Slider>
+            </div>
           <Footer/>
 
           <div className="table_content_btn_row">
@@ -506,10 +528,10 @@ const filterBlogs = blogs.slice(0, 4)
           </div>
 
           <Offcanvas className="details_offcanvas_container w-100 h-50 bg-dark" show={show} onHide={handleClose} scroll={true} placement="bottom">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title> </Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title> </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
    
             <div  style={{width: '100%', marginLeft: '20px'}}>
                   <p className='table_content_title text-light'>TABLE OF CONTENTS</p>

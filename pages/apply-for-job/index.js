@@ -115,8 +115,8 @@ export default function Applyjob() {
             <div className="expact_section">
                 <Row className="container  mx-auto expact_row">
                     <div className="expact_description_div" >
-                      <p className="expact_title text-center">How to become a Turing developer?</p>
-                      <p className="expact_text text-center">Work with the best software companies in just 4 easy steps</p>
+                      <p className="how_to_become_title">How to become a Uptal developer?</p>
+                      <p className="expact_text_apply_job">Work with the best software companies in just 4 easy steps</p>
                     </div>
                     <div className="apply_expact_point_div">
                         <div className="apply_expact_point">
@@ -145,7 +145,7 @@ export default function Applyjob() {
                         </div>
                     </div>
                     <div className="apply_now_btn_div">
-                        <a target="blank" href="https://developer.uptal.org/" className="job_apply_now_btn">Apply Now</a>
+                        <a target="blank" href="https://developer.uptal.org/" className="expect_apply_btn">Apply Now</a>
                     </div>
                 </Row>
             </div>
@@ -209,30 +209,28 @@ export default function Applyjob() {
               </Row>
             </div>
             
-            <div className="join_work_container_mobile">
-                  <Row className="container join_work_container justify-content-md-between mx-auto">
-                  <Col className=""  lg={4} md={4} sm={4} xs={12}>
-                    <img
-                    src="/joinimg.png"
-                    alt="Picture of the author"
-                    className="join_img_foremploye"
-                    />
-                  </Col>
-                  <Col className="" lg={8} md={8} sm={8} xs={12}>
-                      <p className='join_title'>Join the world’s work marketplace</p>
-                      <div  className='join_footer_row'>
-                      <Row className="justify-content-lg-between justify-content-md-between">
-                        <hr className='horizontal_line' />
-                        <Col lg={8} md={8} sm={12}>
-                          <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
-                        </Col>
-                        <Col lg={3} md={3} sm={12}>
-                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
-                        </Col>
-                      </Row>
-                      </div>
-                  </Col>
-                </Row>
+            <div className="join_work_container_mobile mx-auto">
+                <div className="join_flex_div_one">
+                  <img
+                      src="/joinimg.png"
+                      alt="Picture of the author"
+                      className="join_img_foremploye_mobile"
+                      />
+                </div>
+                <div className="ps-2">
+                  <p className='join_title'>Join the world’s work marketplace</p>
+                    <div  className='join_footer_row'>
+                    <Row className="justify-content-lg-between justify-content-md-between">
+                      <hr className='horizontal_line' />
+                      <Col lg={8} md={8} sm={12}>
+                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                      </Col>
+                      <Col lg={3} md={3} sm={12}>
+                            <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                      </Col>
+                    </Row>
+                    </div>
+                </div>
             </div>
         </div>
       <MainFooter/>

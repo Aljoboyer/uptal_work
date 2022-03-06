@@ -1,8 +1,16 @@
+.romote_content_colam{
+  background-color: white;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
 .remote_dev_scroll_div{
     height: 100vh;
     overflow: scroll;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: white;
+    margin-top: 20px;
 }
 .remote_icons_div{
     display: grid;
@@ -57,7 +65,7 @@
 .view_jobs_btn{
   text-decoration: none;
   color: #206ee9;
-  font-size: 22px;
+  /* font-size: 22px; */
 }
 .view_jobs_btn:hover{
   text-decoration: underline;
