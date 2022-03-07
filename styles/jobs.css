@@ -41,6 +41,10 @@
 .responsibility_title{
     padding-top: 30px;
 }
+.table_description_container{
+    padding-right: 30px;
+    padding-left: 13px;
+}
 @media only screen and (min-width: 200px)  and (max-width: 767px) {
     .job_apply_now_btn{
         height: 50px;
@@ -56,5 +60,8 @@
         grid-template-columns: auto;
         grid-row-gap: 20px;
     }
-  
+    .table_description_container{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }

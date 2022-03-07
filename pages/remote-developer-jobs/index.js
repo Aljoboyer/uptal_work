@@ -137,24 +137,27 @@ export default function HireDevelopers({jobs, techs}) {
             </Row>
         </div>
 
-        <div className='remote_dev_content-section'>
+        <div className='remote_dev_content_section'>
             <Row className='container-fluid mx-auto justify-content-center remote_dev_row'>
               <Col lg={3} md={3}>
               <div className='remote_dev_scroll_div'>
               {jobs.map(data => {
-                  return <div className={itemslug === data.fields.slug ? 'scroll_side_manu__color_div' : 'scroll_side_manu_div'} onClick={() => setItemslug(data.fields.slug)} key={data.sys.id}>
-                    <h5 className='side_manu_title'>{data.fields.skill} Developer</h5> 
-                      <div className='remote_side_icons_div'>
-                          <div><p className='icons_text'> <CgCalculator/><span className='ms-2'>Other</span></p></div>
-                          <div><p className='icons_text'><MdPeople/><span className='ms-2'>1-10</span></p></div>
-                          <div><p className='icons_text'><span className='ms-2'>23 Hours</span></p></div>
-                      </div>
-                  </div>
+                  return <><div className={itemslug === data.fields.slug ? 'scroll_side_manu__color_div' : 'scroll_side_manu_div'} onClick={() => setItemslug(data.fields.slug)} key={data.sys.id}>
+                  <h5 className='side_manu_title'>{data.fields.skill} Developer</h5> 
+                    <div className='remote_side_icons_div'>
+                        <div><p className='icons_text'> <CgCalculator/><span className='ms-2'>Other</span></p></div>
+                        <div><p className='icons_text'><MdPeople/><span className='ms-2'>1-10</span></p></div>
+                        <div><p className='icons_text'><span className='ms-2'>23 Hours</span></p></div>
+                    </div>
+                </div>
+                <hr />
+                  
+                  </>
                   }
                   )}
               </div>
               </Col>
-              <Col className='pt-4 ' lg={8} md={9}>
+              <Col className='pt-4 pb-4' lg={8} md={9}>
                   {
                       itemslug ? <div><Row className="romote_content_colam container-fluid mx-auto justify-content-center">
                       <h4>{skill} Developers</h4>
@@ -169,6 +172,7 @@ export default function HireDevelopers({jobs, techs}) {
                               <a target="blank" href="https://developer.uptal.org/" className="job_apply_now_btn">Apply Now</a>
                           </div>
                       </div>
+                      <hr/>
                       <h3 className='ms-2'>Job description</h3>
                       <h5 className='ms-2 responsibility_title'>Job responsibilities</h5>
                       <p className='mt-4'>{documentToReactComponents(jobResponsibilities)}</p>

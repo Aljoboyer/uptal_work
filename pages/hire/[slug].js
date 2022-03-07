@@ -210,7 +210,7 @@ const filterBlogs = blogs.slice(0, 4)
                 </Row>
             </div>
             <div className='container-fluid hire_details_banner_mobile'>
-                    <Row className="  mx-auto banner_row d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center">
+                    <Row className="  mx-auto banner_row d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center ps-2">
                     <Col lg={4} md={10} sm={12} xs={12}>
                       <img src={'https:' + skillLogo.fields.file.url} className='details_img' />
                     </Col>
@@ -272,7 +272,7 @@ const filterBlogs = blogs.slice(0, 4)
                 </div>
               </Col>
               <Col className='description_colam' lg={10} md={12} sm={12} xs={12}>
-                <div  className='container'>
+                <div  className='table_description_container'>
                   <p className='description'>{documentToReactComponents(content,main)}</p>
                 </div>
               </Col>
@@ -309,29 +309,32 @@ const filterBlogs = blogs.slice(0, 4)
                 </Col>
           </Row>
          </div>
-         <div className="join_work_container_mobile mx-auto">
-                <div className="join_flex_div_one">
-                  <img
-                      src="/joinimg.png"
-                      alt="Picture of the author"
-                      className="join_img_foremploye_mobile"
-                      />
-                </div>
-                <div className="ps-2">
-                  <p className='join_title'>Join the world’s work marketplace</p>
-                    <div  className='join_footer_row'>
-                    <Row className="justify-content-lg-between justify-content-md-between">
-                      <hr className='horizontal_line' />
-                      <Col lg={8} md={8} sm={12}>
-                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
-                      </Col>
-                      <Col lg={3} md={3} sm={12}>
-                            <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
-                      </Col>
-                    </Row>
-                    </div>
-                </div>
-          </div>  
+
+         <div>
+          <div className="join_work_container_mobile mx-auto">
+                  <div className="join_flex_div_one">
+                    <img
+                        src="/joinimg.png"
+                        alt="Picture of the author"
+                        className="join_img_foremploye_mobile"
+                        />
+                  </div>
+                  <div className="ps-2">
+                    <p className='join_title'>Join the world’s work marketplace</p>
+                      <div  className='join_footer_row'>
+                      <Row className="justify-content-lg-between justify-content-md-between">
+                        <hr className='horizontal_line' />
+                        <Col lg={8} md={8} sm={12}>
+                          <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                        </Col>
+                        <Col lg={3} md={3} sm={12}>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                        </Col>
+                      </Row>
+                      </div>
+                  </div>
+            </div>  
+         </div>
           <div className='hire_faq_section'>
               <Row className='container justify-content-center mx-auto '>
                 <Row className=' mx-auto hire_faq_row pb-4 pt-4'>

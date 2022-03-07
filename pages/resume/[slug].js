@@ -250,10 +250,17 @@ export default function HireDevelopers({post, blogs}) {
                       </div>
                       <div className='silicon_resume_icon_div'>
                         <p className='mt-2 '>Search Job</p>
-                          <FaFacebook className="silicon_fb mx-2 silicon_icons" size={35} />
-                          <a href="https://www.linkedin.com/company/uptal"><BsLinkedin className="silicon_linkedin silicon_icons" size={35} /></a>
-                          <a href="https://twitter.com/uptalorg"><AiFillTwitterCircle className="silicon_twitter mx-2 silicon_icons" size={40} /></a>
-                          <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="silicon_insta silicon_icons" size={35}/></a>
+                        <a> <img  className='ms-2'  style={{
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/facebook.png"/></a>
+
+                              <a href="https://www.linkedin.com/company/uptal"><img className='mx-2'  style={{
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/linkedin.png"/></a>
+
+                          <a href="https://twitter.com/uptalorg"><img   style={{ 
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/twitter.png"/></a>
+
+                          <a href="https://www.instagram.com/uptalorg/"><img className='mx-2'   style={{ 
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/insta.png"/></a>
 
                       </div>
                   </div>
@@ -261,23 +268,23 @@ export default function HireDevelopers({post, blogs}) {
               </Row>
             </div>
 
-      <div className='blog_section'>
-        <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Row className="container-fluid mx-auto mt-3">
-              {filterBlogs.map(blog => {
-            return <RecentBlogCard key={blog.sys.id} blog={blog} />
-              })}
-          </Row>
-      </div>
+            <div className='blog_section'>
+              <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+                <Row className="container-fluid mx-auto mt-3">
+                    {filterBlogs.map(blog => {
+                  return <RecentBlogCard key={blog.sys.id} blog={blog} />
+                    })}
+                </Row>
+            </div>
 
-      <div className='recent_blog_carusal_section'>
-          <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Slider className="bg-light"  {...settings}>
-              {filterBlogs.map(blog => {
-                  return <RecentBlogSlide key={blog.sys.id} blog={blog} />
-                })}
-          </Slider>
-      </div>
+            <div className='recent_blog_carusal_section'>
+                <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+                <Slider className="bg-light"  {...settings}>
+                    {filterBlogs.map(blog => {
+                        return <RecentBlogSlide key={blog.sys.id} blog={blog} />
+                      })}
+                </Slider>
+            </div>
       <Footer/>
     </Row>
 </div>

@@ -231,10 +231,17 @@ export default function HireDevelopers({post, blogs}) {
                       </div>
                        <div className='silicon_resume_icon_div'>
                         <p className='mt-2 '>Search Job</p>
-                          <FaFacebook className="silicon_fb mx-2 silicon_icons" size={35} />
-                          <a href="https://www.linkedin.com/company/uptal"><BsLinkedin className="silicon_linkedin silicon_icons" size={35} /></a>
-                          <a href="https://twitter.com/uptalorg"><FaTwitterSquare className="silicon_twitter mx-2 silicon_icons" size={38} /></a>
-                          <a href="https://www.instagram.com/uptalorg/"><BsInstagram className="silicon_insta silicon_icons" size={35}/></a>
+                        <a> <img  className='ms-2'  style={{
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/facebook.png"/></a>
+
+                              <a href="https://www.linkedin.com/company/uptal"><img className='mx-2'  style={{
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/linkedin.png"/></a>
+
+                          <a href="https://twitter.com/uptalorg"><img   style={{ 
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/twitter.png"/></a>
+
+                          <a href="https://www.instagram.com/uptalorg/"><img className='mx-2'   style={{ 
+                             height: '32px', marginTop: '5px'}}  alt="Picture of the author"  src="/insta.png"/></a>
 
                       </div>
                     </div>

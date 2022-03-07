@@ -206,29 +206,31 @@ export default function Post({post, recentBlog}) {
                 </Col>
           </Row>
         </div>
-        <div className="join_work_container_mobile mx-auto">
-                <div className="join_flex_div_one">
-                  <img
-                      src="/joinimg.png"
-                      alt="Picture of the author"
-                      className="join_img_foremploye_mobile"
-                      />
-                </div>
-                <div className="ps-2">
-                  <p className='join_title'>Join the world’s work marketplace</p>
-                    <div  className='join_footer_row'>
-                    <Row className="justify-content-lg-between justify-content-md-between">
-                      <hr className='horizontal_line' />
-                      <Col lg={8} md={8} sm={12}>
-                        <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
-                      </Col>
-                      <Col lg={3} md={3} sm={12}>
-                            <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
-                      </Col>
-                    </Row>
-                    </div>
-                </div>
-        </div>  
+        <div>
+          <div className="join_work_container_mobile mx-auto">
+                  <div className="join_flex_div_one">
+                    <img
+                        src="/joinimg.png"
+                        alt="Picture of the author"
+                        className="join_img_foremploye_mobile"
+                        />
+                  </div>
+                  <div className="ps-2">
+                    <p className='join_title'>Join the world’s work marketplace</p>
+                      <div  className='join_footer_row'>
+                      <Row className="justify-content-lg-between justify-content-md-between">
+                        <hr className='horizontal_line' />
+                        <Col lg={8} md={8} sm={12}>
+                          <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
+                        </Col>
+                        <Col lg={3} md={3} sm={12}>
+                              <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                        </Col>
+                      </Row>
+                      </div>
+                  </div>
+          </div> 
+        </div>
         <div className='blog_section'>
           <h1 className='ms-3'>Recent Blog</h1>
             <Row className="container-fluid mx-auto mt-3">
