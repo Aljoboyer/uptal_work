@@ -8,7 +8,6 @@ import { Row, Col, Offcanvas} from "react-bootstrap";
 import MainFooter from '../../../components/Footers/MainFooter';
 import { useRouter } from "next/router";
 import Indicator from '../../../components/Indicator';
-var nodemailer = require('nodemailer');
 
 const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -68,29 +67,7 @@ export default function Post({post}) {
     function onSubmit  (e) {
         e.preventDefault()
         console.log(nam)
-        var transport = nodemailer.createTransport({
-            host: "smtp.zeptomail.in",
-            port: 587,
-            auth: {
-            user: "emailapikey",
-            pass: "PHtE6r0MReDs32J9+xkC5PK6RJGtYI0srO4yf1JFtopEAqNQSk1Qqd56kmXh/x0uBvFKRaOTntk+s+zItbqAJ2juYGsZCmqyqK3sx/VYSPOZsbq6x00VuF4ff0XUXIPmddZp1C3SuNjZNA=="
-            }
-          });
-          
-          var mailOptions = {
-            from: '"Example Team" <hiring@bounce.uptal.org>',
-            to: email,
-            subject: 'Test Email',
-            html: 'Test email sent successfully.',
-          };
-          
-          transport.sendMail(mailOptions, (error, info) => {
-            if (error) {
-            return console.log(error)
-            }
-            console.log('Successfully sent');
-          });
-
+       
     }
     
    
