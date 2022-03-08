@@ -145,12 +145,12 @@ export default function HireDevelopers({jobs, techs}) {
                   return <><div className={itemslug === data.fields.slug ? 'scroll_side_manu__color_div' : 'scroll_side_manu_div'} onClick={() => setItemslug(data.fields.slug)} key={data.sys.id}>
                   <h5 className='side_manu_title'>{data.fields.skill} Developer</h5> 
                     <div className='remote_side_icons_div'>
-                        <div><p className='icons_text'> <CgCalculator/><span className='ms-2'>Other</span></p></div>
+                        <div><p className='icons_text'> <CgCalculator/><span className='ms-2'>Technology</span></p></div>
                         <div><p className='icons_text'><MdPeople/><span className='ms-2'>1-10</span></p></div>
                         <div><p className='icons_text'><span className='ms-2'>23 Hours</span></p></div>
                     </div>
                 </div>
-                <hr />
+                <hr className='horizontal_line m-0' />
                   
                   </>
                   }

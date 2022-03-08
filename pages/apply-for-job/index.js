@@ -4,7 +4,7 @@ import MainFooter from '../../components/Footers/MainFooter'
 import Link from 'next/link'
 export default function Applyjob() {
   return (
-<div style={{width: "100%"}}>
+<div className="mx-auto" style={{width: "100%"}}>
     <Row className="mx-auto">
             <Navbartwo/>
         <div>

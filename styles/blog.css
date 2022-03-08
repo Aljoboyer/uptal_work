@@ -55,3 +55,8 @@
     left: 30%;
 }
 
+.view_more_blog_btn{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
