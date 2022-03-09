@@ -5,8 +5,11 @@
 }
 .hire_details_mobile_banner_row{
   background-color: #f4f4f6;
-  display: none;
+  
   border-radius: 15px;
+}
+.hire_details_banner_mobile{
+  display: none;
 }
 .hire_description_container{
   background-color: #f4f4f6;

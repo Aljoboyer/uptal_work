@@ -41,7 +41,7 @@ export default function Intro({job}) {
     }
   }
   return (
-<div style={{width: "100%"}}>
+<div className="template_section" style={{width: "100%"}}>
     <Row className="mx-auto">
             <Navbartwo/>
         <div>
@@ -745,9 +745,8 @@ export default function Intro({job}) {
                 </div>
             </div>    
         </div>
-
-      <MainFooter/>
     </Row>
+    <MainFooter/>
 </div>
   );
 }

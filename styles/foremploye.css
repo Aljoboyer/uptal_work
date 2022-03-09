@@ -4,7 +4,7 @@
     background-color: #f4f4f6;
     padding-bottom: 15px;
     border-radius: 17px;
-}
+} 
 .employe_title{
     color: #14a800;
     font-size: 50px;
@@ -276,6 +276,9 @@
 }
 
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
+    .template_section{
+        margin-left: 5px;
+    }
     .anchor_talkbtn{
         display: flex;
         flex-direction: column;
@@ -395,6 +398,9 @@
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
+    .template_section{
+        margin-left: 5px;
+    }
     .anchor_talkbtn{
 
         padding-bottom: 30px;

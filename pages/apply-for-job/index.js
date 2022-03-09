@@ -4,7 +4,7 @@ import MainFooter from '../../components/Footers/MainFooter'
 import Link from 'next/link'
 export default function Applyjob() {
   return (
-<div className="mx-auto" style={{width: "100%"}}>
+<div className="template_section" style={{width: "100%"}}>
     <Row className="mx-auto">
             <Navbartwo/>
         <div>
@@ -233,8 +233,8 @@ export default function Applyjob() {
                 </div>
             </div>
         </div>
-      <MainFooter/>
     </Row>
+    <MainFooter/>
 </div>
   );
 }
