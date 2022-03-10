@@ -210,7 +210,7 @@ const filterBlogs = blogs.slice(0, 4)
                 </Row>
             </div>
             <div className='container-fluid hire_details_banner_mobile'>
-                    <Row className="  mx-auto banner_row d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center ps-2">
+                    <Row className="hire_details_mobile_banner_row  mx-auto banner_row d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center ps-2">
                     <Col lg={4} md={10} sm={12} xs={12}>
                       <img src={'https:' + skillLogo.fields.file.url} className='details_img' />
                     </Col>

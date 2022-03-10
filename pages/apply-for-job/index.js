@@ -29,14 +29,14 @@ export default function Applyjob() {
 
         <div>
           <div className="talent_section">
-              <Row className="container mx-auto">
+              <Row className="container mx-auto ">
                 <p className="talent_title">Pre-vetted talent available to start in these fields</p>
                 <div className="talent_div">
                     <div className="talent_item">
                       <img
                             src="/fullstack.png"
                             alt="Picture of the author"
-                            className="talent_img"
+                            className="talent_img ps-2"
                         />
                         <p className="talent_text">FullStack Developer</p>
                     </div>
@@ -151,7 +151,7 @@ export default function Applyjob() {
             </div>
 
             <div className="faq_section">
-      `       <Row className="container-xxl container-xl container-lg container-md  container-sm container-xs mx-auto faq_row justify-content-lg-evenly">
+      `       <Row className="container-xxl container-xl container-lg container-md  container-sm container-xs mx-auto faq_row justify-content-lg-around ">
                 <Col xl={6} xxl={6} lg={5} md={6} sm={6}>
                   <p className="faq_title">Frequently asked questions</p>
                 </Col>
@@ -217,7 +217,7 @@ export default function Applyjob() {
                       className="join_img_foremploye_mobile"
                       />
                 </div>
-                <div className="ps-2">
+                <div className="ps-3">
                   <p className='join_title'>Join the world’s work marketplace</p>
                     <div  className='join_footer_row'>
                     <Row className="justify-content-lg-between justify-content-md-between">

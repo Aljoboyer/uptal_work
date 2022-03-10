@@ -3,20 +3,14 @@ import HomeHeader from "../components/HomeComponents/HomeHeader";
 import Homeslide from "../components/HomeComponents/Homeslide";
 import { useRouter } from "next/router";
 import Link from "next/link";
+
 export default function Home() {
-  // const router = useRouter()
-  // const ClickHandler = () => {
-  //     router.push('/hire-developers')
-  // }
-  // const ApplyBtnHandler = () => {
-  //   router.push('/apply-for-job')
-    
-  // }
   // backgroundColor: "#f4f4f6"
   return (
     <div className="homesection" style={{width:"100%", backgroundColor: "#f4f4f6"}}>
+      <HomeHeader/>
       <Row className="home">
-        <HomeHeader/>
+        
         <Row className="container mx-auto d-flex justify-content-center p-0 mt-4">
             <Row className="justify-content-xs-center justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly  gy-3 cardcontainer justify-content-xl-evenly p-3 mx-auto">
             <h1 className="maintitle fw-bold text-center">Matching great developers with world-class companies</h1>

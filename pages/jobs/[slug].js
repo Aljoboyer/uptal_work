@@ -223,13 +223,12 @@ const filterBlogs = blogs.slice(0, 4);
                       <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
                       </div>
                     </Col>
-                   
                   </Row>
             </div>
             
             <div className='job_description_section'>
               <Row className="container-fluid mx-auto justify-content-center">
-                  <Col lg={8} md={12} sm={12}>
+                  <Col lg={8} md={12} sm={12} xs={12}>
                     <h3 className='ms-2'>Job description</h3>
                     <h5 className='ms-2 responsibility_title'>Job responsibilities</h5>
                     <p className='mt-4'>{documentToReactComponents(jobResponsibilities)}</p>
@@ -240,19 +239,37 @@ const filterBlogs = blogs.slice(0, 4);
                             <h4 className='interested_title'>Interested in this job?</h4>
                             <p>Apply to Turing today.</p>
                         </div>
-                        <div>
+                        <div className='mt-4'>
                        <a target="blank" href="https://developer.uptal.org/"  className="job_apply_now_btn">Apply Now</a>
                         </div>
                     </div>
                   </Col>
               </Row>
             </div>
-       
+            <div className='job_description_mobile_section'>
+                    <Row className='container'>
+                      <h3 className='ms-2'>Job description</h3>
+                      <h5 className='ms-2 responsibility_title'>Job responsibilities</h5>
+                      <p className='mt-4'>{documentToReactComponents(jobResponsibilities)}</p>
+                      <h3 className='ms-2'>Minimum Requirement</h3>
+                      <p>{documentToReactComponents(minimumRequirements)}</p>
+                    </Row>
+                    <div className='interested_job_row'>
+                        <div>
+                            <h4 className='interested_title'>Interested in this job?</h4>
+                            <p>Apply to Turing today.</p>
+                        </div>
+                        <div>
+                       <a target="blank" href="https://developer.uptal.org/"  className="job_apply_now__mobile_btn">Apply Now</a>
+                        </div>
+                    </div>
+            </div>
+
             <div className="hire_expact_section">
                 <Row className="container-fluid  mx-auto expact_row">
                     <div className="expact_description_div" >
-                      <p className="expact_title text-center">How to become a Turing developer?</p>
-                      <p className="expact_text text-center">Work with the best software companies in just 4 easy steps</p>
+                      <p className="how_to_become_title">How to become a Uptal developer?</p>
+                      <p className="expact_text_apply_job">Work with the best software companies in just 4 easy steps</p>
                     </div>
                     <div className="apply_expact_point_div">
                         <div className="apply_expact_point">
@@ -341,7 +358,7 @@ const filterBlogs = blogs.slice(0, 4);
                               className="join_img_foremploye_mobile"
                               />
                         </div>
-                        <div className="ps-2">
+                        <div className="ps-3">
                           <p className='join_title'>Join the world’s work marketplace</p>
                             <div  className='join_footer_row'>
                             <Row className="justify-content-lg-between justify-content-md-between">
@@ -528,24 +545,24 @@ const filterBlogs = blogs.slice(0, 4);
                     </div>
               </div>
               
-      <div className='blog_section'>
-              {filterBlogs.length > 0 ? <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2> : ''}
-          <Row className="container-fluid mx-auto mt-3">
-              {filterBlogs.map(blog => {
-            return <RecentBlogCard key={blog.sys.id} blog={blog} />
-              })}
-          </Row>
-      </div>
+          <div className='blog_section'>
+                  {filterBlogs.length > 0 ? <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2> : ''}
+              <Row className="container-fluid mx-auto mt-3">
+                  {filterBlogs.map(blog => {
+                return <RecentBlogCard key={blog.sys.id} blog={blog} />
+                  })}
+              </Row>
+          </div>
 
-      <div className='recent_blog_carusal_section'>
-          <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-          <Slider className="bg-light"  {...settings}>
-              {filterBlogs.map(blog => {
-                  return <RecentBlogSlide key={blog.sys.id} blog={blog} />
-                })}
-          </Slider>
-      </div>
-          
+          <div className='recent_blog_carusal_section'>
+              <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+              <Slider className="bg-light"  {...settings}>
+                  {filterBlogs.map(blog => {
+                      return <RecentBlogSlide key={blog.sys.id} blog={blog} />
+                    })}
+              </Slider>
+          </div>
+              
           <Footer/>
 
           <div className="table_content_btn_row">

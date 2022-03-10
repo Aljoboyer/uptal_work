@@ -43,7 +43,7 @@ export default function Intro({job}) {
   return (
 <div className="template_section" style={{width: "100%"}}>
     <Row className="mx-auto">
-            <Navbartwo/>
+      <Navbartwo/>
         <div>
           <Row className="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-start justify-content-xs-start  mx-auto employe_banner_section mt-4 gy-3">
                   <Col className="" lg={6} md={6} sm={10}>
@@ -73,7 +73,7 @@ export default function Intro({job}) {
                         <img
                               src="/fullstack.png"
                               alt="Picture of the author"
-                              className="talent_img"
+                              className="talent_img ps-2"
                           />
                           <p className="talent_text">FullStack Developer</p>
                       </div>
@@ -729,7 +729,7 @@ export default function Intro({job}) {
                       className="join_img_foremploye_mobile"
                       />
                 </div>
-                <div className="ps-2">
+                <div className="ps-3">
                   <p className='join_title'>Join the world’s work marketplace</p>
                     <div  className='join_footer_row'>
                     <Row className="justify-content-lg-between justify-content-md-between">
@@ -745,8 +745,8 @@ export default function Intro({job}) {
                 </div>
             </div>    
         </div>
+        <MainFooter/>
     </Row>
-    <MainFooter/>
 </div>
   );
 }

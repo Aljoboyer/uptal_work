@@ -215,7 +215,7 @@ export default function Post({post, recentBlog}) {
                         className="join_img_foremploye_mobile"
                         />
                   </div>
-                  <div className="ps-2">
+                  <div className="ps-3">
                     <p className='join_title'>Join the world’s work marketplace</p>
                       <div  className='join_footer_row'>
                       <Row className="justify-content-lg-between justify-content-md-between">

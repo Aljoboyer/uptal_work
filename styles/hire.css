@@ -5,7 +5,6 @@
 }
 .hire_details_mobile_banner_row{
   background-color: #f4f4f6;
-  
   border-radius: 15px;
 }
 .hire_details_banner_mobile{
@@ -68,7 +67,7 @@
   
   }
   .based_text{
-  
+
     margin-top: 40px;
     font-size: 18px;
     font-weight: 600;
@@ -232,7 +231,7 @@
     
     }
     .based_text{
-      margin-left: 0px;
+      margin-left: 20px;
     }
     
     .Based_role_div{

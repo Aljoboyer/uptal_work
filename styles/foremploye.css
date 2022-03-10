@@ -1,4 +1,5 @@
 /* -------------home banner section css start--------------- */
+
 /* #f4f4f6 */
 .employe_banner_section{
     background-color: #f4f4f6;
@@ -73,6 +74,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+    width: 100%;
+
 }
 .talent_item{
     background-color: #f4f4f6;
@@ -104,6 +107,8 @@
 /* -------------barand section css start--------------- */
 .brand_section{
     padding-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .brand_title{
     font-size: 34px;
@@ -126,8 +131,9 @@
 
 /* -------------expect section css start--------------- */
 .expact_section{
-    margin-left: 38px;
     padding-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .expact_row{
     background-color:  #f4f4f6;
@@ -222,7 +228,8 @@
 /* -------------expect section css end--------------- */
 /* -------------faq section css start--------------- */
 .faq_section{
-    margin-left: 35px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding-top: 80px;
 }
 .faq_row{
@@ -272,10 +279,25 @@
 }
 .join_work_section{
     width: 90%;
-    margin-left: 80px;
+    margin-left: 58px;
+    margin-right: 40px;
 }
 
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
+    .brand_section{
+        padding-top: 80px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .expact_section{
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+    .faq_section{
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+
     .template_section{
         margin-left: 5px;
     }
@@ -331,10 +353,10 @@
         margin-left: 10px;
     }
     .talent_title{
-        line-height: 40px;
+        font-size: 24px;
     }
     .brand_title{
-        line-height: 40px;
+        font-size: 24px;
     }
     .employe_brand_img{
         width: 90px;
