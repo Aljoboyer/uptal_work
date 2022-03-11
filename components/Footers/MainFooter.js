@@ -16,7 +16,9 @@ export default function MainFooter() {
         <footer className="footer">
             <div className="container">
                 <Row className=" footerlink_container pb-3 mx-auto pt-4 mt-2">
-                    <Col className="" lg={2} md={4} sm={12}>
+                    <Col className="" lg={2} md={4} sm={12} style={{
+                        paddingLeft:'0'
+                    }}>
                         <p className="footer_title">Uptal.</p>
                     </Col>
                     <Col lg={10} md={8} sm={12}>

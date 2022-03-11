@@ -218,7 +218,6 @@
       display: grid;
       grid-template-columns: auto auto  ;
       grid-row-gap: 30px;
-      margin-left: 10px;
       
     }
     .technology_text{
@@ -229,9 +228,6 @@
     .technology_colam{
       width: 90%;
     
-    }
-    .based_text{
-      margin-left: 20px;
     }
     
     .Based_role_div{

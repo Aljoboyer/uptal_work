@@ -4,7 +4,7 @@
 .employe_banner_section {
     background-color: #f4f4f6;
     padding-bottom: 15px;
-    border-radius: 17px;
+    border-radius: 15px;
 }
 
 .employe_title {
@@ -70,6 +70,7 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-left: 20px;
+    object-fit: cover;
 }
 
 /* -------------home banner section css end--------------- */
