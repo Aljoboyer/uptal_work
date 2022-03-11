@@ -1,12 +1,13 @@
 /* -------------home banner section css start--------------- */
 
 /* #f4f4f6 */
-.employe_banner_section{
+.employe_banner_section {
     background-color: #f4f4f6;
     padding-bottom: 15px;
     border-radius: 17px;
-} 
-.employe_title{
+}
+
+.employe_title {
     color: #14a800;
     font-size: 50px;
     font-weight: bold;
@@ -15,7 +16,8 @@
     font-family: 'Open Sans', sans-serif;
     line-height: 50px;
 }
-.employe_text{
+
+.employe_text {
     color: #001e00;
     font-size: 16px;
     font-weight: 500;
@@ -23,11 +25,13 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-.anchor_talkbtn{
+
+.anchor_talkbtn {
     display: flex;
     flex-direction: row;
 }
-.talk_btn{
+
+.talk_btn {
     background-color: #14a800;
     border: none;
     border-radius: 15px;
@@ -39,7 +43,8 @@
     font-family: 'Open Sans', sans-serif;
     padding: 5px 20px 5px 20px;
 }
-.looking_anchor{
+
+.looking_anchor {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -51,11 +56,13 @@
     text-align: start;
     margin-top: 3px;
 }
-.looking_anchor:hover{
+
+.looking_anchor:hover {
     text-decoration: underline;
     color: #14a800;
 }
-.employe_banner_img{
+
+.employe_banner_img {
     width: 100%;
     height: 280px;
     border-top-left-radius: 15px;
@@ -64,25 +71,29 @@
     border-bottom-right-radius: 15px;
     margin-left: 20px;
 }
+
 /* -------------home banner section css end--------------- */
 /* #f4f4f6; */
 /* -------------telant section css start--------------- */
-.talent_section{
+.talent_section {
     padding-top: 80px;
 }
-.talent_div{
+
+.talent_div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     width: 100%;
 
 }
-.talent_item{
+
+.talent_item {
     background-color: #f4f4f6;
     border-radius: 15px;
     text-align: center;
 }
-.talent_title{
+
+.talent_title {
     font-size: 34px;
     font-weight: bold;
     color: #001e00;
@@ -90,7 +101,8 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-.talent_text{
+
+.talent_text {
     font-size: 20px;
     font-weight: bold;
     color: #001e00;
@@ -98,19 +110,20 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-.talent_img{
+
+.talent_img {
     width: 160px;
     height: 160px;
 }
+
 /* -------------telant section css end--------------- */
 
 /* -------------barand section css start--------------- */
-.brand_section{
+.brand_section {
     padding-top: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
-.brand_title{
+
+.brand_title {
     font-size: 34px;
     font-weight: bold;
     color: #001e00;
@@ -118,48 +131,54 @@
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-.brand_description{
+
+.brand_description {
     line-height: 22px;
     font-size: 18px;
     color: rgb(124, 124, 123);
 }
-.employe_brand_img{
+
+.employe_brand_img {
     width: 140px;
     height: 56px;
 }
+
 /* -------------barand section css end--------------- */
 
 /* -------------expect section css start--------------- */
-.expact_section{
+.expact_section {
     padding-top: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
-.expact_row{
-    background-color:  #f4f4f6;
+
+.expact_row {
+    background-color: #f4f4f6;
     border-radius: 15px;
-    padding-bottom: 25px;
+    padding: 30px 20px;
+    padding-bottom: 35px;
 }
-.expact_point_div{
+
+.expact_point_div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     padding-top: 35px;
 }
-.expact_point{
+
+.expact_point {
     display: flex;
     flex-direction: row;
 }
-.expact_title{
-        font-size: 34px;
-        font-weight: bold;
-        color: #001e00;
-        font-family: 'Charm', cursive;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-family: 'Open Sans', sans-serif;
-        padding-top: 15px;
-    }
-.expact_text{
+
+.expact_title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #001e00;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.expact_text {
     font-size: 16px;
     line-height: 22px;
     font-family: 'Charm', cursive;
@@ -167,7 +186,8 @@
     font-family: 'Open Sans', sans-serif;
     display: block;
 }
-.expact_text_apply_job{
+
+.expact_text_apply_job {
     font-size: 16px;
     line-height: 22px;
     font-family: 'Charm', cursive;
@@ -175,17 +195,19 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-.how_to_become_title{
+
+.how_to_become_title {
     font-size: 34px;
-        font-weight: bold;
-        color: #001e00;
-        font-family: 'Charm', cursive;
-        font-family: 'IBM Plex Sans', sans-serif;
-        font-family: 'Open Sans', sans-serif;
-        padding-top: 15px;
-        text-align: center;
+    font-weight: bold;
+    color: #001e00;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+    text-align: center;
 }
-.expect_apply_btn{
+
+.expect_apply_btn {
     background-color: #14a800;
     border: none;
     border-radius: 20px;
@@ -198,7 +220,8 @@
     padding: 15px 30px 15px 30px;
     text-decoration: none;
 }
-.talk_two_btn{
+
+.talk_two_btn {
     background-color: #14a800;
     border: none;
     border-radius: 20px;
@@ -211,14 +234,16 @@
     padding: 5px 10px 5px 10px;
     text-decoration: none;
 }
+
 /* -------------expect section css end--------------- */
 /* -------------expect section css start--------------- */
-.apply_now_btn_div{
+.apply_now_btn_div {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 10px;
 }
-.apply_expact_point_div{
+
+.apply_expact_point_div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
@@ -227,23 +252,26 @@
 
 /* -------------expect section css end--------------- */
 /* -------------faq section css start--------------- */
-.faq_section{
+.faq_section {
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 80px;
 }
-.faq_row{
-    background-color:  #f4f4f6;
+
+.faq_row {
+    background-color: #f4f4f6;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 15px;
 
 }
-.fa_question{
+
+.fa_question {
     color: #001e00;
     padding-bottom: 5px;
 }
-.faq_title{
+
+.faq_title {
     font-size: 30px;
     color: #001e00;
     font-weight: 600;
@@ -252,61 +280,70 @@
     font-family: 'Open Sans', sans-serif;
     text-align: start;
 }
-.faq_point_title{
+
+.faq_point_title {
     font-size: 20px;
     font-weight: 600;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-.faq_text{
+
+.faq_text {
     font-size: 17px;
     font-weight: 300;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+
 /* -------------faq section css end--------------- */
 /* ---------------------joinwork section css-------------- */
-.join_img_foremploye{
+.join_img_foremploye {
     width: 100%;
     height: 100%;
-  border-radius: 10px;
+    border-radius: 10px;
 }
-.join_work_container_mobile{
+
+.join_work_container_mobile {
     /* margin-left: 30px; */
     display: none;
 }
-.join_work_section{
+
+.join_work_section {
     width: 90%;
     margin-left: 58px;
     margin-right: 40px;
 }
 
-@media only screen and (min-width: 200px)  and (max-width: 429px) {
-    .brand_section{
+@media only screen and (min-width: 200px) and (max-width: 429px) {
+    .brand_section {
         padding-top: 80px;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .expact_section{
-        padding-left: 5px;
-        margin-right: 5px;
-    }
-    .faq_section{
+
+    .expact_section {
         padding-left: 5px;
         margin-right: 5px;
     }
 
-    .template_section{
+    .faq_section {
+        padding-left: 5px;
+        margin-right: 5px;
+    }
+
+    .template_section {
         margin-left: 5px;
     }
-    .anchor_talkbtn{
+
+    .anchor_talkbtn {
         display: flex;
         flex-direction: column;
         padding-bottom: 30px;
     }
-    .employe_title{
+
+    .employe_title {
         color: #14a800;
         font-size: 35px;
         font-weight: bold;
@@ -316,22 +353,27 @@
         margin-left: 0px;
         line-height: 40px;
     }
-    .employe_banner_img{
+
+    .employe_banner_img {
         display: none;
     }
-    .talk_btn{
+
+    .talk_btn {
         padding: 5px 10px 5px 10px;
         width: 50%;
     }
-    .looking_anchor{
+
+    .looking_anchor {
         padding-top: 15px;
     }
-    .talent_div{
+
+    .talent_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 20px;
     }
-    .talent_item{
+
+    .talent_item {
         background-color: #f4f4f6;
         border-radius: 15px;
         text-align: center;
@@ -339,11 +381,13 @@
         align-items: center;
         margin-top: 10px;
     }
-    .talent_img{
+
+    .talent_img {
         width: 70px;
         height: 70px;
     }
-    .talent_text{
+
+    .talent_text {
         font-size: 16px;
         font-weight: bold;
         color: #001e00;
@@ -352,35 +396,44 @@
         font-family: 'Open Sans', sans-serif;
         margin-left: 10px;
     }
-    .talent_title{
+
+    .talent_title {
         font-size: 24px;
     }
-    .brand_title{
+
+    .brand_title {
         font-size: 24px;
     }
-    .employe_brand_img{
+
+    .employe_brand_img {
         width: 90px;
         height: 40px;
     }
-    .expact_point_div{
+
+    .expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 30px;
         padding-top: 35px;
     }
-    .expact_section{
+
+    .expact_section {
         margin-left: 0px;
     }
-    .expact_title{
+
+    .expact_title {
         line-height: 40px;
     }
-    .faq_section{
+
+    .faq_section {
         margin-left: 0px;
     }
-    .join_work_section{
+
+    .join_work_section {
         display: none;
     }
-    .join_work_container_mobile{
+
+    .join_work_container_mobile {
         background-color: #1f57c3;
         display: flex;
         flex-direction: column;
@@ -389,45 +442,55 @@
         margin-bottom: 70px;
         border-radius: 10px;
         padding-bottom: 20px;
-     
+
     }
-    .join_img_foremploye_mobile{
+
+    .join_img_foremploye_mobile {
         width: 100%;
         height: 100%;
         padding: 12px;
         border-radius: 15px;
     }
-    .join_flex_div_one{
+
+    .join_flex_div_one {
         width: 100%;
     }
-    .join_work_section_hire{
+
+    .join_work_section_hire {
         display: none;
     }
-    .apply_expact_point_div{
+
+    .apply_expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .apply_expact_point{
+
+    .apply_expact_point {
         display: flex;
         flex-direction: row;
     }
-    .how_to_become_title{
+
+    .how_to_become_title {
         text-align: start;
         font-size: 24px;
     }
-    .expact_text_apply_job{
+
+    .expact_text_apply_job {
         text-align: start;
     }
-  }
-@media only screen and (min-width: 430px)  and (max-width: 575px) {
-    .template_section{
+}
+
+@media only screen and (min-width: 430px) and (max-width: 575px) {
+    .template_section {
         margin-left: 5px;
     }
-    .anchor_talkbtn{
+
+    .anchor_talkbtn {
 
         padding-bottom: 30px;
     }
-    .employe_title{
+
+    .employe_title {
         color: #14a800;
         font-size: 35px;
         font-weight: bold;
@@ -437,18 +500,22 @@
         margin-left: 0px;
         line-height: 40px;
     }
-    .employe_banner_img{
+
+    .employe_banner_img {
         display: none;
     }
-    .talk_btn{
+
+    .talk_btn {
         width: 50%;
     }
-    .talent_div{
+
+    .talent_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 20px;
     }
-    .talent_item{
+
+    .talent_item {
         background-color: #2d8b20;
         border-radius: 15px;
         text-align: center;
@@ -456,11 +523,13 @@
         align-items: center;
         margin-top: 10px;
     }
-    .talent_img{
+
+    .talent_img {
         width: 70px;
         height: 70px;
     }
-    .talent_text{
+
+    .talent_text {
         font-size: 18px;
         font-weight: bold;
         color: #001e00;
@@ -469,7 +538,8 @@
         font-family: 'Open Sans', sans-serif;
         margin-left: 10px;
     }
-    .talent_title{
+
+    .talent_title {
         font-size: 25px;
         font-weight: bold;
         color: #001e00;
@@ -477,7 +547,8 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
     }
-    .brand_title{
+
+    .brand_title {
         font-size: 25px;
         font-weight: bold;
         color: #001e00;
@@ -485,25 +556,31 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
     }
-    .expact_section{
+
+    .expact_section {
         margin-left: 0px;
     }
-    .expact_point_div{
+
+    .expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 30px;
         padding-top: 35px;
     }
-    .faq_section{
+
+    .faq_section {
         margin-left: 0px;
     }
-    .join_work_section{
+
+    .join_work_section {
         display: none;
     }
-    .join_work_section_hire{
+
+    .join_work_section_hire {
         display: none;
     }
-    .join_work_container_mobile{
+
+    .join_work_container_mobile {
         background-color: #1f57c3;
         display: flex;
         flex-direction: column;
@@ -512,40 +589,47 @@
         margin-bottom: 70px;
         border-radius: 10px;
         padding-bottom: 20px;
-    
+
     }
-    .join_img_foremploye_mobile{
+
+    .join_img_foremploye_mobile {
         width: 100%;
         height: 100%;
         padding: 12px;
         border-radius: 15px;
     }
-    .join_flex_div_one{
+
+    .join_flex_div_one {
         width: 100%;
     }
-    .apply_expact_point_div{
+
+    .apply_expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .apply_expact_point{
+
+    .apply_expact_point {
         display: flex;
         flex-direction: row;
     }
-    .how_to_become_title{
+
+    .how_to_become_title {
         text-align: start;
         font-size: 25px;
     }
-    .expact_text_apply_job{
+
+    .expact_text_apply_job {
         text-align: start;
     }
-  }
-  
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .anchor_talkbtn{
+    .anchor_talkbtn {
 
         padding-bottom: 30px;
     }
-    .employe_title{
+
+    .employe_title {
         color: #14a800;
         font-size: 40px;
         font-weight: bold;
@@ -555,15 +639,18 @@
         margin-left: 0px;
         line-height: 45px;
     }
-    .employe_banner_img{
+
+    .employe_banner_img {
         display: none;
     }
-    .talent_div{
+
+    .talent_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 20px;
     }
-    .talent_item{
+
+    .talent_item {
         background-color: #2d8b20;
         border-radius: 15px;
         text-align: center;
@@ -571,11 +658,13 @@
         align-items: center;
         margin-top: 10px;
     }
-    .talent_img{
+
+    .talent_img {
         width: 70px;
         height: 70px;
     }
-    .talent_text{
+
+    .talent_text {
         font-size: 18px;
         font-weight: bold;
         color: #001e00;
@@ -584,7 +673,8 @@
         font-family: 'Open Sans', sans-serif;
         margin-left: 10px;
     }
-    .talent_title{
+
+    .talent_title {
         font-size: 30px;
         font-weight: bold;
         color: #001e00;
@@ -592,7 +682,8 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
     }
-    .brand_title{
+
+    .brand_title {
         font-size: 30px;
         font-weight: bold;
         color: #001e00;
@@ -600,25 +691,29 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-family: 'Open Sans', sans-serif;
     }
-    .expact_point_div{
+
+    .expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 30px;
         padding-top: 35px;
     }
 
-    .faq_section{
+    .faq_section {
         margin-left: 0px;
     }
-    .apply_expact_point_div{
+
+    .apply_expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .apply_expact_point{
+
+    .apply_expact_point {
         display: flex;
         flex-direction: row;
     }
-    .join_work_container_mobile{
+
+    .join_work_container_mobile {
         background-color: #1f57c3;
         display: flex;
         flex-direction: column;
@@ -628,32 +723,39 @@
         border-radius: 10px;
         padding-top: 5px;
     }
-    .join_img_foremploye_mobile{
+
+    .join_img_foremploye_mobile {
         width: 100%;
         height: 100%;
         padding: 10px;
         border-radius: 15px;
     }
-    .join_flex_div_one{
+
+    .join_flex_div_one {
         width: 100%;
     }
-    .join_work_section_hire{
+
+    .join_work_section_hire {
         display: none;
     }
-    .join_work_section{
+
+    .join_work_section {
         display: none;
     }
-    .how_to_become_title{
+
+    .how_to_become_title {
         text-align: start;
         font-size: 27px;
     }
-  }
+}
+
 @media only screen and (min-width: 768px) and (max-width:991px) {
-    .join_work_section{
+    .join_work_section {
         width: 92%;
         margin-left: 50px;
     }
-    .employe_title{
+
+    .employe_title {
         color: #14a800;
         font-size: 40px;
         font-weight: bold;
@@ -663,33 +765,36 @@
         margin-left: 0px;
         line-height: 45px;
     }
-    .talent_div{
+
+    .talent_div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
-    .employe_banner_img{
+
+    .employe_banner_img {
         width: 100%;
         height: 100%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-    
+
     }
 
-    .apply_expact_point_div{
+    .apply_expact_point_div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .apply_expact_point{
+
+    .apply_expact_point {
         display: flex;
         flex-direction: row;
     }
 }
 
 @media only screen and (min-width:992px) and (max-width:1163px) {
-    .employe_title{
+    .employe_title {
         color: #14a800;
         font-size: 45px;
         font-weight: bold;
@@ -699,28 +804,31 @@
         margin-left: 0px;
         line-height: 45px;
     }
-    .talent_div{
+
+    .talent_div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
-    .employe_banner_img{
+
+    .employe_banner_img {
         width: 100%;
         height: 250px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-    
+
     }
-    .join_work_section{
+
+    .join_work_section {
         width: 97%;
         margin-left: 30px;
     }
 }
 
 @media only screen and (min-width:1164px) and (max-width: 3000px) {
-    .employe_title{
+    .employe_title {
         color: #14a800;
         font-size: 50px;
         font-weight: bold;
@@ -730,18 +838,15 @@
         margin-left: 0px;
         line-height: 50px;
     }
-    .talent_div{
+
+    .talent_div {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
 
-    .faq_section{
-    margin-left: 35px;
-    padding-top: 80px;
-    }
-    .expact_section{
-        margin-left: 38px;
+    .faq_section {
+        margin-left: 35px;
         padding-top: 80px;
     }
 }
