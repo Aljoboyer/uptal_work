@@ -17,7 +17,7 @@ export default function BlogCard({blog}) {
 
   return(
 
-      <Col className='card-colam pb-4 ps-4 pe-4' lg={4} md={6} sm={12} >
+      <Col className='card-colam pb-4' lg={4} md={6} sm={12} >
           <Link href={`/blog/${slug}`}><a>
           <img className='cards-img' src={'https:' + thumbnail.fields.file.url}  alt='' />
           <p className="blog-title mt-3">{title}</p>

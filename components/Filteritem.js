@@ -9,7 +9,9 @@ export default function Filteritem() {
     <div className="filter-container mb-3 mx-auto">
       <div className="container">
         <div>
-          <p className={style.filter_title}>FILTER BY CATEGORY</p>
+          <p className={style.filter_title} style={{
+            marginLeft:'0'
+          }}>FILTER BY CATEGORY</p>
         </div>
         <div className="filter-text-container pb-3" style={{
           display:'flex',
@@ -17,7 +19,9 @@ export default function Filteritem() {
           flexWrap:'wrap'
         }}>
           <Link href="/blog">
-            <a className={router.route === '/blog' ? 'anchor-texttwo' : 'anchor-text'}>All</a>
+            <a className={router.route === '/blog' ? 'anchor-texttwo' : 'anchor-text'} style={{
+            marginLeft:'0'
+          }}>All</a>
           </Link>
           <Link href="/blog/category/remote-work">
             <a className={router.route === '/blog/category/remote-work' ? 'anchor-texttwo' : 'anchor-text'}>Remote Work</a>

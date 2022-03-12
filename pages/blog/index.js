@@ -43,15 +43,15 @@ export default function Blog({ blogs }) {
 
       <Filteritem />
       <div className="container">
-        <Row className="mx-auto mt-3">
+        <Row className="mx-auto mt-3 mb-4">
           {SliceBlogs.map(blog => {
             return <BlogCard key={blog.sys.id} blog={blog} />
           })}
           {
             viewMore && <p className='text-primary view_more_blog_btn text-center' onClick={() => {
               ViewBlog(viewBlog + 6)
-
-            }}>View More</p>
+            }}
+            >View More</p>
           }
 
         </Row>
