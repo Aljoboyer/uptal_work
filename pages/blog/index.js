@@ -1,4 +1,4 @@
-import React,  {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import BlogCard from "../../components/BlogCard";
 import { createClient } from 'contentful'
 import Filteritem from "../../components/Filteritem";
 import { Row } from "react-bootstrap";
-import Nabars from "../../components/Navbars/Navbars";
+import Navbar from "../../components/Navbars/Navbars";
 import Footer from "../../components/Footers/Footers";
 
 export async function getStaticProps() {
@@ -33,29 +33,31 @@ export default function Blog({ blogs }) {
 
   let SliceBlogs;
   SliceBlogs = blogs.slice(0, viewBlog)
- 
- 
+
+
   return (
-       
-    <Row className="mx-auto">
-     <Nabars/>
-     
-     <Filteritem />
-    
-      <Row className="mx-auto mt-3">
+
+    <div className="mx-auto">
+      <Navbar />
+
+
+      <Filteritem />
+      <div className="container">
+        <Row className="mx-auto mt-3">
           {SliceBlogs.map(blog => {
             return <BlogCard key={blog.sys.id} blog={blog} />
           })}
           {
-            viewMore && <p className='text-primary view_more_blog_btn text-center' onClick={() =>  {
+            viewMore && <p className='text-primary view_more_blog_btn text-center' onClick={() => {
               ViewBlog(viewBlog + 6)
-     
+
             }}>View More</p>
           }
-          
-      </Row>
-      <Footer/>
-    </Row>
-    
+
+        </Row>
+      </div>
+      <Footer />
+    </div>
+
   );
 }

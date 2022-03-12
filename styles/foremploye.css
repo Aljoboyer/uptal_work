@@ -334,10 +334,6 @@
         margin-right: 5px;
     }
 
-    .template_section {
-        margin-left: 5px;
-    }
-
     .anchor_talkbtn {
         display: flex;
         flex-direction: column;
@@ -482,12 +478,8 @@
 }
 
 @media only screen and (min-width: 430px) and (max-width: 575px) {
-    .template_section {
-        margin-left: 5px;
-    }
 
     .anchor_talkbtn {
-
         padding-bottom: 30px;
     }
 
