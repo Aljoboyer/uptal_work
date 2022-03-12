@@ -231,7 +231,7 @@ export default function Post({ post, recentBlog }) {
             </div>
           </div>
         </div>
-        <div className='blog_section'>
+        <section className='blog_section'>
           <div className="container">
             <h1>Recent Blog</h1>
             <Row className="mx-auto mt-3">
@@ -240,7 +240,7 @@ export default function Post({ post, recentBlog }) {
               })}
             </Row>
           </div>
-        </div>
+        </section>
         <MainFooter />
         <div className="table_content_btn_row">
           <button onClick={handleShow} className='table_content_btn'>Table of Content</button>
