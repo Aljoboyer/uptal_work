@@ -12,29 +12,31 @@ export default function Home() {
       <div className="home">
 
         <div className="container mt-4">
-        <h1 className="maintitle fw-bold text-center">Matching great developers with world-class companies</h1>
-          <Row className="justify-content-xs-center justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly  gy-3 cardcontainer justify-content-xl-evenly p-3 mx-auto">
-           
-            <Col className="text-center justify-content-center  pb-4 ps-3 pe-3 content-colam" lg={4} md={10} sm={12}>
-              <button className="businessbtn">Businesses</button>
-              <h5 className="cardtitle fw-bold">Uptal for enterprises</h5>
-              <p className="card-pera">
-                Uptal lets you hire  vetted  <br />
-                remote developers with  <br />  strong technical and communication skills.
-              </p>
-              <Link href="/hire-developers"><a className="hirebtn">Hire Now</a></Link>
-            </Col>
-            <Col className="text-center pb-4 ps-3 pe-3  content-colam" lg={4} md={10} sm={12}>
+          <div className="home_content_wrapper">
+            <h1 className="maintitle fw-bold text-center">Matching great developers with world-class companies</h1>
+            <Row className="justify-content-xs-center justify-content-sm-center justify-content-md-evenly  justify-content-lg-evenly  gy-3 cardcontainer justify-content-xl-evenly p-3 mx-auto">
 
-              <button className="developers">Developers</button>
-              <h5 className="cardtitle fw-bold">Uptal for developers</h5>
-              <p className="card-pera">
-                Join a community of developers <br />
-                and get full time, long term  <br /> remote jobs with better compensation.
-              </p>
-              <Link href="/apply-for-job"><a className="joinbtn">Apply Now</a></Link>
-            </Col>
-          </Row>
+              <Col className="text-center justify-content-center  pb-4 ps-3 pe-3 content-colam" lg={4} md={10} sm={12}>
+                <button className="businessbtn">Businesses</button>
+                <h5 className="cardtitle fw-bold">Uptal for enterprises</h5>
+                <p className="card-pera">
+                  Uptal lets you hire  vetted  <br />
+                  remote developers with  <br />  strong technical and communication skills.
+                </p>
+                <Link href="/hire-developers"><a className="hirebtn">Hire Now</a></Link>
+              </Col>
+              <Col className="text-center pb-4 ps-3 pe-3  content-colam" lg={4} md={10} sm={12}>
+
+                <button className="developers">Developers</button>
+                <h5 className="cardtitle fw-bold">Uptal for developers</h5>
+                <p className="card-pera">
+                  Join a community of developers <br />
+                  and get full time, long term  <br /> remote jobs with better compensation.
+                </p>
+                <Link href="/apply-for-job"><a className="joinbtn">Apply Now</a></Link>
+              </Col>
+            </Row>
+          </div>
         </div>
         <div className="home_brand_section">
           <Row className="container-fluid mx-auto justify-content-around">
