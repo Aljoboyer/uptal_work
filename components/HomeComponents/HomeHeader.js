@@ -16,7 +16,7 @@ export default function HomeHeader() {
         }}>
           <Container>
           <Navbar.Brand ><p className="website_title">Uptal.</p></Navbar.Brand>
-          <Navbar.Toggle onClick={handleShow} className="me-3 mb-2"  aria-controls="responsive-navbar-nav" style={{color: 'black'}}><AiOutlineMenu size={30}/></Navbar.Toggle>
+          <Navbar.Toggle onClick={handleShow} className="mb-2"  aria-controls="responsive-navbar-nav" style={{color: 'black'}}><AiOutlineMenu size={30}/></Navbar.Toggle>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               

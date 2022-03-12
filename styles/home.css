@@ -257,10 +257,6 @@
 }
 
 @media only screen and (min-width: 322px) and (max-width: 429px) {
-  .homesection {
-    margin-left: 15px;
-  }
-
 
   .maintitle {
     color: #2c3454;
@@ -468,6 +464,10 @@
 
   .home_brand_section {
     padding-top: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }
 
