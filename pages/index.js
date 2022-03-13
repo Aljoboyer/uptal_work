@@ -38,7 +38,9 @@ export default function Home() {
             </Row>
           </div>
         </div>
-        <div className="home_brand_section">
+        <div className="home_brand_section" style={{
+          backgroundColor: "#f4f4f6"
+        }}>
           <Row className="container-fluid mx-auto justify-content-around">
             <Col lg={2} sm={4} md={3} xs={6}>
               <img

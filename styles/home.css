@@ -480,13 +480,14 @@
 @media only screen and (min-width:1450px) {
   .home_content_wrapper{
     margin-top: 100px;
+    min-height: calc(100vh - 270px);
   }
-  .home_brand_section {
+  /* .home_brand_section {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-  }
+  } */
 }
 
 @media only screen and (min-width:1541px) and (max-width:3000px) {
