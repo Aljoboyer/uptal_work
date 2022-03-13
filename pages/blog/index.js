@@ -42,7 +42,9 @@ export default function Blog({ blogs }) {
 
 
       <Filteritem />
-      <div className="container">
+      <div className="container" style={{
+        minHeight:'calc(100vh - 700px)'
+      }}>
         <Row className="mx-auto mt-3 mb-4">
           {SliceBlogs.map(blog => {
             return <BlogCard key={blog.sys.id} blog={blog} />

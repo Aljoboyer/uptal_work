@@ -11,9 +11,9 @@ import { useRouter } from "next/router";
 import { Button, TextField } from '@mui/material';
 import Footer from '../../components/Footers/Footers';
 import HireCard from '../../components/HireCard';
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import RecentBlogCard from '../../components/RecentBlogCard';
 import RecentBlogSlide from '../../components/RecentBlogSlide';
 
@@ -415,7 +415,7 @@ export default function HireDevelopers({ post, hire, blogs }) {
             </div>
           </div>
         </section>
-        
+
         <section className="technology_section" style={{ marginRight: '0' }}>
 
           <div className="container mt-4">
@@ -900,7 +900,7 @@ export default function HireDevelopers({ post, hire, blogs }) {
           </div>
         </section>
 
-        <section className='blog_section'>
+        {/* <section className='blog_section'>
           <div className="container">
             {filterBlogs.length > 0 ? <h2 className='fw-bold pb-4 '>Recent Blog</h2> : ''}
             <Row className="mx-auto mt-3">
@@ -909,16 +909,22 @@ export default function HireDevelopers({ post, hire, blogs }) {
               })}
             </Row>
           </div>
-        </section>
+        </section> */}
 
-        {/* <div className='recent_blog_carusal_section'>
-                <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-                <Slider className="bg-light"  {...settings}>
-                    {filterBlogs.map(blog => {
-                        return <RecentBlogSlide key={blog.sys.id} blog={blog} />
-                      })}
-                </Slider>
-            </div> */}
+        <section className='recent_blog_carusal_section' style={{
+          display: 'block',
+          marginBottom:'70px',
+          marginTop:'70px'
+        }}>
+          <div className="container">
+            <h2 className='fw-bold pb-4 '>Recent Blog</h2>
+            <Slider className="bg-light"  {...settings}>
+              {filterBlogs.map(blog => {
+                return <RecentBlogSlide key={blog.sys.id} blog={blog} />
+              })}
+            </Slider>
+          </div>
+        </section>
         <Footer />
 
         <div className="table_content_btn_row">

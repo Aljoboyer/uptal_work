@@ -16,7 +16,9 @@ export default function RecentBlogCard({blog}) {
     const years = new Date(date).getFullYear();
 
   return(
-    <div className='card-colam pb-4 ps-4 pe-4' >
+    <div className='card-colam pb-4 ps-3 pe-3' style={{
+      backgroundColor:'#fff'
+    }}>
         <Link href={`/blog/${slug}`}><a>
         <img className='cards-img' src={'https:' + thumbnail.fields.file.url}  alt='' />
         <p className="blog-title mt-3">{title}</p>
