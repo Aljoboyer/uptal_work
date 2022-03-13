@@ -120,6 +120,9 @@
 .recent_blog_carusal_section{
   display: none;
 }
+.recent_blog_carusal_section .bg-light{
+  background-color: #fff !important;
+}
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
  .interview_q_btn{
     width: 250px;

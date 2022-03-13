@@ -3,9 +3,9 @@ import Navbartwo from "../../components/Navbars/Navbartwo";
 import Footer from '../../components/Footers/Footers'
 import Link from 'next/link';
 import RecentBlogCard from '../../components/RecentBlogCard';
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import RecentBlogSlide from '../../components/RecentBlogSlide';
 import { createClient } from 'contentful'
 
@@ -215,13 +215,29 @@ export default function About({ blogs }) {
         </section>
 
         {blogs?.length > 0 && (
-          <section className='blog_section'>
-            <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
-            <Row className="container-fluid mx-auto mt-3">
-              {blogs.map(blog => {
-                return <RecentBlogCard key={blog.sys.id} blog={blog} />
-              })}
-            </Row>
+          // <section className='blog_section'>
+          //   <h2 className='fw-bold ms-4 pb-4 '>Recent Blog</h2>
+          //   <Row className="container-fluid mx-auto mt-3">
+          //     {blogs.map(blog => {
+          //       return <RecentBlogCard key={blog.sys.id} blog={blog} />
+          //     })}
+          //   </Row>
+          // </section>
+
+
+          <section className='recent_blog_carusal_section' style={{
+            display: 'block',
+            marginBottom: '70px',
+            marginTop: '30px'
+          }}>
+            <div className="container">
+              <h2 className='fw-bold pb-4 '>Recent Blog</h2>
+              <Slider className="bg-light"  {...settings}>
+                {blogs.map(blog => {
+                  return <RecentBlogSlide key={blog.sys.id} blog={blog} />
+                })}
+              </Slider>
+            </div>
           </section>
         )}
 
