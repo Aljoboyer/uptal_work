@@ -6,18 +6,14 @@ export default function Filteritem() {
   const router = useRouter();
 
   return (
-    <div className="filter-container mb-3 mx-auto">
+    <div className="filter_bar mb-3 mx-auto">
       <div className="container">
         <div>
           <p className={style.filter_title} style={{
             marginLeft:'0'
           }}>FILTER BY CATEGORY</p>
         </div>
-        <div className="filter-text-container pb-3" style={{
-          display:'flex',
-          alignItems:'center',
-          flexWrap:'wrap'
-        }}>
+        <div className="filter-text-container pb-3 filter_items" >
           <Link href="/blog">
             <a className={router.route === '/blog' ? 'anchor-texttwo' : 'anchor-text'} style={{
             marginLeft:'0'

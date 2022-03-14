@@ -9,6 +9,7 @@ import Filteritem from "../../components/Filteritem";
 import { Row } from "react-bootstrap";
 import Navbar from "../../components/Navbars/Navbars";
 import Footer from "../../components/Footers/Footers";
+import { IoIosArrowDown } from 'react-icons/io';
 
 export async function getStaticProps() {
 
@@ -53,7 +54,7 @@ export default function Blog({ blogs }) {
             viewMore && <p className='text-primary view_more_blog_btn text-center' onClick={() => {
               ViewBlog(viewBlog + 6)
             }}
-            >View More</p>
+            >View More <IoIosArrowDown size={24} /></p>
           }
 
         </Row>

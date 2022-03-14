@@ -13,6 +13,7 @@ import "../styles/about.css";
 import "../styles/contact.css";
 import "../styles/interviewQuestion.css";
 import "../styles/remoteDevelopersJobs.css";
+import "../styles/Event.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {

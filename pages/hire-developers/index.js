@@ -783,40 +783,7 @@ export default function Intro({ job }) {
     </div>
   );
 }
-{/* <Row className="container-fluid mx-auto gy-3 justify-content-evenly gorious_section">
-<Col lg={6} md={6} sm={12}>
-  <img
-    src="/regorious.jpg"
-    alt="Picture of the author"
-    className="regorious_img"
-  />
-</Col>
-<Col lg={5} md={6} sm={12}>
-  <p className="rigorious_title ms-2">Rigorous Vetting</p>
-  <div className="gorious_div mt-4">
-      <img
-        src="/goroious-check-icon.svg"
-        alt="Picture of the author"
-        className="regorious_icon"
-      />
-      <div>
-         <p className="gorious_point_title">5+ hours of tests and interviews</p>
-         <p className="gorious_text">More rigorous than Silicon Valley job interviews. We test for 100+ skills, data structures, algorithms, systems design, software specializations & frameworks.</p>
-      </div>
-  </div>
-  <div className="gorious_div">
-      <img
-        src="/gorious-box-icon.svg"
-        alt="Picture of the author"
-        className="regorious_icon"
-      />
-      <div>
-        <p className="gorious_point_title">Seniority tests</p>
-          <p className="gorious_text">We select excellent communicators who can proactively take ownership of business and product objectives without micromanagement.</p>
-      </div>
-  </div>
-</Col>
-</Row> */}
+
 
 {/* <Row className="container mx-auto">
 <Col>

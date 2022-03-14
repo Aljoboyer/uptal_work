@@ -177,6 +177,12 @@
     margin-right: 30px;
     cursor: pointer;
 }
+.navtwo{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
 @media only screen and (min-width: 200px)  and (max-width: 429px) {
     .website_title{
         margin-left: 0px;

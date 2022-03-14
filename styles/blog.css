@@ -58,5 +58,16 @@
 .view_more_blog_btn{
     cursor: pointer;
     font-size: 18px;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+.filter_items{
+    overflow: auto;
+    white-space: nowrap;
+}
+.filter_bar{
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1;
+    padding-top: 20px;
 }
