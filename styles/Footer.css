@@ -1,0 +1,167 @@
+.Footer , .footer{
+    background: black;
+}
+.footer_title{
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+}
+.remote_btn{
+    text-align: center;
+    font-size: 16px;
+    background: white;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px 13px 50px;
+
+}
+.remote_btn:hover{
+    text-decoration: none;
+    color: black;
+}
+.apply_btn{
+    text-align: center;
+    font-size: 16px;
+    background: black;
+    border: white solid 1px;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 10px 50px 15px 50px;
+    color: white;
+}
+.apply_btn:hover{
+    text-decoration: none;
+    color: white;
+}
+.foter_link{
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 35px;
+}
+.foter_link_title{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 35px;
+}
+.foter_link_title:hover{
+    color: white;
+}
+.foter_link:hover{
+    text-decoration: underline;
+    transition: 0.8s ease-in-out;
+    color: white;
+}
+.footerbtn_container{
+    padding-bottom: 80px;
+}
+.bottomfooter_text{
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-left: 8px;
+    text-decoration: none;
+}
+.bottomfooter_text:hover{
+    text-decoration: underline;
+    transition: 0.8s ease-in-out;
+    color: white;
+}
+.social_icons{
+    color: rgb(160, 159, 159);
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+.copyright_title{
+    font-size: 16px;
+    color: white;
+    margin-left: 8px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.bottom_text_containerOne{
+    display: none;
+}
+.remote_arrow_icons, .apply_arrow_icons{
+    display: none;
+    
+}
+.remote_btn:hover .remote_arrow_icons{
+    display: inline-block;
+
+}
+.apply_btn:hover .apply_arrow_icons{
+    display: inline-block;
+
+    
+}
+.apply_arrow_icons{
+    color: white;
+}
+.footer_title{
+    font-size: 34;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+@media only screen and (min-width: 100px)  and (max-width: 337px) {
+    .apply_btn{
+        padding: 10px 20px 10px 20px;
+    }
+    .remote_btn{
+        padding: 10px 20px 10px 20px;
+    }
+    .bottom_text_containerOne{
+      display: block;
+  }
+  .bottom_text_containertwo{
+      display: none;
+  }
+}
+@media only screen and (min-width: 338px)  and (max-width: 429px) {
+    
+      .bottom_text_containerOne{
+        display: block;
+    }
+    .bottom_text_containertwo{
+        display: none;
+    }
+  }
+@media only screen and (min-width: 430px)  and (max-width: 575px) {
+    
+      .bottom_text_containerOne{
+        display: block;
+    }
+    .bottom_text_containertwo{
+        display: none;
+    }
+  }
+  
+@media only screen and (min-width: 576px) and (max-width: 787px) {
+    
+      .bottom_text_containerOne{
+        display: block;
+    }
+    .bottom_text_containertwo{
+        display: none;
+    }
+  }
+@media only screen and (min-width: 788px) and (max-width:991px) {
+    
+  }
+@media only screen and (min-width: 992px) and (max-width:1203px) {
+   
+}
