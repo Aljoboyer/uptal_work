@@ -29,7 +29,7 @@ export default function Contact() {
     // };
     // const k = await axios(options)
     // const access_token = k.data.access_token
-    // console.log(access_token)
+    console.log(email)
 
   
     var data = qs.stringify({
@@ -72,13 +72,9 @@ export default function Contact() {
       data : data
     };
 
-    await axios(config)
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log(error.response);
-    });
+    res = await axios(config)
+    console.log(res)
+    
 
   //   const dataa = qs.stringify({
   //     "data": [
