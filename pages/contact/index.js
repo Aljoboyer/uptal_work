@@ -32,7 +32,49 @@ export default function Contact() {
     console.log(email)
 
   
-   
+    var data = qs.stringify({
+      'refresh_token': '1000.693c75255acb78e8d228694908e21844.8fc1f58474967fc7e87abfd31f2a0036',
+      'client_id': '1000.2SMNIWVPRPCNK2M1ZTPJBMGK9EUBMV',
+      'client_secret': '308074678c641944ecb8accc78ad4880747d357518',
+      'grant_type': 'refresh_token' 
+    });
+    var config = {
+      method: 'post',
+      url: 'https://accounts.zoho.in/oauth/v2/token?= ',
+      headers: { 
+        'Content-Type': 'application/x-www-form-urlencoded', 
+        'Cookie': '6e73717622=94da0c17b67b4320ada519c299270f95; _zcsr_tmp=3eedf25e-6082-4deb-bb91-794daf353bfd; iamcsr=3eedf25e-6082-4deb-bb91-794daf353bfd'
+      },
+      data : data
+    };
+
+    var access_token = await axios(config)
+
+    var data = JSON.stringify({
+      "data": [
+        {
+          "Company": "gh",
+          "Last_Name": "nmmb",
+          "First_Name": "nbg",
+          "Email": "p.daly@zylker.com",
+          "State": "Texas"
+        }
+      ]
+    });
+
+    var config = {
+      method: 'post',
+      url: 'https://www.zohoapis.in/crm/v2/Contacts',
+      headers: { 
+        'Authorization': `Zoho-oauthtoken ${access_token}`, 
+        'Content-Type': 'application/json'
+      },
+      data : data
+    };
+
+    res = await axios(config)
+    console.log(res)
+    
 
   //   const dataa = qs.stringify({
   //     "data": [
