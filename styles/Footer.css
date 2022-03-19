@@ -3,8 +3,12 @@
 }
 .footer_title{
     color: white;
-    font-weight: bold;
-    font-size: 34px;
+    font-size: 25px;
+    font-family: 'Charm', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
 }
 .remote_btn{
     text-align: center;
@@ -14,7 +18,7 @@
     border-radius: 2px;
     text-decoration: none;
     color: black;
-    padding: 10px 50px 13px 50px;
+    padding: 20px 50px 0px 50px;
 
 }
 .remote_btn:hover{
@@ -28,7 +32,7 @@
     border: white solid 1px;
     border-radius: 2px;
     text-decoration: none;
-    padding: 10px 50px 15px 50px;
+    padding: 20px 50px 0px 50px;
     color: white;
 }
 .apply_btn:hover{
@@ -107,15 +111,15 @@
 .apply_arrow_icons{
     color: white;
 }
-.footer_title{
-    font-size: 34;
+.footer_website_title{
     color: white;
-    margin-bottom: 10px;
+    font-size: 34px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+
 }
 @media only screen and (min-width: 100px)  and (max-width: 337px) {
     .apply_btn{
@@ -130,6 +134,7 @@
   .bottom_text_containertwo{
       display: none;
   }
+
 }
 @media only screen and (min-width: 338px)  and (max-width: 429px) {
     
@@ -138,6 +143,16 @@
     }
     .bottom_text_containertwo{
         display: none;
+    }
+    .footer_title{
+        text-align: center;
+    }
+    .remote_btn{
+        padding: 20px 50px 20px 50px;
+
+    }
+    .apply_btn{
+        padding: 20px 50px 20px 50px;
     }
   }
 @media only screen and (min-width: 430px)  and (max-width: 575px) {
@@ -148,9 +163,19 @@
     .bottom_text_containertwo{
         display: none;
     }
+    .footer_title{
+        text-align: center;
+    }
+    .remote_btn{
+        padding: 20px 50px 20px 50px;
+
+    }
+    .apply_btn{
+        padding: 20px 50px 20px 50px;
+    }
   }
   
-@media only screen and (min-width: 576px) and (max-width: 787px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     
       .bottom_text_containerOne{
         display: block;
@@ -158,9 +183,22 @@
     .bottom_text_containertwo{
         display: none;
     }
+    .footer_title{
+        text-align: center;
+    }
+
+    .remote_btn{
+        padding: 20px 50px 20px 50px;
+
+    }
+    .apply_btn{
+        padding: 20px 50px 20px 50px;
+    }
   }
-@media only screen and (min-width: 788px) and (max-width:991px) {
-    
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .footer_title{
+        text-align: center;
+    }
   }
 @media only screen and (min-width: 992px) and (max-width:1203px) {
    

@@ -15,19 +15,23 @@ export default function Footer() {
     return (
         <div className="Footer mx-auto">
             <div className="container">
-                <Row className="footerbtn_container justify-content-center gy-3">
-                    <p className="footer_title text-center">Join Uptal to unleash the world’s <br /> untapped human potential</p>
-                    <Col className="d-flex justify-content-center " xl={3} lg={5} md={5} sm={12}>
+                <Row className="footerbtn_container justify-content-center gy-3 pt-4">
+                    <Col xl={4} lg={3} md={8} sm={12}><p className="footer_title ">Join the Uptal® community.</p></Col>
+                    <Col  xl={8} lg={9} md={12} sm={12} xs={12}>
+                        <Row>
+                        <Col className="d-flex justify-content-center " xl={5} lg={5} md={5} sm={12}>
                         <Link href="/hire-developers"><a className="remote_btn">Hire remote developers<BsArrowRight className="remote_arrow_icons ms-2" /></a></Link>
                     </Col>
-                    <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-2">OR</p></Col>
-                    <Col className="d-flex justify-content-center" xl={3} lg={5} md={5} sm={12}>
+                    <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-4">OR</p></Col>
+                    <Col className="d-flex justify-content-center" xl={5} lg={5} md={5} sm={12}>
                         <Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer<BsArrowRight className="apply_arrow_icons ms-2" /></a></Link>
+                    </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row className="footerlink_container pb-3 mx-auto ">
                     <Col className="" lg={2} md={4} sm={12}>
-                        <p className="footer_title">Uptal.</p>
+                        <p className="footer_website_title">Uptal.</p>
                     </Col>
                     <Col lg={10} md={8} sm={12}>
                         <Row className="gy-3  justify-content-center">

@@ -63,11 +63,51 @@ export default function Post({post}) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-    const { name, slug, dateAndTime, location, about, organizedBy} = post.fields;
+    const { name, slug, dateAndTime, location, about, organizedBy, metaTitle} = post.fields;
+
+    const main = {
+
+      renderNode: {
+        [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+          return (
+            <img
+              src={`https://${node.data.target.fields.file.url}`}
+              height={node.data.target.fields.file.details.image.height}
+              width={node.data.target.fields.file.details.image.width}
+              alt={node.data.target.fields.description}
+            />
+          );
+        }
+  
+      },
+    };
  
     function onSubmit  (e) {
         e.preventDefault()
+        let data = {
+          nam,
+          email
+        }
+
+        fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        }).then((res) => {
+          console.log('Response received')
+          if (res.status === 200) {
+            console.log('Response succeeded!')
+            setName('')
+            setEmail('')
+          }
+        })
+        
+        
         console.log(nam)
+        console.log(email)
        
     }
     
@@ -76,7 +116,7 @@ export default function Post({post}) {
       <div style={{width: '100%'}}>
                 <Navbartwo/>
         <Meta
-        title={name}
+        title={metaTitle}
         />
         <section className='event_details_banner_section'>
             <div className="contact_header_section">
@@ -118,10 +158,10 @@ export default function Post({post}) {
                       </div>
                     </Col>
                     <Col lg={8} md={12} sm={12} xs={12}>
-                      <p className='event_content'>{documentToReactComponents(about)}</p>
+                      <p className='event_content'>{documentToReactComponents(about,main)}</p>
                       <p className='sign_up_title organize_title'>Want to Organize a Toptal Event?</p>
                       <p>We welcome all Toptalers who are motivated to create and lead new events around the world. It's a great opportunity to meet other industry leaders, forge new connections, and help grow your local community. Fill out the contact form on this page, or email community@toptal.com for more information.</p>
-                    </Col>
+                    </Col> 
                 </Row>
             </div>
         </section>

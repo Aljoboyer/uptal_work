@@ -32,16 +32,15 @@ export default function Nabars({ navigation }) {
               <Nav >
 
                 <Nav.Link className="mt-2 "> <Link href='/apply-for-job'><a className="right-nav-span">Apply As Developer</a></Link></Nav.Link>
+
                 <Nav.Link className="mt-2 "> <Link href='/hire-developers'><a className="getstarted_btn">Hire Remote Developers</a></Link></Nav.Link>
 
-                <Nav.Link className="mt-2"> <span className="right-nav-span">Login</span>
-                </Nav.Link>
-
+                <Link href='https://community.uptal.org/'><a target="blank" className="right-nav-span fs-6 mt-3">Community</a></Link>
               </Nav>
             </div>
           </Navbar.Collapse>
         </Navbar>
-
+        
         <Offcanvas className="offcanvas_container w-100" show={show} onHide={handleClose} scroll={true} placement="end">
           <Offcanvas.Header closeButton>
             <Offcanvas.Title> <Link href="/"><a className="navtwo_logo">Uptal.</a></Link></Offcanvas.Title>
@@ -51,7 +50,8 @@ export default function Nabars({ navigation }) {
             <div style={{ width: '100%' }}>
               <Link href='/hire-developers'><a className="offcangetstarted_btn">Hire Remote Developers</a></Link>
               <Link href='/apply-for-job'><a className="Applydev_btn">Apply As Developer</a></Link>
-              <Link href="/blog"><a className="Login_btn">Blog</a></Link>
+
+              <Link href='https://community.uptal.org/'><a target="blank" className="Login_btn fs-6 mt-3">Community</a></Link>
             </div>
           </Offcanvas.Body>
         </Offcanvas>

@@ -10,28 +10,29 @@ export default function HomeHeader() {
   const handleShow = () => setShow(true);
 
     return (
-      <div>
-        <Navbar collapseOnSelect expand="lg" variant="l" style={{
-          backgroundColor:'#F4F4F6'
-        }}>
-          <Container>
-          <Navbar.Brand ><p className="website_title">Uptal.</p></Navbar.Brand>
-          <Navbar.Toggle onClick={handleShow} className="mb-2"  aria-controls="responsive-navbar-nav" style={{color: 'black'}}><AiOutlineMenu size={30}/></Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              
-            </Nav>
-            <div className="nav-itmes">
-            <Nav>
-              <Link href="/blog"><a className="home_blog_btn ">Community</a></Link>
-              <Link href="/blog"><a className="home_blog_btn ">Blog</a></Link>
-            </Nav>
-            </div>
-          </Navbar.Collapse>
-          </Container>
-        </Navbar>
+      <div  style={{ width: '100%', paddingLeft:'0', paddingRight:'0' , backgroundColor:'#F4F4F6'}}>
 
+        <div className="container" >
+          <Navbar collapseOnSelect expand="lg" variant="l">
+      
+          <Navbar.Brand className="me-3 "> <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
 
+            <Navbar.Toggle onClick={handleShow} className="mb-2"  aria-controls="responsive-navbar-nav" style={{color: 'black'}}><AiOutlineMenu size={30}/></Navbar.Toggle>
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                
+              </Nav>
+              <div className="nav-itmes">
+              <Nav>
+                <Link href="/blog"><a className="home_blog_btn ">Community</a></Link>
+                <Link href="/blog"><a className="home_blog_btn ">Blog</a></Link>
+              </Nav>
+              </div>
+            </Navbar.Collapse>
+      
+          </Navbar>
+
+        </div>
 
         <Offcanvas className="offcanvas_container w-100" show={show} onHide={handleClose} scroll={true} placement="end">
         <Offcanvas.Header closeButton>

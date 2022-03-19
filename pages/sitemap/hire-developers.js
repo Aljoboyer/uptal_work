@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import Link from 'next/link'
 export async function getStaticProps() {
 
-    const client = createClient({
+    const client = createClient({ 
       space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
       accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_TOKEN,
     })

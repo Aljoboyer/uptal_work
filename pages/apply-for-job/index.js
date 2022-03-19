@@ -1,8 +1,32 @@
 import { Row, Col } from "react-bootstrap";
 import Navbartwo from "../../components/Navbars/Navbartwo";
 import MainFooter from '../../components/Footers/MainFooter'
-import Link from 'next/link'
-export default function Applyjob() {
+import Link from 'next/link';
+import JobCard from "../../components/JobCard";
+import { createClient } from 'contentful'
+import { useState } from "react";
+
+export async function getStaticProps() {
+
+  const client = createClient({
+    space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_TOKEN,
+  })
+
+  const res = await client.getEntries({ content_type: "jobs" })
+
+  return {
+    props: {
+      job: res.items,
+    },
+    revalidate: 1
+  } 
+}
+
+export default function Applyjob({job}) {
+  const HalfSLice = job.slice(0, 6)
+  const [showTech, setShowTech] = useState(false)
+
   return (
     <div className="template_section" style={{ width: "100%" }}>
       <Navbartwo />
@@ -128,7 +152,7 @@ export default function Applyjob() {
                   marginTop: '7px', marginLeft: '5px',
                   height: '30px'
                 }} alt="Picture of the author" src="/numone.png" />
-                <p className="expact_text ms-2 mt-2"> <span className="fw-bold" fs-5>Create your profile</span> <br />
+                <p className="expact_text ms-2 mt-2"> <span className="fw-bold fs-5" >Create your profile</span> <br />
                   Fill in your basic details - Name, location, skills, salary, & experience.</p>
               </div>
               <div className="apply_expact_point">
@@ -160,6 +184,40 @@ export default function Applyjob() {
               <a target="blank" href="https://developer.uptal.org/" className="expect_apply_btn">Apply Now</a>
             </div>
           </div>
+        </div>
+      </section>
+      
+      <section className="technology_section" style={{ marginRight: '0' }}>
+        <div className="container mt-4">
+          <p className="based_text">Based on Skills</p>
+          <div className="technology_div">
+            {job.map(data => {
+                 return <JobCard key={data.sys.id} data={data} />
+                }
+                )}
+          </div>
+        </div>
+      </section>
+
+      <section className="technology_section_mobile">
+        <div className="container">
+          <p className="based_text ">Based on Skills</p>
+          { showTech || <div className="technology_div">
+            {HalfSLice.map(data => {
+                 return <JobCard key={data.sys.id} data={data} />
+                }
+                )}
+          </div>
+          }
+          {
+            showTech && <div className="technology_div">
+              {job.map(data => {
+                 return <JobCard key={data.sys.id} data={data} />
+                }
+                )}
+            </div>
+          }
+          <p onClick={() => setShowTech(!showTech)} className="text-primary mt-2">View More +</p>
         </div>
       </section>
 

@@ -91,6 +91,18 @@ export default function Post({ post, recentBlog }) {
         return (
           <p className="description_title"><a id={strUnderscores}>{pext} </a></p>
         )
+
+      },
+      [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+        return (
+          <img
+            src={`https://${node.data.target.fields.file.url}`}
+            height={node.data.target.fields.file.details.image.height}
+            width={node.data.target.fields.file.details.image.width}
+            alt={node.data.target.fields.description}
+          />
+        );
+
       }
 
     },

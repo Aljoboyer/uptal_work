@@ -121,7 +121,7 @@ export default function HireDevelopers({ post, blogs }) {
       router.push('https://www.uptal.org/hire/python')
     }
   }
-  const { title, skill, skillLogo, content, intro } = post.fields;
+  const { title, skill, skillLogo, content, intro, metaDescription, metaTitle } = post.fields;
 
   const headingTypes = [BLOCKS.HEADING_2]
 
@@ -141,6 +141,16 @@ export default function HireDevelopers({ post, blogs }) {
         return (
           <p className="description_title"><a id={strUnderscores}>{pext} </a></p>
         )
+      },
+      [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+        return (
+          <img
+            src={`https://${node.data.target.fields.file.url}`}
+            height={node.data.target.fields.file.details.image.height}
+            width={node.data.target.fields.file.details.image.width}
+            alt={node.data.target.fields.description}
+          />
+        );
       }
 
     },
@@ -193,8 +203,8 @@ export default function HireDevelopers({ post, blogs }) {
       <Row className="mx-auto">
         <Navbartwo />
         <Meta
-          title={title}
-          image={'https:' + skillLogo.fields.file.url}
+            title={metaTitle}
+            description={metaDescription}
         />
         <div className='hire_details_banner_section'>
           <Row className='container-fluid hire_details_banner mx-auto'>

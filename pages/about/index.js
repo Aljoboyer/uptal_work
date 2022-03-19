@@ -154,7 +154,7 @@ export default function About({ blogs }) {
             <div className="glance_row">
               <div className="mx-auto remote_company_div"><h1 className="">100% remote company</h1></div>
               <div className="glance_div">
-                <div className="glance_colam ">
+                <div className="glance_colam "> 
                   <h1>1 million+</h1>
                   <p>DevelopersDevelopers</p>
                 </div>

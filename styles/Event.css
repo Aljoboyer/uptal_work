@@ -1,3 +1,9 @@
+.event_container{
+    background-color: #f4f4f6;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .event_section{
     padding-top: 50px;
     padding-bottom: 80px; 
@@ -41,10 +47,7 @@
 .event_colam a{
     text-decoration: none;
 }
-.event_colam a:hover{
-    text-decoration: none;
-    
-}
+
 .event_colam{
     width: 100%;
     padding: 10px;
@@ -78,7 +81,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .event_colam:hover{
- background-color: #f4f4f6;
+ background-color: #e4e2e2;
  transition: 0.5s ease-in-out;  
 }
 /* #f4f4f6; */
@@ -89,7 +92,7 @@
     grid-column-gap: 25px;
 }
 .event_text_colam{
-    height: 320px;
+    height: 270px;
 }
 
 /* ------------------event details css start------------------ #f4f4f6;*/

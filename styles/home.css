@@ -234,7 +234,7 @@
     color: #2c3454;
     font-size: 25px;
     font-weight: 700;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 40px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -265,6 +265,7 @@
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 20px;
+    margin-top: 40px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -328,9 +329,7 @@
     line-height: 40px;
   }
 
-  .homesection {
-    margin-left: 15px;
-  }
+
 
   .content-colam {
     margin-bottom: 40px;

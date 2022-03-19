@@ -19,7 +19,7 @@ export async function getStaticProps() {
         job: res.items,
       },
       revalidate: 1
-    }
+    } 
   }
 
 export default function SitemapHireDevelopers({job}) {

@@ -19,7 +19,7 @@ export default function MainFooter() {
                     <Col className="" lg={2} md={4} sm={12} style={{
                         paddingLeft:'0'
                     }}>
-                        <p className="footer_title">Uptal.</p>
+                        <p className="footer_website_title">Uptal.</p>
                     </Col>
                     <Col lg={10} md={8} sm={12}>
                         <Row className="gy-3  justify-content-center">
