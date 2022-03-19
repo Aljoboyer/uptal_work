@@ -24,7 +24,7 @@ export async function getStaticProps() {
 
 export default function SitemapHireDevelopers({hire}) {
     const router = useRouter()
-console.log(hire)
+
     const GoBackHandler = () => {
         router.push('')
     }
