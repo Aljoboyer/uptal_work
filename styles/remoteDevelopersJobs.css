@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 .remote_icons_div{
     display: grid;

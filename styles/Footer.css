@@ -1,15 +1,27 @@
 .Footer , .footer{
     background: black;
 }
+.footer_btn_container{
+    display: flex;
+    justify-content: center;
+}
+.footer_mobile_btn_container{
+    padding-bottom: 80px;
+    display: none;
+}
+.footer_btn_div{
+    display: flex;
+}
 .footer_title{
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
 }
+
 .remote_btn{
     text-align: center;
     font-size: 16px;
@@ -18,8 +30,8 @@
     border-radius: 2px;
     text-decoration: none;
     color: black;
-    padding: 20px 50px 0px 50px;
-
+    padding: 15px 30px 15px 30px;
+    display: block;
 }
 .remote_btn:hover{
     text-decoration: none;
@@ -32,7 +44,8 @@
     border: white solid 1px;
     border-radius: 2px;
     text-decoration: none;
-    padding: 20px 50px 0px 50px;
+    padding: 15px 30px 15px 30px;
+    display: block;
     color: white;
 }
 .apply_btn:hover{
@@ -62,9 +75,7 @@
     transition: 0.8s ease-in-out;
     color: white;
 }
-.footerbtn_container{
-    padding-bottom: 80px;
-}
+
 .bottomfooter_text{
     cursor: pointer;
     color: white;
@@ -173,6 +184,12 @@
     .apply_btn{
         padding: 20px 50px 20px 50px;
     }
+    .footer_btn_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
   }
   
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -194,12 +211,22 @@
     .apply_btn{
         padding: 20px 50px 20px 50px;
     }
+    .footer_btn_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
   }
 @media only screen and (min-width: 768px) and (max-width:991px) {
     .footer_title{
         text-align: center;
     }
+    .footer_btn_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
   }
-@media only screen and (min-width: 992px) and (max-width:1203px) {
-   
+@media only screen and (min-width: 992px) and (max-width:2403px) {
+  
 }

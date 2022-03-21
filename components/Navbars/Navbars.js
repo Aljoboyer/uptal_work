@@ -19,8 +19,8 @@ export default function Nabars({ navigation }) {
   return (
     <div style={{ width: '100%', paddingLeft:'0', paddingRight:'0'}}>
       <div className="container">
-        <Navbar collapseOnSelect expand="lg" bg="" variant="light">
 
+      <Navbar collapseOnSelect expand="lg" bg="" variant="light">
           <Navbar.Brand > <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
 
           <Navbar.Toggle className="mb-2" onClick={handleShow} aria-controls="responsive-navbar-nav" style={{ color: 'black' }} />
@@ -31,11 +31,11 @@ export default function Nabars({ navigation }) {
             <div className="nav-itmes">
               <Nav >
 
-                <Nav.Link className="mt-2 "> <Link href='/apply-for-job'><a className="right-nav-span">Apply As Developer</a></Link></Nav.Link>
+                <Link href='/apply-for-job'><a className="right-nav-span mb-3">Apply As Developer</a></Link>
 
-                <Nav.Link className="mt-2 "> <Link href='/hire-developers'><a className="getstarted_btn">Hire Remote Developers</a></Link></Nav.Link>
+                <Link href='/hire-developers'><a className="right-nav-span mx-3 mb-3">Hire Now</a></Link> 
 
-                <Link href='https://community.uptal.org/'><a target="blank" className="right-nav-span fs-6 mt-3">Community</a></Link>
+                <Link href='https://community.uptal.org/'><a target="blank" className="right-nav-span fs-6 mb-3">Community</a></Link>
               </Nav>
             </div>
           </Navbar.Collapse>

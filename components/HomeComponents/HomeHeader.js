@@ -15,7 +15,7 @@ export default function HomeHeader() {
         <div className="container" >
           <Navbar collapseOnSelect expand="lg" variant="l">
       
-          <Navbar.Brand className="me-3 "> <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
+          <Navbar.Brand className="me-4"> <Link href="/"><a className="navtwo_logo">Uptal.</a></Link> </Navbar.Brand>
 
             <Navbar.Toggle onClick={handleShow} className="mb-2"  aria-controls="responsive-navbar-nav" style={{color: 'black'}}><AiOutlineMenu size={30}/></Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">

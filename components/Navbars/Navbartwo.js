@@ -31,9 +31,15 @@ export default function Navbartwo() {
             </Nav>
             <div className="nav-itmes">
               <Nav >
-                <Link href={router.route === '/apply-for-job' ? 'https://developer.uptal.org/' : '/apply-for-job'}><a target={router.route === '/apply-for-job' ? 'blank' : ''} className="right-nav-span">Apply As Developer</a></Link>
 
-                <Link href={router.route === '/hire-developers' ? 'https://client.uptal.org/' : '/hire-developers'} ><a target={router.route === '/hire-developers' ? 'blank' : ''} className="getstarted_btn">Hire Remote Developers</a></Link>
+                {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="right-nav-span">Hire Remote Developers</a></Link> :
+                <Link href='/apply-for-job'><a  className="right-nav-span">Apply As Developer</a></Link> 
+                } 
+              
+
+              {router.route === '/apply-for-job' || router.route ===  '/hire-developers' ? <> { router.route === '/apply-for-job' ? <Link href='https://developer.uptal.org/signin' ><a target='blank' className="getstarted_btn">Apply Now</a></Link> : 
+              <Link href= 'https://client.uptal.org/'><a target='blank' className="getstarted_btn">Hire Developers </a></Link> } </> : <Link href='/hire-developers'><a className="getstarted_btn">Hire Developers </a></Link>
+              }
 
                 <Link href='/blog'><a className="right-nav-span">Blog</a></Link>
 

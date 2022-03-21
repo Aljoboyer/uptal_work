@@ -1,16 +1,15 @@
 
 .getstarted_btn{
-   
     text-decoration: none;
     padding: 12px;
     border-radius: 5px;
     border: none;
-    background-color: #206ee9;
+    background-color: #00cc83;
     text-align: center;
     font-size: 15px;
     color: white;
     height: 48px;
-    width: 250px;
+    width: 150px;
     font-weight: 500;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -81,7 +80,7 @@
     transition: 0.5s ease-in-out;
 }
 .navbar-row{ 
-    background-color: #206ee9;
+    background-color: #00cc83;
     color: white;
     text-align: center;
     height: 40px;
@@ -107,7 +106,7 @@
 .offcangetstarted_btn{
     border-radius: 5px;
     border: none;
-    background-color: #206ee9;
+    background-color: #00cc83;
     text-align: center;
     font-size: 15px;
     color: white;
@@ -123,11 +122,11 @@
 }
 .Applydev_btn{
     border-radius: 5px;
-    border: solid 1px #206ee9;;
+    border: solid 1px #00cc83;
     background-color: white;
     text-align: center;
     font-size: 15px;
-    color: #206ee9;
+    color: #00cc83;
     padding: 10px 0px 10px 0px;
     width: 93vw;
     font-weight: 500;
@@ -141,11 +140,11 @@
 }
 .Login_btn{
     border-radius: 5px;
-    border: solid 1px #206ee9;;
+    border: solid 1px #00cc83;
     background-color: white;
     text-align: center;
     font-size: 16px;
-    color: #206ee9;
+    color: #00cc83;
     padding: 10px;
     width: 93vw;
     font-weight: 500;
@@ -212,7 +211,7 @@
     .offcangetstarted_btn{
         border-radius: 5px;
         border: none;
-        background-color: #206ee9;
+        background-color: #00cc83;
         text-align: center;
         font-size: 15px;
         color: white;
@@ -227,11 +226,11 @@
     }
     .Applydev_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 93vw;
         font-weight: 500;
@@ -244,11 +243,11 @@
     }
     .Login_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 93vw;
         font-weight: 500;
@@ -282,7 +281,7 @@
     .offcangetstarted_btn{
         border-radius: 5px;
         border: none;
-        background-color: #206ee9;
+        background-color: #00cc83;
         text-align: center;
         font-size: 15px;
         color: white;
@@ -297,11 +296,11 @@
     }
     .Applydev_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 95vw;
         font-weight: 500;
@@ -314,11 +313,11 @@
     }
     .Login_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 95vw;
         font-weight: 500;
@@ -353,7 +352,7 @@
     .offcangetstarted_btn{
         border-radius: 5px;
         border: none;
-        background-color: #206ee9;
+        background-color: #00cc83;
         text-align: center;
         font-size: 15px;
         color: white;
@@ -368,11 +367,11 @@
     }
     .Applydev_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 95vw;
         font-weight: 500;
@@ -385,11 +384,11 @@
     }
     .Login_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 95vw;
         font-weight: 500;
@@ -423,7 +422,7 @@
     .offcangetstarted_btn{
         border-radius: 5px;
         border: none;
-        background-color: #206ee9;
+        background-color: #00cc83;
         text-align: center;
         font-size: 15px;
         color: white;
@@ -438,11 +437,11 @@
     }
     .Applydev_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 95vw;
         font-weight: 500;
@@ -455,11 +454,11 @@
     }
     .Login_btn{
         border-radius: 5px;
-        border: solid 1px #206ee9;;
+        border: solid 1px #00cc83;;
         background-color: white;
         text-align: center;
         font-size: 15px;
-        color: #206ee9;
+        color: #00cc83;
         height: 40px;
         width: 95vw;
         font-weight: 500;
