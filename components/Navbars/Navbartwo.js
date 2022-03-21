@@ -34,8 +34,7 @@ export default function Navbartwo() {
 
                 {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="right-nav-span">Hire Remote Developers</a></Link> :
                 <Link href='/apply-for-job'><a  className="right-nav-span">Apply As Developer</a></Link> 
-                } 
-              
+                }         
 
               {router.route === '/apply-for-job' || router.route ===  '/hire-developers' ? <> { router.route === '/apply-for-job' ? <Link href='https://developer.uptal.org/signin' ><a target='blank' className="getstarted_btn">Apply Now</a></Link> : 
               <Link href= 'https://client.uptal.org/'><a target='blank' className="getstarted_btn">Hire Developers </a></Link> } </> : <Link href='/hire-developers'><a className="getstarted_btn">Hire Developers </a></Link>
@@ -59,8 +58,16 @@ export default function Navbartwo() {
           <Offcanvas.Body>
 
             <div style={{ width: '100%' }}>
-              <Link href='/hire-developers'><a className="offcangetstarted_btn">Hire Remote Developers</a></Link>
-              <Link href='/apply-for-job'><a className="Applydev_btn">Apply As Developer</a></Link>
+
+              {router.route === '/apply-for-job' || router.route ===  '/hire-developers' ? <> { router.route === '/apply-for-job' ? <Link href='https://developer.uptal.org/signin' ><a target='blank' className="offcangetstarted_btn">Apply Now</a></Link> : 
+              <Link href= 'https://client.uptal.org/'><a target='blank' className="offcangetstarted_btn">Hire Developers </a></Link> } </> : <Link href='/hire-developers'><a className="offcangetstarted_btn">Hire Developers </a></Link>
+              }
+
+
+              {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="Applydev_btn">Hire Remote Developers</a></Link> :
+                <Link href='/apply-for-job'><a  className="Applydev_btn">Apply As Developer</a></Link> 
+                }
+
               <Link href="/blog"><a className="Login_btn">Blog</a></Link>
             </div>
           </Offcanvas.Body>

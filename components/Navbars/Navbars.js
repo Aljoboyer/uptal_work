@@ -30,10 +30,13 @@ export default function Nabars({ navigation }) {
             </Nav>
             <div className="nav-itmes">
               <Nav >
+              {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="right-nav-span">Hire Remote Developers</a></Link> :
+                <Link href='/apply-for-job'><a  className="right-nav-span">Apply As Developer</a></Link> 
+                }         
 
-                <Link href='/apply-for-job'><a className="right-nav-span mb-3">Apply As Developer</a></Link>
-
-                <Link href='/hire-developers'><a className="right-nav-span mx-3 mb-3">Hire Now</a></Link> 
+              {router.route === '/apply-for-job' || router.route ===  '/hire-developers' ? <> { router.route === '/apply-for-job' ? <Link href='https://developer.uptal.org/signin' ><a target='blank' className="getstarted_btn">Apply Now</a></Link> : 
+              <Link href= 'https://client.uptal.org/'><a target='blank' className="getstarted_btn">Hire Developers </a></Link> } </> : <Link href='/hire-developers'><a className="getstarted_btn">Hire Developers </a></Link>
+              }
 
                 <Link href='https://community.uptal.org/'><a target="blank" className="right-nav-span fs-6 mb-3">Community</a></Link>
               </Nav>
@@ -48,8 +51,15 @@ export default function Nabars({ navigation }) {
           <Offcanvas.Body>
 
             <div style={{ width: '100%' }}>
-              <Link href='/hire-developers'><a className="offcangetstarted_btn">Hire Remote Developers</a></Link>
-              <Link href='/apply-for-job'><a className="Applydev_btn">Apply As Developer</a></Link>
+
+            {router.route === '/apply-for-job' || router.route ===  '/hire-developers' ? <> { router.route === '/apply-for-job' ? <Link href='https://developer.uptal.org/signin' ><a target='blank' className="offcangetstarted_btn">Apply Now</a></Link> : 
+              <Link href= 'https://client.uptal.org/'><a target='blank' className="offcangetstarted_btn">Hire Developers </a></Link> } </> : <Link href='/hire-developers'><a className="offcangetstarted_btn">Hire Developers </a></Link>
+              }
+
+
+              {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="Applydev_btn">Hire Remote Developers</a></Link> :
+                <Link href='/apply-for-job'><a  className="Applydev_btn">Apply As Developer</a></Link> 
+                }
 
               <Link href='https://community.uptal.org/'><a target="blank" className="Login_btn fs-6 mt-3">Community</a></Link>
             </div>

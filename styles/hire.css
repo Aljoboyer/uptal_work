@@ -241,7 +241,9 @@
     display: none !important;
   }
 }
-
+.hire_content_image{
+  width: 100%;
+}
 @media only screen and (min-width: 200px) and (max-width: 429px) {
   .hire_details_banner_section {
     display: none;
@@ -322,6 +324,9 @@
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 
+  }
+  .hire_content_image{
+    width: 100%;
   }
 }
 
@@ -410,6 +415,9 @@
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 
+  }
+  .hire_content_image{
+    width: 100%;
   }
 }
 
@@ -542,6 +550,9 @@
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 
+  }
+  .hire_content_image{
+    width: 100%;
   }
 }
 

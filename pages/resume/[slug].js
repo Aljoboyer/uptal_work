@@ -149,6 +149,7 @@ export default function HireDevelopers({ post, blogs }) {
             height={node.data.target.fields.file.details.image.height}
             width={node.data.target.fields.file.details.image.width}
             alt={node.data.target.fields.description}
+            className="hire_content_image"
           />
         );
       }

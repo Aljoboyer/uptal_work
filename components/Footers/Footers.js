@@ -31,7 +31,7 @@ export default function Footer() {
 
                 <div className="footer_mobile_btn_container">
                     <Row className="footerbtn_container justify-content-center gy-3 pt-4">
-                        <Col xl={4} lg={3} md={8} sm={12}><p className="footer_title ">Join the Uptal® community.</p></Col>
+                        <Col xl={4} lg={3} md={8} sm={12}><p className="footer_title text-center">Join the Uptal® community.</p></Col>
                         <Col  xl={8} lg={9} md={12} sm={12} xs={12}>
                             <Row>
                             <Col className="d-flex justify-content-center " xl={5} lg={5} md={5} sm={12}>
