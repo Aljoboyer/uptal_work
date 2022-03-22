@@ -21,11 +21,11 @@ export default function Footer() {
                     </div>
                     <div className="footer_btn_div">
                         
-                        <div className="d-flex align-items-center ms-3"><Link href="/hire-developers"><a className="remote_btn">Hire remote developers<BsArrowRight className="remote_arrow_icons " /></a></Link></div>
+                        <div className="d-flex align-items-center ms-3"><Link href="/hire-developers"><a className="remote_btn">Hire remote developers</a></Link></div>
                         
                         <div><p className="text-light mt-4 ms-2">OR</p></div>
                         
-                        <div className="d-flex align-items-center ms-3"><Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer<BsArrowRight className="apply_arrow_icons ms-2" /></a></Link></div>
+                        <div className="d-flex align-items-center ms-3"><Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer</a></Link></div>
                     </div>
                </div>
 
@@ -35,11 +35,11 @@ export default function Footer() {
                         <Col  xl={8} lg={9} md={12} sm={12} xs={12}>
                             <Row>
                             <Col className="d-flex justify-content-center " xl={5} lg={5} md={5} sm={12}>
-                            <Link href="/hire-developers"><a className="remote_btn">Hire remote developers<BsArrowRight className="remote_arrow_icons ms-2" /></a></Link>
+                            <Link href="/hire-developers"><a className="remote_btn">Hire remote developers</a></Link>
                         </Col>
-                        <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-4">OR</p></Col>
+                        <Col className="text-center" lg={1} md={1} sm={12}><p className="text-light mt-4 pb-0 ps-0">OR</p></Col>
                         <Col className="d-flex justify-content-center" xl={5} lg={5} md={5} sm={12}>
-                            <Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer<BsArrowRight className="apply_arrow_icons ms-2" /></a></Link>
+                            <Link href="/apply-for-job"><a className="apply_btn  ">Apply as a Developer</a></Link>
                         </Col>
                             </Row>
                         </Col>

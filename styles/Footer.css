@@ -35,7 +35,8 @@
 }
 .remote_btn:hover{
     text-decoration: none;
-    color: black;
+    color: white;
+    background-color: #00cc83;
 }
 .apply_btn{
     text-align: center;
@@ -51,6 +52,7 @@
 .apply_btn:hover{
     text-decoration: none;
     color: white;
+    background-color: #00cc83;
 }
 .foter_link{
     cursor: pointer;
@@ -95,7 +97,7 @@
 
 }
 .copyright_title{
-    font-size: 16px;
+    font-size: 16px; 
     color: white;
     margin-left: 8px;
     padding: 0px;

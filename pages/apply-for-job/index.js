@@ -24,6 +24,7 @@ export async function getStaticProps() {
 }
 
 export default function Applyjob({job}) {
+  const HalfSLiceTwo = job.slice(0, 18)
   const HalfSLice = job.slice(0, 6)
   const [showTech, setShowTech] = useState(false)
 
@@ -191,11 +192,13 @@ export default function Applyjob({job}) {
         <div className="container mt-4">
           <p className="based_text">Based on Skills</p>
           <div className="technology_div">
-            {job.map(data => {
+            {HalfSLiceTwo?.map(data => {
                  return <JobCard key={data.sys.id} data={data} />
                 }
                 )}
           </div>
+          <Link href='https://www.uptal.org/sitemap/jobs'><a className="more_skills" target="blank">+ More skills</a></Link>
+
         </div>
       </section>
 

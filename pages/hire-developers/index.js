@@ -26,6 +26,7 @@ export async function getStaticProps() {
   }
 }
 export default function Intro({ hire }) {
+  const HalfSliceTwo = hire.slice(0, 18)
   const HalfSLice = hire.slice(0, 6)
   const [showTech, setShowTech] = useState(false)
 
@@ -186,10 +187,11 @@ export default function Intro({ hire }) {
         <div className="container mt-4">
           <p className="based_text">Based on Skills</p>
           <div className="technology_div">
-            {hire.map(data => {
+            {HalfSliceTwo.map(data => {
                     return <HireCard key={data.sys.id} data={data} />
                 })}
           </div>
+          <Link href='https://www.uptal.org/sitemap/hire-developers'><a className="more_skills" target="blank">+ More skills</a></Link>
         </div>
       </section>
 

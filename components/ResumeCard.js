@@ -18,7 +18,7 @@ export default function ResumeCard({data}) {
           <Link href={`/resume/${slug}`}><a>
           <img className='hire_tech_img' src={'https:' + skillLogo.fields.file.url}  alt={skill} />
           <p className="technology_text">{skill}</p>
-          <IoIosArrowForward className="hire_arrow_icon ms-2"/>
+      
           {/* <p className="category_text">{category.fields.categoryName}</p> */}
           </a></Link>
       </div>

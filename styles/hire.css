@@ -125,8 +125,8 @@
   display: none;
 }
 
-.technology_colam:hover .hire_arrow_icon {
-  display: inline;
+.technology_colam:hover{
+  background-color: #85f3cd;;
 }
 
 .technology_section {
@@ -235,7 +235,10 @@
 .slick-arrow.slick-next {
   right: -45px;
 }
-
+.more_skills{
+  display: block;
+  padding-top: 15px;
+}
 @media only screen and (max-width: 768px) {
   .slick-arrow {
     display: none !important;
