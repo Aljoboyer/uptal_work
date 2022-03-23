@@ -30,7 +30,7 @@ export default function Nabars({ navigation }) {
             </Nav>
             <div className="nav-itmes">
               <Nav >
-              {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="right-nav-span">Hire Remote Developers</a></Link> :
+              {router.route === '/apply-for-job'?   <Link href='/hire-developers'><a className="right-nav-span">Hire Developers</a></Link> :
                 <Link href='/apply-for-job'><a  className="right-nav-span">Apply As Developer</a></Link> 
                 }         
 

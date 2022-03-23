@@ -29,9 +29,16 @@
 .getstartleft{
     display: none;
 }
-.right-nav-span{
-    font-size: 16px;
+
+.right-nav-span:hover{
     color: #515e72;
+
+}
+.right-nav-span {
+    display: inline-block;
+    position: relative;
+    color: #515e72;
+    font-size: 16px;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -39,10 +46,26 @@
     text-decoration: none;
     margin-top: 12px;
     margin-right: 10px;
-}
-.right-nav-span:hover{
-    color: #515e72;
-}
+  }
+  
+  .right-nav-span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .right-nav-span:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
 .anchor-text{
     text-decoration: none;
     color: #515e72;

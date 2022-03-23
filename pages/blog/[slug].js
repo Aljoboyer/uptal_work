@@ -245,7 +245,7 @@ export default function Post({ post, recentBlog }) {
         </div>
         <section className='blog_section'>
           <div className="container">
-            <h1>Recent Blog</h1>
+            <p className="blog_details_recent_blog_title">Recent Blog</p>
             <Row className="mx-auto mt-3">
               {recentBlog.map(blog => {
                 return <RecentBlogCard key={blog.sys.id} blog={blog} />

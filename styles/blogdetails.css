@@ -87,7 +87,11 @@
 .join_title{
     font-size: 30px;
     font-weight: 600;
-    color: white;
+    color: white; 
+}
+.blog_details_recent_blog_title{
+    font-size: 25px;
+    font-weight: 500;
 }
 .join_img{
     width: 100%;

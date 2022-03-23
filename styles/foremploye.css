@@ -8,7 +8,7 @@
 }
 
 .employe_title {
-    color: #14a800;
+    color: black;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Charm', cursive;
@@ -18,7 +18,7 @@
 }
 
 .employe_text {
-    color: #001e00;
+    color: black;
     font-size: 16px;
     font-weight: 500;
     font-family: 'Charm', cursive;
@@ -48,18 +48,19 @@
     text-decoration: none; 
     font-size: 16px;
     font-weight: 500;
-    color: #14a800;
+    color: #00cc83;
     font-family: 'Charm', cursive;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     text-align: start;
     margin-top: 3px;
+
 }
 
 .looking_anchor:hover {
     text-decoration: underline;
-    color: #14a800;
+    color: #00cc83;
 }
 
 .employe_banner_img {
@@ -211,7 +212,7 @@
 .expect_apply_btn {
     background-color: #00cc83;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     color: white;
     font-size: 15px;
     font-weight: 300;
@@ -341,7 +342,7 @@
     }
 
     .employe_title {
-        color: #14a800;
+ 
         font-size: 35px;
         font-weight: bold;
         font-family: 'Charm', cursive;
@@ -475,6 +476,9 @@
     .expact_text_apply_job {
         text-align: start;
     }
+    .faq_title{
+        font-size: 24px;
+    }
 }
 
 @media only screen and (min-width: 430px) and (max-width: 575px) {
@@ -484,7 +488,6 @@
     }
 
     .employe_title {
-        color: #14a800;
         font-size: 35px;
         font-weight: bold;
         font-family: 'Charm', cursive;
@@ -614,6 +617,9 @@
     .expact_text_apply_job {
         text-align: start;
     }
+    .faq_title{
+        font-size: 24px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -623,7 +629,7 @@
     }
 
     .employe_title {
-        color: #14a800;
+
         font-size: 40px;
         font-weight: bold;
         font-family: 'Charm', cursive;
@@ -749,7 +755,7 @@
     }
 
     .employe_title {
-        color: #14a800;
+
         font-size: 40px;
         font-weight: bold;
         font-family: 'Charm', cursive;
@@ -788,7 +794,7 @@
 
 @media only screen and (min-width:992px) and (max-width:1163px) {
     .employe_title {
-        color: #14a800;
+
         font-size: 45px;
         font-weight: bold;
         font-family: 'Charm', cursive;
@@ -822,7 +828,7 @@
 
 @media only screen and (min-width:1164px) and (max-width: 3000px) {
     .employe_title {
-        color: #14a800;
+
         font-size: 50px;
         font-weight: bold;
         font-family: 'Charm', cursive;
