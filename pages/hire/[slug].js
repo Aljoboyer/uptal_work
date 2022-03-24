@@ -16,6 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import RecentBlogCard from '../../components/RecentBlogCard';
 import RecentBlogSlide from '../../components/RecentBlogSlide';
+import Link from 'next/link';
 
 const client = createClient({
   space: process.env.NEXT_PUBLIC_CONTENTFUL_KEY,
@@ -105,6 +106,7 @@ export default function HireDevelopers({ post, hire, blogs }) {
       }
     ]
   };
+  const HalfSliceTwo = hire.slice(0, 18)
   const HalfSLice = hire.slice(0, 6)
   const [showTech, setShowTech] = useState(false)
 
@@ -432,11 +434,12 @@ export default function HireDevelopers({ post, hire, blogs }) {
         <div className="container mt-4">
           <p className="based_text">Based on Skills</p>
           <div className="technology_div">
-            {hire.map(data => {
+            {HalfSliceTwo.map(data => {
                  return <HireCard key={data.sys.id} data={data} />
                 }
                 )}
           </div>
+          <Link href='https://www.uptal.org/sitemap/jobs'><a className="more_skills" target="blank">+ More skills</a></Link>
         </div>
       </section>
 
