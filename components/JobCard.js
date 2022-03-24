@@ -10,7 +10,7 @@ export default function JobCard({data}) {
     console.log('slug', slug)
   return(
 
-      <div className='technology_colam'  lg={4} md={6} sm={12}>
+      <div className='technology_text'  lg={4} md={6} sm={12}>
           <Link href={`/jobs/${slug}`}><a >
           <img className='hire_tech_img' src={'https:' + skillLogo.fields.file.url}  alt={skill} />
           <p className="technology_text">{skill}</p>

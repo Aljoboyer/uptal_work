@@ -320,12 +320,13 @@
 
 @media only screen and (min-width: 200px) and (max-width: 429px) {
     .brand_section {
-        padding-top: 80px;
+        padding-top: 40px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
     .expact_section {
+        padding-top: 40px;
         padding-left: 5px;
         margin-right: 5px;
     }
@@ -333,6 +334,7 @@
     .faq_section {
         padding-left: 5px;
         margin-right: 5px;
+        padding-top: 40px;
     }
 
     .anchor_talkbtn {
@@ -364,7 +366,9 @@
     .looking_anchor {
         padding-top: 15px;
     }
-
+    .talent_section {
+        padding-top: 40px;
+    }
     .talent_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -421,6 +425,7 @@
 
     .expact_title {
         line-height: 40px;
+        font-size: 24px;
     }
 
     .faq_section {
@@ -556,7 +561,10 @@
     .expact_section {
         margin-left: 0px;
     }
+    .expact_title {
 
+        font-size: 24px;
+    }
     .expact_point_div {
         display: grid;
         grid-template-columns: repeat(1, 1fr);

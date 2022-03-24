@@ -36,8 +36,8 @@ export default function Intro({ hire }) {
       <Navbartwo />
       <section>
         <div className="container">
-          <Row className="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-start justify-content-xs-start  mx-auto employe_banner_section mt-4 gy-3">
-            <Col className="" lg={6} md={6} sm={10}>
+          <Row className="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-xs-start  justify-content-sm-start  mx-auto employe_banner_section mt-4 gy-3">
+            <Col className="ml-0" lg={6} md={6} sm={12} xs={12}>
               <p className="employe_title">Your shortcut to pre-vetted talent</p>
               <p className="employe_text ">Talk to a recruiter and get a shortlist within 2 days</p>
               <div className="anchor_talkbtn ">

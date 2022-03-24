@@ -117,7 +117,7 @@
 
 .technology_section_mobile {
   display: none;
-  padding-top: 50px;
+  /* padding-top: 20px; */
 }
 
 .hire_arrow_icon {
@@ -265,7 +265,7 @@
     width: 100%;
     height: 48px;
     margin-top: 10px;
-  }
+  } 
 
   .technology_section {
     display: none;
@@ -282,13 +282,14 @@
 
   .Based_role_section_mobile {
     display: block;
+    padding-top: 40px;
   }
 
   .technology_div {
     display: grid;
     grid-template-columns: auto auto;
     grid-row-gap: 30px;
-
+    grid-column-gap: 10px;
   }
 
   .technology_text {
@@ -519,6 +520,7 @@
     grid-template-columns: auto auto auto auto auto;
     grid-row-gap: 30px;
     margin-left: 10px;
+    grid-column-gap: 10px;
   }
 
   .technology_colam {
@@ -564,13 +566,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     grid-row-gap: 30px;
-  }
-
-  .Based_role_div {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 30px;
+   
   }
 
   .hire_blog_inputs {

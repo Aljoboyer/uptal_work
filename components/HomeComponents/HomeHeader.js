@@ -3,17 +3,17 @@ import {Offcanvas, Row, Col, Nav, Navbar,Container} from "react-bootstrap";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { AiOutlineMenu} from 'react-icons/ai';
+
 export default function HomeHeader() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+  const router = useRouter()
     return (
       <div  style={{ width: '100%', paddingLeft:'0', paddingRight:'0' , backgroundColor:'#F4F4F6'}}>
-
         <div className="container" >
-          <Navbar collapseOnSelect expand="lg" variant="l">
+          <Navbar  collapseOnSelect expand="lg" variant="l">
       
           <Navbar.Brand className="home_nav_logo me-4"> <Link href="/"><a className="navtwo_logo ">Uptal.</a></Link> </Navbar.Brand>
 
