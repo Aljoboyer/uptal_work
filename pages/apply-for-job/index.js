@@ -35,7 +35,7 @@ export default function Applyjob({job}) {
       <section>
         <div className="container">
           <Row className="container-fluid justify-content-xl-evenly justify-content-lg-evenly justify-content-sm-start justify-content-xs-start  mx-auto employe_banner_section mt-4 gy-3">
-            <Col className="w-100" lg={6} md={6} sm={12} xs={12}>
+            <Col  lg={6} md={6} sm={12} xs={12}>
               <p className="employe_title">Your shortcut to pre-vetted talent</p>
               <p className="employe_text ">Talk to a recruiter and get a shortlist within 2 days</p>
               <div className="anchor_talkbtn ">
