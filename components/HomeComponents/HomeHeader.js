@@ -24,7 +24,7 @@ export default function HomeHeader() {
               </Nav>
               <div className="nav-itmes">
               <Nav>
-                <Link href="/blog"><a className="home_blog_btn ">Community</a></Link>
+                <Link href="https://community.uptal.org/"><a target="blank" className="home_blog_btn ">Community</a></Link>
                 <Link href="/blog"><a className="home_blog_btn ">Blog</a></Link>
               </Nav>
               </div>

@@ -20,7 +20,7 @@
 }
 .card-colam{
     cursor: pointer;
-    overflow: hidden;
+    overflow: hidden; 
 
 }
 .card-colam a {
@@ -31,7 +31,7 @@
     width: 100%;
 }
 .card-colam:hover .blog-title{
-    color: #206ee9;
+    color: #00cc83;
     transition: 0.5s ease-in-out;
 }
 .card-colam:hover .cards-img{
@@ -57,8 +57,9 @@
 
 .view_more_blog_btn{
     cursor: pointer;
-    font-size: 18px;
-    /* font-weight: bold; */
+    font-size: 16px;
+    font-weight: bold;
+    color: #00cc83;
 }
 .filter_items{
     overflow: auto;

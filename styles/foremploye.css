@@ -26,9 +26,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.anchor_talkbtn {
-    display: flex;
-    flex-direction: row;
+.mobile_looking_anchor {
+  display: none;
 }
 
 .talk_btn {
@@ -55,8 +54,7 @@
     cursor: pointer;
     text-align: start;
     margin-top: 3px;
-
-}
+}   
 
 .looking_anchor:hover {
     text-decoration: underline;
@@ -484,6 +482,12 @@
     .faq_title{
         font-size: 24px;
     }
+    .pc_looking_anchor{
+        display: none;
+    }
+    .mobile_looking_anchor {
+        display: block;
+      }
 }
 
 @media only screen and (min-width: 430px) and (max-width: 575px) {
@@ -628,6 +632,12 @@
     .faq_title{
         font-size: 24px;
     }
+    .pc_looking_anchor{
+        display: none;
+    }
+    .mobile_looking_anchor {
+        display: block;
+      }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {

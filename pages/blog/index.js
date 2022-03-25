@@ -51,10 +51,10 @@ export default function Blog({ blogs }) {
             return <BlogCard key={blog.sys.id} blog={blog} />
           })}
           {
-            viewMore && <p className='text-primary view_more_blog_btn text-center' onClick={() => {
+            viewMore && <p className='view_more_blog_btn text-center' onClick={() => {
               ViewBlog(viewBlog + 6)
             }}
-            >View More <IoIosArrowDown size={24} /></p>
+            >View More <IoIosArrowDown size={22} /></p>
           }
 
         </Row>

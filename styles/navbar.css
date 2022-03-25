@@ -16,6 +16,7 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     margin-right: 10px;
+    margin-top: 3px;
 }
 .hire_remote_nav_btn{
     padding-top: 30px;
@@ -142,6 +143,7 @@
     font-family: 'Poppins', sans-serif;
     display: block;
     text-decoration: none;
+
 }
 .Applydev_btn{
     border-radius: 5px;

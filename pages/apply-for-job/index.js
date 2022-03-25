@@ -38,9 +38,11 @@ export default function Applyjob({job}) {
             <Col  lg={6} md={6} sm={12} xs={12}>
               <p className="employe_title">Your shortcut to pre-vetted talent</p>
               <p className="employe_text ">Talk to a recruiter and get a shortlist within 2 days</p>
-              <div className="anchor_talkbtn ">
-                <button className="talk_btn">Talk to a recruiter</button>
-                <a className="looking_anchor ms-2">Looking for work?</a>
+               <div className="anchor_talkbtn ">
+                <button className="talk_btn">Apply Now</button>
+                <p className="pt-2 pc_looking_anchor">Looking to Hire instead?<Link href="/hire-developers"><a className="looking_anchor ms-2">Hire Developers</a></Link></p>
+
+                <p className="pt-2 mobile_looking_anchor">Looking to Hire instead? <br /> <Link href="/hire-developers"><a className="looking_anchor">Hire Developers</a></Link></p>
               </div>
             </Col>
             <Col className="text-end" lg={6} md={6} sm={12}>
@@ -283,7 +285,7 @@ export default function Applyjob({job}) {
                         <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                       </Col>
                       <Col lg={3} md={3} sm={12}>
-                        <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                        <a target="blank" href='https://developer.uptal.org/'><button className='talent_btn'>Apply Now</button></a>
                       </Col>
                     </Row>
                   </div>
@@ -316,7 +318,7 @@ export default function Applyjob({job}) {
                     <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
                   </Col>
                   <Col lg={3} md={3} sm={12}>
-                    <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                    <a target="blank" href='https://client.uptal.org/'><button className='talent_btn'>Apply Now</button></a>
                   </Col>
                 </Row>
               </div>
