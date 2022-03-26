@@ -239,14 +239,17 @@
   display: block;
   padding-top: 15px;
 }
+.hire_content_image{
+  width: 60%;
+  height: 60%;
+}
+
 @media only screen and (max-width: 768px) {
   .slick-arrow {
     display: none !important;
   }
 }
-.hire_content_image{
-  width: 100%;
-}
+
 @media only screen and (min-width: 200px) and (max-width: 429px) {
   .hire_details_banner_section {
     display: none;

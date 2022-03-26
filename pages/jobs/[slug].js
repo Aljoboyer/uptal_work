@@ -217,7 +217,7 @@ export default function HireDevelopers({ post, hire, blogs , job}) {
                   </div>
                   <div className='mt-3'>
                     <button className="job_apply_developer_btn">Apply as {skill} Developer</button>
-                    <p className='mt-4'>Check out the best jobs for February 2022 <span className='text-primary'>here</span></p>
+
                   </div>
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} style={{
@@ -241,8 +241,8 @@ export default function HireDevelopers({ post, hire, blogs , job}) {
                 <p className='blog_detailsone'>{intro}</p>
               </div>
               <div className='mt-3'>
-                <input type="text" className="hire_blog_inputs" placeholder='Your work Email' />
-                <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
+              <button className="job_apply_developer_btn">Apply as {skill} Developer</button>
+
               </div>
             </Col>
           </Row>
@@ -389,7 +389,7 @@ export default function HireDevelopers({ post, hire, blogs , job}) {
                           <p className='join_text'>Access a pre-screened pool of remote talent, shortlisted for you by specialized recruiters who help you select the best talent based on your business needs.</p>
                         </Col>
                         <Col lg={3} md={3} sm={12}>
-                          <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                          <a target="blank" href='https://developer.uptal.org/'><button className='talent_btn'>Apply Now</button></a>
                         </Col>
                       </Row>
                     </div>
@@ -422,7 +422,7 @@ export default function HireDevelopers({ post, hire, blogs , job}) {
                       <p className='join_text'>Find great talent. Build your business. Take your career to the next level.</p>
                     </Col>
                     <Col lg={3} md={3} sm={12}>
-                      <a href='https://client.uptal.org/'><button className='talent_btn'>Find Talent</button></a>
+                    <a target="blank" href='https://developer.uptal.org/'><button className='talent_btn'>Apply Now</button></a>
                     </Col>
                   </Row>
                 </div>

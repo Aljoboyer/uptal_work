@@ -8,7 +8,9 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { createClient } from 'contentful'
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
+
 export async function getStaticProps() {
 
   const client = createClient({ 

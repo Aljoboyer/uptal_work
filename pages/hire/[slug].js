@@ -218,7 +218,6 @@ export default function HireDevelopers({ post, hire, blogs }) {
                     <p className='hire_banner_text'>{intro}</p>
                   </div>
                   <div className='mt-3'>
-                    <input type="text" className="hire_blog_inputs" placeholder='Your work Email' />
                     <a href='https://client.uptal.org/'><button className="hire_blog_developer_btn">Hire {skill} Developer</button></a>
                   </div>
                 </Col>
@@ -242,7 +241,6 @@ export default function HireDevelopers({ post, hire, blogs }) {
                 <p className='blog_detailsone'>{intro}</p>
               </div>
               <div className='mt-3'>
-                <input type="text" className="hire_blog_inputs" placeholder='Your work Email' />
                 <button className="hire_blog_developer_btn">Hire {skill} Developer</button>
               </div>
             </Col>
