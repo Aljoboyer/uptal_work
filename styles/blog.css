@@ -63,7 +63,7 @@
 }
 .filter_items{
     overflow: auto;
-    white-space: nowrap;
+    white-space: nowrap; 
 }
 .filter_bar{
     position: sticky;
